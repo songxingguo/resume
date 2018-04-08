@@ -1,0 +1,44 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#app {
+	background-color: #fff;
+	width: 1024px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#header {
+	height: 70px;
+	background-color: #fff;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+#technology {
+	height: 560px;
+	background-color: #fff;
+}
+
+#learning {
+	height: 470px;
+	background-color: #fafafa;
+}
+
+#working {
+	height: 1000px;
+	background-color: #fff;
+}
+
+#project {
+	height: 1000px;
+	background-color: #fafafa;
+}
+
+#footer {
+	height: 90px;
+	background-color: #fff;
+	border-top: 1px solid #e9e9e9;
+}
