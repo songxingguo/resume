@@ -21,7 +21,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("./../images/header.png");
+  background-image: url("../images/header.png");
   background-position: center;
   background-size: cover;
 }
@@ -40,7 +40,7 @@ body {
 .QR-code {
   width: 140px;
   height: 140px;
-  background-image: url("./../images/QR-code.png");
+  background-image: url("../images/QR-code.png");
   background-position: center;
   background-size: cover;
 }
