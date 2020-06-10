@@ -4,14 +4,13 @@
 </head>
 <body>
 <div id="root">
-    <div class="animated backInRight" style="margin-top: 250px">
-        <% var welcomeText = 'Hello World' %>
-        <div class="welcome"><%= welcomeText %></div>
-        <div class="github">
-            <span>By CRONWMMM - </span>
-            <a href="https://github.com/CRONWMMM/multi_page_app_template" class="link">GitHub</a>
-            <a href="https://juejin.im/post/5cb1aabdf265da037b6101d3" class="link">掘金专栏</a>
-        </div>
+    <div style="margin-top: 250px">
+        <% var users = [{name: 'songxingguo'}, {name: '宋兴国'}] %>
+        <% if(users) { %>
+            <% users.forEach(function (user) { %>
+                <h2><%= user.name %></h2>
+            <% }) %>
+        <% } %>
     </div>
 </div>
 </body>
