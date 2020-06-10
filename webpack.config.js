@@ -1,11 +1,15 @@
 const path = require('path');
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
   entry: [
-    './src/main.js'
+    './src/index.js'
   ],
   output: {
-    path: path.resolve(__dirname, './dist')
+    path: path.resolve(__dirname, './dist'),
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -32,5 +36,22 @@ module.exports = {
         }
       }
     ]
+  },
+  plugins: [new HtmlWebpackPlugin({
+    template: 'src/index.ejs',
+    inject: true,
+    minify: {
+      collapseWhitespace: true
+    }
+  }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    overlay: true,
+    port: 4550,
+    open: true,
+    hot: true
   }
 };

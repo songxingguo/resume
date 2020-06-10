@@ -1,22 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- title -->
-    <% include ./includes/title.ejs %>
-    <!-- link -->
-    <% include ./includes/link.ejs %>
 </head>
 <body>
 <div id="root">
     <div class="animated backInRight" style="margin-top: 250px">
-        <% var welcomeText = 'Hello World!' %>
-        <% include includes/img.ejs %>
-        <% include includes/welcomeText.ejs %>
-        <div>
-            <% % if ( title == '首页' ) { %>
-            <p style="margin: 20px 0 20px">这是首页</p>
-            <% % } %>
-        </div>
+        <% var welcomeText = 'Hello World' %>
+        <div class="welcome"><%= welcomeText %></div>
         <div class="github">
             <span>By CRONWMMM - </span>
             <a href="https://github.com/CRONWMMM/multi_page_app_template" class="link">GitHub</a>
