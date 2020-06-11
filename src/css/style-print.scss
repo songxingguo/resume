@@ -99,3 +99,12 @@ body {
     margin-top: 5px;
   }
 }
+.resume__footer {
+  border-top: solid 1px #999999;
+  box-sizing: border-box;
+  padding-top: 10px;
+  .resume__footer-desc {
+    font-size: 14px;
+    color: #999;
+  }
+}
