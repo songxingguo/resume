@@ -1,35 +1,59 @@
-/*****文字排版******/
+/*CSS reset*/
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{font-size:100%;}
+
+
+/*文字排版*/
 .f12{font-size:12px;}
 .f13{font-size:13px;}
 .f14{font-size:14px;}
 .f16{font-size:16px;}
 .f20{font-size:20px;}
-.fb{font-weight:bold;}
+.fb{font-weight:bold}
 .fn{font-weight:normal;}
 .t2{text-indent:2em;}
-.lh150{line-height:150%}
-.lh180{line-height:180%}
-.lh200{line-height:200%}
-.unl{text-decoration:underline;}
+.lh150{line-height:150%;}
+.lh180{line-height:180%;}
+.lh200{line-height:200%;}
+.unl{text-decoration:underlline;}
 .no_unl{text-decoration:none;}
-/****定位****/
+
+
+/*定位*/
 .tl{text-align:left;}
 .tc{text-align:center;}
 .tr{text-align:right;}
-.bc{margin-left:auto;margin-right:auto;}
-.fl{float:left;display:inline;}
-.fr{float:right;display:inline;}
-.cb{clear:both;}
-.cl{clear:left;}
-.cr{clear:right;}
+.bc{margin-left:auto;margin-right:auto;}/*块级元素水平居中（前提是块级元素有设置宽度）*/
+.fl{float:left;display:inline;}/*消除ie6浮动产生的双边距*/
+.fr{float:right;display:inline;}/*消除ie6浮动产生的双边距*/
+.cb{clear:both;}/*清除浮动*/
+.cl{clear:left;}/*清除左浮动*/
+.cr{clear:right;}/*清除右浮动*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .vm{vertical-align:middle;}
 .pr{position:relative;}
 .pa{position:absolute;}
-.abs-right{position:absolute;right:0;}
-.zoom{zoom:1}
-.hidden{visibility:hidden;}
+.abs-right{position:absolute;right:0}
+.zoom {zoom:1; }/*触发IE浏览器的haslayout。解决ie下的浮动，margin重叠等一些问题*/
+.hidden{visibility:hidden; }
 .none{display:none;}
-/******长度 高度*******/
+
+/*下列这些类的设置和使用可以减少我们页面样式的代码量*/
+/*长度高度*/
 .w10{width:10px;}
 .w20{width:20px;}
 .w30{width:30px;}
@@ -47,24 +71,15 @@
 .w600{width:600px;}
 .w700{width:700px;}
 .w800{width:800px;}
-.wp10{width: 10%;}
-.wp20{width: 20%;}
-.wp30{width: 30%;}
-.wp40{width: 40%;}
-.wp50{width: 50%;}
-.wp60{width: 60%;}
-.wp70{width: 70%;}
-.wp80{width: 80%;}
-.wp90{width: 90%;}
 .w{width:100%}
-.h20{height: 20px;}
-.h40{height: 40px;}
-.h50{height:50px;}
-.h80{height:80px;}
-.h100{height:100px;}
-.h200{height:200px;}
+.h50{width:50px;}
+.h80{width:80px;}
+.h100{width:100px;}
+.h200{width:200px;}
 .h{height:100%}
-/******边距*******/
+
+
+/*边距*/
 .m10{margin:10px;}
 .m15{margin:15px;}
 .m30{margin:30px;}
@@ -73,12 +88,8 @@
 .mt15{margin-top:15px;}
 .mt20{margin-top:20px;}
 .mt30{margin-top:30px;}
-.mt40{margin-top: 40px;}
 .mt50{margin-top:50px;}
-.mt80{margin-top: 80px;}
 .mt100{margin-top:100px;}
-.mt140{margin-top: 140px;}
-.mt180{margin-top: 180px;}
 .mb5{margin-bottom:5px;}
 .mb10{margin-bottom:10px;}
 .mb15{margin-bottom:15px;}

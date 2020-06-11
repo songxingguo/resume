@@ -10,10 +10,30 @@
     <link href="<%= require('./css/base.css') %>" media="not print" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class="resume__item__header flex-row flex-all-center">
-    <div class="resume__item__header-title">标题1</div>
-    <div class="resume__item__header-desc">描述</div>
-    <img src="<%= require('./imgs/header.png') %>" width="100" height="100" alt="头像">
+<% var tech = {
+    title: '精通前端，涉猎后端',
+    desc: '编织有艺术感的代码',
+    list: ['负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+        '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+        '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+        '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。']
+} %>
+<div id="resume">
+    <div class="resume__content mt100 mb100">
+        <div class="resume__item">
+            <div class="resume__item__header flex-row flex-items-center">
+                <div class="resume__item__header-title"><%= tech.title %></div>
+                <div class="resume__item__header-desc ml50"><%= tech.desc %></div>
+            </div>
+            <div class="resume__item__body mt50">
+                <ul class="resume__item-text list-style">
+                    <% tech.list.forEach(function (item)  { %>
+                        <li><%= item %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
