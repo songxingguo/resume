@@ -1,4 +1,4 @@
-import './css/main.scss'
+import './css/index.scss'
 
 const isDev = process.env.NODE_ENV === 'development'
 
