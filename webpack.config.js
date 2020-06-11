@@ -20,7 +20,7 @@ module.exports = {
           options: {
             name: '[name].[hash:8].[ext]',
             outputPath: 'assets/',
-            publicPath: '/assets/'
+            publicPath: './assets/'
           }
         }, 'extract-loader', 'css-loader', 'postcss-loader']
       },
