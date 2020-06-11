@@ -31,6 +31,19 @@
         content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。'
     }]
 } %>
+<% var works = {
+    title: '3 年工作经验',
+    desc: '曾在知名互联网公司任职',
+    list: [{
+        title: '锦鲤多多',
+        desc: '2018.12-至今',
+        content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。'
+    }, {
+        title: '知晓理工',
+        desc: '2018.12-至今',
+        content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。'
+    }]
+} %>
 <div id="resume">
     <div class="resume__content mt100 mb100">
         <div class="resume__item">
@@ -61,6 +74,34 @@
                         <ul class="resume__item-text list-style mt50">
                             <%= item.content %>
                         </ul>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+        <div class="resume__item">
+            <div class="flex-row flex-items-center">
+                <div class="resume__item-title"><%= works.title %></div>
+                <div class="resume__item-desc ml50"><%= works.desc %></div>
+            </div>
+            <div class="work-container mt50">
+                <% works.list.forEach(function (item)  { %>
+                    <div class="work__item-date flex-row flex-items-center">
+                        <div class="work__item-dot"></div>
+                        <span class="ml15">2017/06</span>
+                    </div>
+                    <div class="work__item flex-row">
+                        <div class="flex-column">
+                            <div class="flex-row flex-items-center">
+                                <div class="work__item-title"><%= item.title %>—</div>
+                                <div class="work__item-desc ml5"><%= item.desc %></div>
+                            </div>
+                            <ul class="resume__item-text list-style mt50">
+                                <%= item.content %>
+                            </ul>
+                        </div>
+                        <div class="ml100">
+                            <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="50" height="50">
+                        </div>
                     </div>
                 <% }) %>
             </div>

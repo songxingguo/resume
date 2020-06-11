@@ -25,6 +25,37 @@ body {
   font-size: 16px;
   color: #999;
 }
+.work-container {
+  position: relative;
+  border-left: solid 2px #999;
+  box-sizing: border-box;
+  padding: 2px 0 10px 10px;
+  margin-left: 5px;
+}
+.work__item {
+  .work__item-title {
+    font-size: 14px;
+    color: #333;
+  }
+  .work__item-desc {
+    font-size: 12px;
+    color: #999;
+  }
+}
+.work__item-date {
+  position: relative;
+  top: -10px;
+  left: -16px;
+  font-size: 10px;
+  color: #999999;
+  margin-top: 30px;
+  .work__item-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+  }
+}
 .project__item {
   border-bottom: 1px dashed #999;
   box-sizing: border-box;
