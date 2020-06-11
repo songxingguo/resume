@@ -45,6 +45,30 @@
     }]
 } %>
 <div id="resume">
+    <div class="resume__header">
+        <div class="flex-row flex-content-between flex-items-end">
+            <div class="flex-row flex-items-end">
+                <div class="resume__header-name">宋兴国</div>
+                <div class="resume__header-desc ml20">前端开发工程师</div>
+            </div>
+            <div class="resume__header-desc">毕业于<span>重庆理工大学</span></div>
+        </div>
+        <div class="flex-row flex-content-between flex-items-end mt50">
+            <div class="flex-row flex-items-end">
+                <div class="resume__header-desc">
+                    <img src="<%= require('./imgs/QR-code.png') %>" alt="手机" width="10" height="10">
+                    <span>18983642737</span>
+                </div>
+                <div class="resume__header-desc ml30">
+                    <img src="<%= require('./imgs/QR-code.png') %>" alt="邮箱" width="10" height="10">
+                    <span>xg.song@qq.com</span>
+                </div>
+            </div>
+            <div class="resume__header-desc">
+                <span>个人博客（www.songxingguo.com）</span>
+            </div>
+        </div>
+    </div>
     <div class="resume__content mt100 mb100">
         <div class="resume__item">
             <div class="flex-row flex-items-center">
@@ -107,6 +131,7 @@
             </div>
         </div>
     </div>
+    <div class="resume__footer"></div>
 </div>
 </body>
 </html>
