@@ -45,6 +45,7 @@
     }]
 } %>
 <div id="resume">
+    <!-- 头部区域 -->
     <div class="resume__header">
         <div class="flex-row flex-content-between flex-items-end">
             <div class="flex-row flex-items-end">
@@ -69,7 +70,9 @@
             </div>
         </div>
     </div>
+    <!-- 内容区域 -->
     <div class="resume__content mt100 mb100">
+        <!-- 技术掌握 -->
         <div class="resume__item">
             <div class="flex-row flex-items-center">
                 <div class="resume__item-title"><%= tech.title %></div>
@@ -83,6 +86,7 @@
                 </ul>
             </div>
         </div>
+        <!-- 项目经验 -->
         <div class="resume__item">
             <div class="flex-row flex-items-center">
                 <div class="resume__item-title"><%= projects.title %></div>
@@ -102,6 +106,7 @@
                 <% }) %>
             </div>
         </div>
+        <!-- 工作经验 -->
         <div class="resume__item">
             <div class="flex-row flex-items-center">
                 <div class="resume__item-title"><%= works.title %></div>
@@ -113,7 +118,7 @@
                         <div class="work__item-dot"></div>
                         <span class="ml15">2017/06</span>
                     </div>
-                    <div class="work__item flex-row">
+                    <div class="work__item flex-row flex-content-between">
                         <div class="flex-column">
                             <div class="flex-row flex-items-center">
                                 <div class="work__item-title"><%= item.title %>—</div>
@@ -131,6 +136,7 @@
             </div>
         </div>
     </div>
+    <!-- 底部区域 -->
     <div class="resume__footer flex-row flex-content-between flex-items-center">
         <div class="resume__footer-desc flex-row flex-items-center">
             <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="50" height="50">
