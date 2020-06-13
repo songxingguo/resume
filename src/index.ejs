@@ -52,26 +52,47 @@
 <div id="resume">
     <!-- 头部区域 -->
     <div class="resume__header">
-        <div class="flex-row flex-content-between flex-items-end">
+        <div class="flex-row flex-content-between mb30 not-for-print">
             <div class="flex-row flex-items-end">
                 <div class="resume__header-name">宋兴国</div>
                 <div class="resume__header-desc ml20">前端开发工程师</div>
             </div>
-            <div class="resume__header-desc">毕业于<span>重庆理工大学</span></div>
-        </div>
-        <div class="flex-row flex-content-between flex-items-end mt50">
             <div class="flex-row flex-items-end">
                 <div class="resume__header-desc">
                     <img src="<%= require('./imgs/QR-code.png') %>" alt="手机" width="10" height="10">
                     <span>18983642737</span>
                 </div>
-                <div class="resume__header-desc ml30">
+                <div class="resume__header-desc ml50">
                     <img src="<%= require('./imgs/QR-code.png') %>" alt="邮箱" width="10" height="10">
                     <span>xg.song@qq.com</span>
                 </div>
+                <div class="resume__header-desc ml50">
+                    <a href="https://www.songxingguo.com/" class="resume-button">个人博客</a>
+                </div>
             </div>
-            <div class="resume__header-desc">
-                <span>个人博客（www.songxingguo.com）</span>
+        </div>
+        <div class="only-for-print">
+            <div class="flex-row flex-content-between flex-items-end">
+                <div class="flex-row flex-items-end">
+                    <div class="resume__header-name">宋兴国</div>
+                    <div class="resume__header-desc ml20">前端开发工程师</div>
+                </div>
+                <div class="resume__header-desc">毕业于<span>重庆理工大学</span></div>
+            </div>
+            <div class="flex-row flex-content-between flex-items-end mt50">
+                <div class="flex-row flex-items-end">
+                    <div class="resume__header-desc">
+                        <img src="<%= require('./imgs/QR-code.png') %>" alt="手机" width="10" height="10">
+                        <span>18983642737</span>
+                    </div>
+                    <div class="resume__header-desc ml30">
+                        <img src="<%= require('./imgs/QR-code.png') %>" alt="邮箱" width="10" height="10">
+                        <span>xg.song@qq.com</span>
+                    </div>
+                </div>
+                <div class="resume__header-desc">
+                    <span>个人博客（www.songxingguo.com）</span>
+                </div>
             </div>
         </div>
     </div>
@@ -88,7 +109,7 @@
                 <div class="resume__item-desc ml50"><%= tech.desc %></div>
             </div>
             <div class="resume__item__body mt50">
-                <ul>
+                <ul class="ml30">
                     <% tech.list.forEach(function (item)  { %>
                         <li class="tech__item flex-row flex-items-center" style="width: 20%;">
                             JavaScript
@@ -102,29 +123,45 @@
                 </ul>
             </div>
         </div>
-        <!-- 项目经验 -->
         <div class="resume__item">
-            <div class="flex-row flex-items-center">
-                <div class="resume__item-title"><%= projects.title %></div>
-                <div class="resume__item-desc ml50"><%= projects.desc %></div>
+            <div class="flex-column flex-items-center not-for-print">
+                <div class="resume__item-title"><%= tech.title %></div>
+                <div class="resume__item-desc"><%= tech.desc %></div>
             </div>
-            <div class="mt50">
-                <% projects.list.forEach(function (item)  { %>
-                    <div class="project__item">
-                        <div class="flex-row flex-content-between flex-items-center">
-                            <div class="project__item-title"><%= item.title %></div>
-                            <div class="project__item-desc"><%= item.desc %></div>
-                        </div>
-                        <ul class="resume__item-text list-style mt50">
-                            <%= item.content %>
+            <div class="flex-row flex-items-center only-for-print">
+                <div class="resume__item-title"><%= tech.title %></div>
+                <div class="resume__item-desc ml50"><%= tech.desc %></div>
+            </div>
+            <div class="flex-row mt50 pl50 pr50">
+                <div class="pr100 flex-row">
+                    <div class="mr100">
+                        <ul class="resume__item-text list-style">
+                            <% tech.list.forEach(function (item)  { %>
+                                <li><%= item %></li>
+                            <% }) %>
                         </ul>
                     </div>
-                <% }) %>
+                    <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="200" height="200">
+                </div>
+                <div class="split-line flex-row pl100">
+                    <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="200" height="200">
+                    <div class="ml100">
+                        <ul class="resume__item-text list-style">
+                            <% tech.list.forEach(function (item)  { %>
+                                <li><%= item %></li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- 工作经验 -->
         <div class="resume__item">
-            <div class="flex-row flex-items-center">
+            <div class="flex-column flex-items-center not-for-print">
+                <div class="resume__item-title"><%= works.title %></div>
+                <div class="resume__item-desc"><%= works.desc %></div>
+            </div>
+            <div class="flex-row flex-items-center only-for-print">
                 <div class="resume__item-title"><%= works.title %></div>
                 <div class="resume__item-desc ml50"><%= works.desc %></div>
             </div>
@@ -135,17 +172,70 @@
                         <span class="ml15">2017/06</span>
                     </div>
                     <div class="work__item flex-row flex-content-between">
-                        <div class="flex-column">
-                            <div class="flex-row flex-items-center">
-                                <div class="work__item-title"><%= item.title %>—</div>
-                                <div class="work__item-desc ml5"><%= item.desc %></div>
+                        <div class="flex-row not-for-print">
+                            <div class="ml30">
+                                <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="50" height="50">
+                            </div>
+                            <div class="flex-column ml50">
+                                <div class="flex-row flex-items-center">
+                                    <div class="work__item-title"><%= item.title %></div>
+                                    <div class="work__item-desc ml5">—<%= item.desc %></div>
+                                </div>
+                                <ul class="resume__item-text list-style mt50">
+                                    <%= item.content %>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="only-for-print">
+                            <div class="flex-column">
+                                <div class="flex-row flex-items-center">
+                                    <div class="work__item-title"><%= item.title %></div>
+                                    <div class="work__item-desc ml5">—<%= item.desc %></div>
+                                </div>
+                                <ul class="resume__item-text list-style mt50">
+                                    <%= item.content %>
+                                </ul>
+                            </div>
+                            <div class="ml100">
+                                <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="50" height="50">
+                            </div>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+        <!-- 项目经验 -->
+        <div class="resume__item">
+            <div class="flex-column flex-items-center not-for-print">
+                <div class="resume__item-title"><%= projects.title %></div>
+                <div class="resume__item-desc"><%= projects.desc %></div>
+            </div>
+            <div class="flex-row flex-items-center only-for-print">
+                <div class="resume__item-title"><%= projects.title %></div>
+                <div class="resume__item-desc ml50"><%= projects.desc %></div>
+            </div>
+            <div class="mt50">
+                <% projects.list.forEach(function (item)  { %>
+                    <div class="project__item flex-row flex-content-between">
+                        <div>
+                            <div class="flex-row flex-content-between flex-items-center">
+                                <div class="project__item-title"><%= item.title %></div>
+                                <div class="project__item-desc"><%= item.desc %></div>
+                            </div>
+                            <div class="flex-row">
+                                <div class="tech-label flex-row flex-all-center">HTML5</div>
+                                <div class="tech-label flex-row flex-all-center">HTML5</div>
+                                <div class="tech-label flex-row flex-all-center">HTML5</div>
                             </div>
                             <ul class="resume__item-text list-style mt50">
                                 <%= item.content %>
                             </ul>
+                            <div class="flex-row flex-content-end mt30">
+                                <a href="https://www.songxingguo.com/" class="resume-link">项目地址</a>
+                            </div>
                         </div>
-                        <div class="ml100">
-                            <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="50" height="50">
+                        <div>
+                            <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码" width="500" height="200">
                         </div>
                     </div>
                 <% }) %>

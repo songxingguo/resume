@@ -12,9 +12,11 @@ body {
   -webkit-print-color-adjust: exact;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 100px 100px;
 }
 .resume__item {
+  &:nth-child(even) {
+    background-color: #f4f4f4;
+  }
   + .resume__item {
     margin-top: 20px;
   }
@@ -24,11 +26,11 @@ body {
   box-sizing: border-box;
   padding-bottom: 10px;
   .resume__header-name {
-    font-size: 24px;
+    font-size: 100px;
     color: #333;
   }
   .resume__header-desc {
-    font-size: 14px;
+    font-size: 50px;
     color: #999;
     span {
       color: #333;
@@ -44,46 +46,43 @@ body {
 }
 .work__item {
   .work__item-title {
-    font-size: 14px;
+    font-size: 50px;
     color: #333;
   }
   .work__item-desc {
-    font-size: 12px;
+    font-size: 30px;
     color: #999;
   }
 }
 .work__item-date {
   position: relative;
   top: -10px;
-  left: -16px;
+  left: -25px;
   font-size: 10px;
   color: #999999;
   margin-top: 30px;
   .work__item-dot {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: dodgerblue;
   }
 }
 .project__item {
-  border-bottom: 1px dashed #999;
-  box-sizing: border-box;
-  padding-bottom: 10px;
   + .project__item {
-    margin-top: 20px;
+    margin-top: 100px;
   }
   .project__item-title {
-    font-size: 14px;
+    font-size: 50px;
     color: #333;
   }
   .project__item-desc {
-    font-size: 12px;
+    font-size: 30px;
     color: #999;
   }
 }
 .resume__item-text {
-  font-size: 13px;
+  font-size: 40px;
   color: #666;
 }
 .list-style > li {
@@ -96,13 +95,51 @@ body {
 .resume__footer {
   border-top: solid 1px #999999;
   box-sizing: border-box;
-  padding-top: 10px;
   .resume__footer-desc {
     font-size: 14px;
     color: #999;
   }
 }
+.tech-label {
+  width: 150px;
+  height: 50px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 5px;
+  + .tech-label {
+    margin-left: 20px;
+  }
+}
+.resume-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: dodgerblue;
+  + .resume-link {
+    margin-left: 20px;
+  }
+}
+.resume-button {
+  width: 100px;
+  height: 40px;
+  background-color: steelblue;
+  font-size: 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.split-line {
+  border-left: dashed 1px #999999;
+}
 @media not print {
+  .resume__header, .resume__footer {
+    padding: 50px 100px;
+  }
+  .resume__item {
+    padding: 100px;
+  }
   @mixin comb—light($hue,$sat:100%) {
     background-color: hsl($hue, $sat, 90%);
     color: hsl($hue, $sat, 50%);
@@ -122,14 +159,24 @@ body {
     display: none;
   }
   .resume__item-title {
-    font-size: 100px;
+    font-size: 80px;
   }
   .resume__item-desc {
-    font-size: 50px;
+    font-size: 60px;
     color: #999;
+  }
+  .project__item {
+    + .project__item {
+      border-top: 1px dashed #999;
+      box-sizing: border-box;
+      padding-top: 50px;
+    }
   }
 }
 @media print {
+  body {
+    padding: 100px 100px;
+  }
   @page {
     size: A4 portrait;
     margin: 2.1cm 1.9cm;
@@ -140,5 +187,10 @@ body {
   }
   .not-for-print {
     display: none;
+  }
+  .project__item {
+    border-bottom: 1px dashed #999;
+    box-sizing: border-box;
+    padding-bottom: 50px;
   }
 }
