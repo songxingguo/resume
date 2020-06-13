@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MinCssExtractPlugin = require("mini-css-extract-plugin");   // 将css代码提取为独立文件的插件
+const MediaQueryPlugin = require('media-query-plugin');
 
 module.exports = {
   mode: 'production',
@@ -15,12 +17,20 @@ module.exports = {
     rules: [{
       test: /\.s[ac]ss$/i,
       use: [
-        // Creates `style` nodes from JS strings
-        'style-loader',
-        // Translates CSS into CommonJS
-        'css-loader',
-        // Compiles Sass to CSS
-        'sass-loader',
+        {
+          loader: MinCssExtractPlugin.loader,  // 将处理后的CSS代码提取为独立的CSS文件，可以只在生产环境中配置，但我喜欢保持开发环境与生产环境尽量一致
+          options: {
+            publicPath: '/assets/',
+            // only enable hot in development
+            hmr: true,
+            // if hmr does not work, this is a forceful method.
+            reloadAll: true,
+          },
+        },
+        'css-loader',  // CSS加载器，使webpack可以识别css文件
+        MediaQueryPlugin.loader,
+        'postcss-loader', // 承载autoprefixer功能，为css添加前缀
+        'sass-loader', // Compiles Sass to CSS
       ],
     },
       {
@@ -54,7 +64,17 @@ module.exports = {
       collapseWhitespace: true
     }
   }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new MinCssExtractPlugin(),
+    new MediaQueryPlugin({
+      include: [
+        'style',
+      ],
+      queries: {
+        'print': 'print',
+        'not print': 'not-print'
+      }
+    })
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
