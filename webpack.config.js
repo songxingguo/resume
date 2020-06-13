@@ -54,6 +54,18 @@ module.exports = {
             publicPath: './assets/'
           }
         }
+      },
+      {
+        test: /\.ejs$/,
+        use: {
+          loader: 'ejs-compiled-loader',
+          options: {
+            htmlmin: true,
+            htmlminOptions: {
+              removeComments: true
+            }
+          }
+        }
       }
     ]
   },
