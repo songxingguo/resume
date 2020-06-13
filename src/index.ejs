@@ -79,9 +79,16 @@
                 <div class="resume__item-desc ml50"><%= tech.desc %></div>
             </div>
             <div class="resume__item__body mt50">
-                <ul class="resume__item-text list-style">
+                <!--<ul class="resume__item-text list-style">-->
+                <!--    <% tech.list.forEach(function (item)  { %>-->
+                <!--        <li><%= item %></li>-->
+                <!--    <% }) %>-->
+                <!--</ul>-->
+                <ul>
                     <% tech.list.forEach(function (item)  { %>
-                        <li><%= item %></li>
+                        <li class="tech__item flex-row flex-items-center" style="width: 20%;">
+                            JavaScript
+                        </li>
                     <% }) %>
                 </ul>
             </div>

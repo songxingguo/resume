@@ -1,3 +1,4 @@
+import './css/style.scss'
 import './css/style-print.scss'
 
 const isDev = process.env.NODE_ENV === 'development'

@@ -1,0 +1,15 @@
+@mixin comb—light($hue,$sat:100%) {
+  background-color: hsl($hue, $sat, 90%);
+  color: hsl($hue, $sat, 50%);
+  border-left: solid 2px hsl($hue, $sat, 45%);
+}
+.tech__item {
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  font-size: 12px;
+  @include comb—light(30);
+  + .tech__item {
+    margin-top: 10px;
+  }
+}
