@@ -42,7 +42,10 @@ module.exports = {
             outputPath: 'assets/',
             publicPath: './assets/'
           }
-        }, 'extract-loader', 'css-loader', 'postcss-loader']
+        },
+          'extract-loader',
+          'css-loader',
+          'postcss-loader']
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
