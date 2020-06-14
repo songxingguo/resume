@@ -7,16 +7,13 @@ body {
   &:nth-child(even) {
     background-color: #f4f4f4;
   }
-  + .resume__item {
-    margin-top: 20px;
-  }
 }
 .resume__header {
   border-bottom: solid 1px #999;
   box-sizing: border-box;
   padding-bottom: 10px;
   .resume__header-name {
-    font-size: 50px;
+    font-size: 40px;
     color: #333;
   }
   .resume__header-desc {
@@ -36,43 +33,57 @@ body {
 }
 .work__item {
   .work__item-title {
-    font-size: 50px;
+    font-size: 24px;
     color: #333;
   }
   .work__item-desc {
-    font-size: 30px;
+    font-size: 18px;
     color: #999;
+  }
+  .work--img {
+    width: 60px;
+    height: 60px;
+    img {
+      width: inherit;
+      height: inherit;
+    }
   }
 }
 .work__item-date {
   position: relative;
   top: -10px;
-  left: -25px;
+  left: -16px;
   font-size: 10px;
   color: #999999;
   margin-top: 30px;
   .work__item-dot {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: dodgerblue;
   }
 }
 .project__item {
   + .project__item {
-    margin-top: 100px;
+    margin-top: 20px;
   }
   .project__item-title {
-    font-size: 50px;
+    font-size: 24px;
     color: #333;
   }
   .project__item-desc {
-    font-size: 30px;
+    font-size: 18px;
     color: #999;
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 .resume__item-text {
-  font-size: 40px;
+  font-size: 18px;
   color: #666;
 }
 .list-style > li {
@@ -89,14 +100,17 @@ body {
     font-size: 14px;
     color: #999;
   }
+  img {
+    width: 10%;
+    height: 10%;
+  }
 }
 .tech-label {
-  width: 150px;
-  height: 50px;
   background-color: aquamarine;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 2px;
+  font-size: 12px;
   + .tech-label {
     margin-left: 20px;
   }
@@ -110,36 +124,40 @@ body {
   }
 }
 .resume-button {
-  width: 100px;
-  height: 40px;
   background-color: steelblue;
-  font-size: 10px;
+  font-size: 13px;
   text-decoration: none;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
 }
 .split-line {
   border-left: dashed 1px #999999;
 }
+.edu__item {
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
 @media not print {
   .resume__header, .resume__footer {
-    padding: 50px 100px;
+    padding: 20px 30px;
   }
   .resume__item {
-    padding: 20px;
+    padding: 50px;
   }
   @mixin comb—light($hue,$sat:100%) {
     background-color: hsl($hue, $sat, 90%);
     color: hsl($hue, $sat, 50%);
-    border-left: solid 2px hsl($hue, $sat, 45%);
+    border-left: solid 4px hsl($hue, $sat, 45%);
   }
   .tech__item {
     height: 50px;
     box-sizing: border-box;
-    padding-left: 5px;
-    font-size: 12px;
+    padding-left: 10px;
+    font-size: 16px;
     @include comb—light(30);
     + .tech__item {
       margin-top: 10px;
@@ -149,10 +167,10 @@ body {
     display: none;
   }
   .resume__item-title {
-    font-size: 20px;
+    font-size: 30px;
   }
   .resume__item-desc {
-    font-size: 60px;
+    font-size: 20px;
     color: #999;
   }
   .project__item {
