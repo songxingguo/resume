@@ -6,10 +6,10 @@ body {
 .resume__header {
   border-bottom: solid 1px #999;
   box-sizing: border-box;
-  padding-bottom: 10px;
   .resume__header-name {
     font-size: 40px;
     color: #333;
+    line-height: 1;
   }
   .resume__header-desc {
     font-size: 20px;
@@ -132,7 +132,25 @@ body {
     height: 100px;
   }
 }
-@media screen and (min-width: 639px) {
+@media screen {
+  @media (max-width: 639px) {
+    .only-for-pc {
+      display: none;
+    }
+    .show-for-mb {
+      display: block;
+    }
+    .edu__item {
+      + .edu__item {
+        border-top: dashed 1px #999999;
+      }
+    }
+    .resume__header-item {
+      + .resume__header-item {
+        margin-top: 20px;
+      }
+    }
+  }
   .resume__header, .resume__footer {
     padding: 20px 30px;
   }
@@ -178,7 +196,7 @@ body {
     margin-top: 50px
   }
 }
-@media print, (max-width: 639px) {
+@media print {
   @page {
     size: A4 portrait;
     margin: 2.1cm 1.9cm;
