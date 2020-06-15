@@ -86,8 +86,8 @@ module.exports = {
         'style',
       ],
       queries: {
-        'print': 'print',
-        'not print': 'not-print'
+        'print, (max-width: 639px)': 'print-or-mobile',
+        'screen and (min-width: 639px)': 'pc'
       }
     })
   ],

@@ -3,11 +3,6 @@ body {
   background-color: #fff;
   box-sizing: border-box;
 }
-.resume__item {
-  &:nth-child(even) {
-    background-color: #f4f4f4;
-  }
-}
 .resume__header {
   border-bottom: solid 1px #999;
   box-sizing: border-box;
@@ -40,13 +35,9 @@ body {
     font-size: 18px;
     color: #999;
   }
-  .work--img {
+  img {
     width: 60px;
     height: 60px;
-    img {
-      width: inherit;
-      height: inherit;
-    }
   }
 }
 .work__item-date {
@@ -55,7 +46,7 @@ body {
   left: -16px;
   font-size: 10px;
   color: #999999;
-  margin-top: 30px;
+  margin-top: 10px;
   .work__item-dot {
     width: 10px;
     height: 10px;
@@ -141,12 +132,15 @@ body {
     height: 100px;
   }
 }
-@media not print {
+@media screen and (min-width: 639px) {
   .resume__header, .resume__footer {
     padding: 20px 30px;
   }
   .resume__item {
     padding: 50px;
+    &:nth-child(even) {
+      background-color: #f4f4f4;
+    }
   }
   @mixin comb—light($hue,$sat:100%) {
     background-color: hsl($hue, $sat, 90%);
@@ -180,25 +174,59 @@ body {
       padding-top: 50px;
     }
   }
-}
-@media print {
-  body {
-    padding: 100px 100px;
+  .work-container, .project-container {
+    margin-top: 50px
   }
+}
+@media print, (max-width: 639px) {
   @page {
     size: A4 portrait;
     margin: 2.1cm 1.9cm;
   }
+  .resume__header-name, .resume__header-position {
+    text-align-last: justify;
+    text-align: justify;
+    text-justify: distribute-all-lines; // 这行必加，兼容ie浏览器
+  }
+  .resume__header-name {
+    width: 150px;
+  }
+  .resume__header-position {
+    width: 160px;
+  }
+  .resume__item {
+    padding: 15px 0;
+  }
   .resume__item-title {
-    font-size: 18px;
+    font-size: 30px;
+    color: #333;
+  }
+  .resume__item-desc {
+    font-size: 20px;
     color: #333;
   }
   .not-for-print {
     display: none;
   }
   .project__item {
-    border-bottom: 1px dashed #999;
-    box-sizing: border-box;
-    padding-bottom: 50px;
+    + .project__item {
+      border-top: 1px dashed #999;
+      box-sizing: border-box;
+      padding-top: 10px;
+    }
+  }
+  .resume__header, .resume__footer {
+    padding: 20px 10px;
+  }
+  .resume__content {
+    padding: 0 10px;
+  }
+  .work-container, .project-container {
+    margin-top: 10px
+  }
+  .user-head-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
   }
 }
