@@ -29,7 +29,12 @@ module.exports = {
         },
         'css-loader',  // CSS加载器，使webpack可以识别css文件
         MediaQueryPlugin.loader,
-        'postcss-loader', // 承载autoprefixer功能，为css添加前缀
+        {
+          loader: 'postcss-loader',
+          options: {
+            plugins: () => [require('autoprefixer')]
+          }
+        }, // 承载autoprefixer功能，为css添加前缀
         'sass-loader', // Compiles Sass to CSS
       ],
     },
@@ -45,7 +50,12 @@ module.exports = {
         },
           'extract-loader',
           'css-loader',
-          'postcss-loader']
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [require('autoprefixer')]
+            }
+          }]
       },
       {
         test: /\.(jpg|png|gif|svg)$/,
