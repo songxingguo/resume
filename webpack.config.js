@@ -32,9 +32,19 @@ module.exports = {
         {
           loader: 'postcss-loader',
           options: {
-            plugins: () => [require('autoprefixer')]
+            plugins: () => [
+              require('autoprefixer')
+            ]
           }
         }, // 承载autoprefixer功能，为css添加前缀
+        {
+          loader: 'px2rem-loader',
+          // options here
+          options: {
+            remUni: 75,
+            remPrecision: 8
+          }
+        },
         'sass-loader', // Compiles Sass to CSS
       ],
     },
@@ -54,6 +64,13 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: () => [require('autoprefixer')]
+            }
+          }, {
+            loader: 'px2rem-loader',
+            // options here
+            options: {
+              remUni: 75,
+              remPrecision: 8
             }
           }]
       },
