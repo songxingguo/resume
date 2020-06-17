@@ -180,30 +180,30 @@
 } %>
 <div id="resume">
     <div class="resume__header">
-        <%- include header.ejs -%>
+        <%- require('./header.ejs')() -%>
     </div>
     <!-- 内容区域 -->
     <div class="resume__content">
         <!-- 技术掌握 -->
         <div class="resume__item">
-            <%- include tech.ejs -%>
+            <%- require('./tech.ejs')({tech}) -%>
         </div>
         <!-- 教育经历 -->
         <div class="resume__item">
-            <%- include edu.ejs -%>
+            <%- require('./edu.ejs')({edu}) -%>
         </div>
         <!-- 工作经验 -->
         <div class="resume__item">
-            <%- include works.ejs -%>
+            <%- require('./works.ejs')({works}) -%>
         </div>
         <!-- 项目经验 -->
         <div class="resume__item">
-            <%- include projects.ejs -%>
+            <%- require('./projects.ejs')({projects}) -%>
         </div>
     </div>
     <!-- 底部区域 -->
     <div class="resume__footer flex-row flex-content-between flex-items-center">
-        <%- include footer.ejs -%>
+        <%- require('./footer.ejs')() -%>
     </div>
 </div>
 </body>
