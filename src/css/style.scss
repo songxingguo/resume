@@ -150,12 +150,17 @@ body {
         margin-top: 20px;
       }
     }
+    .user-head-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
   }
   .resume__header, .resume__footer {
     padding: 20px 30px;
   }
   .resume__item {
-    padding: 50px;
+    padding: 20px;
     &:nth-child(even) {
       background-color: #f4f4f4;
     }
