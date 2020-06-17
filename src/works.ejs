@@ -1,0 +1,46 @@
+<div class="flex-column flex-items-center not-for-print">
+    <div class="resume__item-title"><%= works.title %></div>
+    <div class="resume__item-desc"><%= works.desc %></div>
+</div>
+<div class="flex-row flex-items-end only-for-print">
+    <div class="resume__item-title"><%= works.title %></div>
+    <div class="resume__item-desc ml20"><%= works.desc %></div>
+</div>
+<div class="work-container">
+    <% works.list.forEach(function (item)  { %>
+        <div class="work__item-date flex-row flex-items-center">
+            <div class="work__item-dot"></div>
+            <span class="ml15">2017/06</span>
+        </div>
+        <div class="work__item">
+            <div class="flex-row not-for-print">
+                <div class="flex-row ml10">
+                    <img src="<%= require("./imgs/QR-code.png") %>" alt="二维码">
+                </div>
+                <div class="flex-column ml50">
+                    <div class="flex-row flex-items-center">
+                        <div class="work__item-title"><%= item.title %></div>
+                        <div class="work__item-desc ml5">—<%= item.desc %></div>
+                    </div>
+                    <ul class="resume__item-text list-style mt10">
+                        <%= item.content %>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-row flex-content-between  only-for-print">
+                <div class="flex-column">
+                    <div class="flex-row flex-items-center">
+                        <div class="work__item-title"><%= item.title %></div>
+                        <div class="work__item-desc ml5">—<%= item.desc %></div>
+                    </div>
+                    <ul class="resume__item-text list-style mt10">
+                        <%= item.content %>
+                    </ul>
+                </div>
+                <div class="ml100">
+                    <img src="<%= require("./imgs/QR-code.png") %>">
+                </div>
+            </div>
+        </div>
+    <% }) %>
+</div>
