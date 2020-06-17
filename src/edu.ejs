@@ -1,11 +1,4 @@
-<div class="flex-column flex-items-center not-for-print">
-    <div class="resume__item-title"><%= edu.title %></div>
-    <div class="resume__item-desc"><%= edu.desc %></div>
-</div>
-<div class="flex-row flex-items-center only-for-print">
-    <div class="resume__item-title"><%= edu.title %></div>
-    <div class="resume__item-desc ml20"><%= edu.desc %></div>
-</div>
+<%- require('./layout/header.ejs')({item: edu}) -%>
 <div class="flex-row mt30 pl50 pr50 not-for-print only-for-pc">
     <div class="edu__item pr100 flex-row">
         <div class="mr100">
