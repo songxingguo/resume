@@ -41,18 +41,25 @@ module.exports = {
     list: [{
       name: '锦鲤多多',
       desc: '2018.12-至今',
-      tagList: ['HTML5', 'CSS'],
+      tagList: ['微信小程序'],
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
-      link: {
-        name: '项目地址',
-        url: 'https://www.songxingguo.com/'
-      },
-      imgUrl: 'https://generative-placeholders.glitch.me/image?width=600&height=300&style=cellular-automata&cells=10'
+      imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/JLDD.png'
     }, {
       name: '知晓理工',
       desc: '2018.12-至今',
       tagList: ['HTML5', 'CSS'],
-      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。'
+      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+      imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/wecqut.jpg'
+    }, {
+      name: '相册',
+      desc: '2018.12-至今',
+      tagList: ['HTML5', 'CSS', 'JavaScript'],
+      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+      link: {
+        name: '相册地址',
+        url: 'https://album.songxingguo.com/'
+      },
+      imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'
     }]
   },
   works: {
