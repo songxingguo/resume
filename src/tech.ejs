@@ -3,12 +3,12 @@
     <ul class="ml30 not-for-print not-for-print only-for-pc">
         <% tech.list.forEach(function (item)  { %>
             <li class="tech__item flex-row flex-items-center" style="width: 20%;">
-                JavaScript
+                <%= item %>
             </li>
         <% }) %>
     </ul>
     <ul class="resume__item-text list-style only-for-print show-for-mb">
-        <% tech.list.forEach(function (item)  { %>
+        <% tech.descList.forEach(function (item)  { %>
             <li><%= item %></li>
         <% }) %>
     </ul>

@@ -2,26 +2,30 @@
 <div class="project-container">
     <% projects.list.forEach(function (item)  { %>
         <div class="project__item flex-row flex-content-between flex-wrap">
-            <div class="project__item__left">
+            <div class="project__item__left flex-full">
                 <div class="flex-row flex-content-between flex-items-center">
-                    <div class="project__item-title"><%= item.title %></div>
+                    <div class="project__item-title"><%= item.name %></div>
                     <div class="project__item-desc"><%= item.desc %></div>
                 </div>
                 <div class="flex-row mt5 not-for-print">
-                    <div class="tech-label flex-row flex-all-center">HTML5</div>
-                    <div class="tech-label flex-row flex-all-center">HTML5</div>
-                    <div class="tech-label flex-row flex-all-center">HTML5</div>
+                    <% item.tagList.forEach(function (value) { %>
+                        <div class="tech-label flex-row flex-all-center"><%= value %></div>
+                    <% }) %>
                 </div>
                 <ul class="resume__item-text list-style mt10">
                     <%= item.content %>
                 </ul>
-                <div class="flex-row flex-content-end mt30 not-for-print">
-                    <a href="https://www.songxingguo.com/" class="resume-link">项目地址</a>
+                <% if (item.link) { %>
+                    <div class="flex-row flex-content-end mt30 not-for-print">
+                        <a href="<%= item.link.url %>" class="resume-link"><%= item.link.name %></a>
+                    </div>
+                <% } %>
+            </div>
+            <% if (item.imgUrl) { %>
+                <div class="ml20 not-for-print">
+                    <img src="<%= item.imgUrl %>" alt="<%= item.name %>">
                 </div>
-            </div>
-            <div class="not-for-print">
-                <img src="<%= require("./imgs/cqut.jpg") %>" alt="知晓理工">
-            </div>
+            <% } %>
         </div>
     <% }) %>
 </div>

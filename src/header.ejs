@@ -1,8 +1,8 @@
 <!-- 头部区域 -->
 <div class="flex-row flex-content-between flex-wrap not-for-print only-for-pc">
     <div class="resume__header-item flex-row flex-items-end">
-        <div class="resume__header-name">宋兴国</div>
-        <div class="resume__header-desc ml20">前端开发工程师</div>
+        <div class="resume__header-name"><%= header.name %></div>
+        <div class="resume__header-desc ml20"><%= header.position %></div>
     </div>
     <div class="resume__header-item flex-row">
         <div class="resume__header-desc flex-row flex-items-end">
@@ -13,7 +13,7 @@
                 <path d="M474.44 793.72c-2.85 0-5.75-0.68-8.44-2.12-12.03-6.41-25.78-15.95-40.85-28.37-7.67-6.32-8.77-17.66-2.45-25.34 6.32-7.67 17.66-8.77 25.34-2.45 13.23 10.89 24.97 19.1 34.89 24.38 8.77 4.67 12.1 15.57 7.43 24.35a18.041 18.041 0 0 1-15.92 9.55zM686 878.33c-1.3 0-2.62-0.14-3.95-0.44-36.39-8.15-76.24-21.24-115.23-37.86-9.15-3.9-13.4-14.47-9.5-23.62 3.9-9.15 14.47-13.4 23.62-9.5 37.01 15.77 74.69 28.17 108.98 35.85 9.7 2.17 15.8 11.8 13.63 21.5-1.88 8.38-9.31 14.07-17.55 14.07z"
                       fill="#353535" p-id="17897"></path>
             </svg>
-            <span class="ml10">18983642737</span>
+            <span class="ml10"><%= header.telNum %></span>
         </div>
         <div class="resume__header-desc flex-row flex-items-end ml50">
             <svg t="1592117028658" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -23,24 +23,24 @@
                 <path d="M139.5712 387.1744a32 32 0 1 1 28.0576-57.5488l335.9744 163.9936c5.2736 2.56 11.52 2.56 16.7936 0l335.9744-163.9936a32 32 0 1 1 28.0576 57.5488l-335.9232 163.9424c-23.04 11.264-49.9712 11.264-73.0112 0L139.5712 387.1744z"
                       fill="#5A5A68" p-id="17652"></path>
             </svg>
-            <span class="ml10">xg.song@qq.com</span>
+            <span class="ml10"><%= header.email %></span>
         </div>
         <div class="resume__header-desc ml50">
-            <a href="https://www.songxingguo.com/" class="resume-button">个人博客</a>
+            <a href="<%= header.blogUrl %>" class="resume-button">个人主页</a>
         </div>
     </div>
 </div>
 <div class="flex-row flex-content-between flex-items-center only-for-print not-for-print show-for-mb">
     <div class="resume__header-item flex-row  flex-content-between flex-items-center">
         <div class="resume__header-item flex-row flex-items-center">
-            <img src="<%= require('./imgs/header.png') %>" alt="头像" class="user-head-icon">
+            <img src="<%= header.headIcon %>" alt="头像" class="user-head-icon">
             <div class="flex-column flex-items-center ml20">
-                <div class="resume__header-name">宋兴国</div>
-                <div class="resume__header-desc resume__header-position">前端开发工程师</div>
+                <div class="resume__header-name"><%= header.name %></div>
+                <div class="resume__header-desc resume__header-position"><%= header.position %></div>
             </div>
         </div>
         <div class="resume__header-desc ml50">
-            <a href="https://www.songxingguo.com/" class="resume-button">个人博客</a>
+            <a href="<%= header.blogUrl %>" class="resume-button">个人主页</a>
         </div>
     </div>
     <div class="resume__header-item flex-row flex-content-between">
@@ -52,7 +52,7 @@
                 <path d="M474.44 793.72c-2.85 0-5.75-0.68-8.44-2.12-12.03-6.41-25.78-15.95-40.85-28.37-7.67-6.32-8.77-17.66-2.45-25.34 6.32-7.67 17.66-8.77 25.34-2.45 13.23 10.89 24.97 19.1 34.89 24.38 8.77 4.67 12.1 15.57 7.43 24.35a18.041 18.041 0 0 1-15.92 9.55zM686 878.33c-1.3 0-2.62-0.14-3.95-0.44-36.39-8.15-76.24-21.24-115.23-37.86-9.15-3.9-13.4-14.47-9.5-23.62 3.9-9.15 14.47-13.4 23.62-9.5 37.01 15.77 74.69 28.17 108.98 35.85 9.7 2.17 15.8 11.8 13.63 21.5-1.88 8.38-9.31 14.07-17.55 14.07z"
                       fill="#353535" p-id="17897"></path>
             </svg>
-            <span class="ml10">18983642737</span>
+            <span class="ml10"><%= header.telNum %></span>
         </div>
         <div class="resume__header-desc flex-row flex-items-end">
             <svg t="1592117028658" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -62,7 +62,7 @@
                 <path d="M139.5712 387.1744a32 32 0 1 1 28.0576-57.5488l335.9744 163.9936c5.2736 2.56 11.52 2.56 16.7936 0l335.9744-163.9936a32 32 0 1 1 28.0576 57.5488l-335.9232 163.9424c-23.04 11.264-49.9712 11.264-73.0112 0L139.5712 387.1744z"
                       fill="#5A5A68" p-id="17652"></path>
             </svg>
-            <span class="ml10">xg.song@qq.com</span>
+            <span class="ml10"><%= header.email %></span>
         </div>
         <div class="resume__header-desc flex-row flex-items-end">
             <svg t="1592401810590" class="icon" viewBox="0 0 1029 1024" version="1.1"
@@ -74,15 +74,15 @@
                 <path d="M615.552 509.40928c-19.02592 0-37.69344 18.71872-37.69344 37.79072 0 19.01056 18.66752 37.66272 37.69344 37.66272 28.66176 0 46.40256-19.54816 46.40256-37.66272-0.00512-18.176-17.74592-37.79072-46.40256-37.79072zM808.576 509.40928c-18.8928 0-37.44256 18.71872-37.44256 37.79072 0 19.01056 18.54464 37.66272 37.44256 37.66272 28.8 0 46.62272-19.54816 46.62272-37.66272 0-18.176-17.82272-37.79072-46.62272-37.79072z"
                       fill="#333333" p-id="10338"></path>
             </svg>
-            <span class="ml10">s1328989942</span>
+            <span class="ml10"><%= header.wxChat %></span>
         </div>
     </div>
 </div>
 <div class="flex-row flex-content-between flex-items-center only-for-print">
-    <img src="<%= require('./imgs/header.png') %>" alt="头像" class="user-head-icon">
+    <img src="<%= header.headIcon %>" alt="头像" class="user-head-icon">
     <div class="flex-column flex-items-center">
-        <div class="resume__header-name">宋兴国</div>
-        <div class="resume__header-desc resume__header-position">前端开发工程师</div>
+        <div class="resume__header-name"><%= header.name %></div>
+        <div class="resume__header-desc resume__header-position"><%= header.position %></div>
     </div>
     <div class="flex-column flex-content-between  mt10">
         <div class="resume__header-desc flex-row flex-items-center">
@@ -93,7 +93,7 @@
                 <path d="M474.44 793.72c-2.85 0-5.75-0.68-8.44-2.12-12.03-6.41-25.78-15.95-40.85-28.37-7.67-6.32-8.77-17.66-2.45-25.34 6.32-7.67 17.66-8.77 25.34-2.45 13.23 10.89 24.97 19.1 34.89 24.38 8.77 4.67 12.1 15.57 7.43 24.35a18.041 18.041 0 0 1-15.92 9.55zM686 878.33c-1.3 0-2.62-0.14-3.95-0.44-36.39-8.15-76.24-21.24-115.23-37.86-9.15-3.9-13.4-14.47-9.5-23.62 3.9-9.15 14.47-13.4 23.62-9.5 37.01 15.77 74.69 28.17 108.98 35.85 9.7 2.17 15.8 11.8 13.63 21.5-1.88 8.38-9.31 14.07-17.55 14.07z"
                       fill="#353535" p-id="15129"></path>
             </svg>
-            <span class="ml10">18983642737</span>
+            <span class="ml10"><%= header.telNum %></span>
         </div>
         <div class="resume__header-desc flex-row flex-items-center">
             <svg t="1592186972879" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -103,7 +103,7 @@
                 <path d="M139.5712 387.1744a32 32 0 1 1 28.0576-57.5488l335.9744 163.9936c5.2736 2.56 11.52 2.56 16.7936 0l335.9744-163.9936a32 32 0 1 1 28.0576 57.5488l-335.9232 163.9424c-23.04 11.264-49.9712 11.264-73.0112 0L139.5712 387.1744z"
                       fill="#5A5A68" p-id="22359"></path>
             </svg>
-            <span class="ml10">xg.song@qq.com</span>
+            <span class="ml10"><%= header.email %></span>
         </div>
         <div class="resume__header-desc flex-row flex-items-center">
             <svg t="1592186354781" class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -117,7 +117,7 @@
                 <path d="M456.91 668.17c-20.66 1.25-37.52 19.95-37.52 40.65v157.92c0 20.7 16.85 39.4 37.52 40.65a40 40 0 0 0 42.48-39.93V708.1a40 40 0 0 0-42.48-39.93zM563.91 698.12c-20.66 1.25-37.52 19.95-37.52 40.65v98c0 20.7 16.85 39.4 37.52 40.65a40 40 0 0 0 42.48-39.93V738a40 40 0 0 0-42.48-39.88z"
                       fill="#48BCFF" p-id="8239"></path>
             </svg>
-            <span class="ml10">www.songxingguo.com</span>
+            <span class="ml10"><%= header.blog %></span>
         </div>
     </div>
 </div>
