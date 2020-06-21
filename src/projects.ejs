@@ -2,7 +2,7 @@
 <div class="project-container">
     <% projects.list.forEach(function (item)  { %>
         <div class="project-item flex-row flex-wrap">
-            <!-- 桌面端 -->
+            <!-- 桌面设备 -->
             <div class="project-item-left flex-full not-for-print not-for-mb">
                 <div class="flex-row flex-content-between flex-items-center">
                     <div class="project-item__title"><%= item.name %></div>
@@ -27,8 +27,8 @@
                     </div>
                 <% } %>
             </div>
-            <!-- 移动端 -->
-            <div class="project-item-left not-for-print not-for-pc">
+            <!-- 移动设备/打印设备 -->
+            <div class="project-item-left not-for-pc">
                 <div class="flex-row flex-content-between flex-items-center">
                     <div class="project-item__title"><%= item.name %></div>
                     <div class="project-item__desc"><%= item.desc %></div>

@@ -9,10 +9,12 @@
         <% } %>
         <div class="work-item">
             <div class="flex-row not-for-print">
-                <div class="flex-row ml10">
-                    <img src="<%= item.logoUrl %>" alt="<%= item.name %>">
-                </div>
-                <div class="flex-column ml50">
+                <% if (item.logoUrl) { %>
+                    <div class="flex-row ml10">
+                        <img src="<%= item.logoUrl %>" alt="<%= item.name %>">
+                    </div>
+                <% } %>
+                <div class="flex-column ml10">
                     <div class="flex-row flex-items-center">
                         <div class="work-item__title"><%= item.name %></div>
                         <div class="work-item__desc ml5">—<%= item.desc %></div>
@@ -32,9 +34,11 @@
                         <%= item.content %>
                     </ul>
                 </div>
-                <div class="ml100">
-                    <img src="<%= item.logoUrl %>" alt="<%= item.name %>">
-                </div>
+                <% if (item.logoUrl) { %>
+                    <div class="ml100">
+                        <img src="<%= item.logoUrl %>" alt="<%= item.name %>">
+                    </div>
+                <% } %>
             </div>
         </div>
     <% }) %>

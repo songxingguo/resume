@@ -121,8 +121,8 @@
 }
 .edu-item {
   img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
 }
 .project-item-left {
@@ -161,7 +161,7 @@
   }
   @media (min-width: 639px) {
     .project-item__img {
-      margin-left: 20px;
+      margin-left: 50px;
       img {
         max-height: 500px;
       }
@@ -226,7 +226,7 @@
     width: 150px;
   }
   .resume-header__position {
-    width: 160px;
+    width: 200px;
   }
   .resume-item {
     padding: 15px 0;

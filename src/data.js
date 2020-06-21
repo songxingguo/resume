@@ -18,23 +18,17 @@ module.exports = {
       logoUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/cqut_logo.png',
       term: '2015.9-2019.6',
       major: '软件工程'
-    }, {
-      name: '重庆理工大学',
-      descList: ['描述'],
-      logoUrl: 'https://generative-placeholders.glitch.me/image?width=100&height=100&style=cellular-automata&cells=10',
-      term: '2015.9-2019.6',
-      major: '软件工程'
     }]
   },
   tech: {
-    title: '精通前端，涉猎后端',
+    title: '专注前端，涉猎后端',
     desc: '编织有艺术感的代码',
     list: ['JavaScript', 'HTML', 'CSS'],
-    descList: ['本人性格随和乐观，积极向上，喜欢钻研。乐于沟通，易于融入 集体，乐于助人，学习能力较好，注重理论与实践相结合，在实 践中不断提高专业知识。',
-      '熟练掌握 JavaScript、HTML5、CSS3、微信小程序、Node.js 等技术。熟悉 React、 ES6、 Webpack 、JQuery 等技术。',
-      '熟练掌握 AngularJs、Bootstrap 以及 Maven，Git/SVN 等工 具的使用，熟悉 Mockplus、Axure、Photoshop 等工具的使用。',
-      '作为项目组长参与了“新能源物流车综合运营平台”项目的设计、 开发与测试，并参加了校级创业创新大赛，荣获比赛的一等奖;',
-      '独自设计与开发了一款校园微信小程序。']
+    descList: ['坚持和善于用技术和工具解决问题。',
+      '熟悉掌握 JavaScript 基础，对基础数据类型和它们的 API 能够纯熟应用。',
+      '熟悉 React、 ES6、 Webpack 、JQuery 等技术。',
+      '具有 Web 应用前后端研发经验。',
+      '了解 npm、Webpack 等工具的基本原理。',]
   },
   projects: {
     title: '丰富的项目经验',
@@ -72,22 +66,12 @@ module.exports = {
     }]
   },
   works: {
-    title: '3 年工作经验',
+    title: '1 年工作经验',
     desc: '曾在知名互联网公司任职',
     list: [{
-      name: '锦鲤多多',
+      name: '上海大约网络科技有限公司',
       desc: '2018.12-至今',
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
-      logoUrl: 'https://generative-placeholders.glitch.me/image?width=100&height=100&style=cellular-automata&cells=10',
-      date: {
-        start: '2018/06',
-        end: ''
-      }
-    }, {
-      name: '知晓理工',
-      desc: '2018.12-至今',
-      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
-      logoUrl: 'https://generative-placeholders.glitch.me/image?width=100&height=100&style=cellular-automata&cells=10',
       date: {
         start: '2018/06'
       }
