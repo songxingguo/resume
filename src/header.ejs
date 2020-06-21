@@ -1,5 +1,6 @@
 <!-- 头部区域 -->
-<div class="flex-row flex-content-between flex-wrap not-for-print only-for-pc">
+<!-- 桌面设备 -->
+<div class="flex-row flex-content-between flex-wrap not-for-print not-for-mb">
     <div class="resume-header-item flex-row flex-items-end">
         <div class="resume-header__name"><%= header.name %></div>
         <div class="resume-header__desc ml20"><%= header.position %></div>
@@ -30,7 +31,8 @@
         </div>
     </div>
 </div>
-<div class="flex-row flex-content-between flex-items-center only-for-print not-for-print show-for-mb">
+<!-- 移动设备 -->
+<div class="flex-column not-for-print not-for-pc">
     <div class="resume-header-item flex-row  flex-content-between flex-items-center">
         <div class="resume-header-item flex-row flex-items-center">
             <img src="<%= header.headIcon %>" alt="头像" class="user-head-icon">
@@ -78,7 +80,8 @@
         </div>
     </div>
 </div>
-<div class="flex-row flex-content-between flex-items-center only-for-print">
+<!-- 打印设备 -->
+<div class="flex-row flex-content-between flex-items-center not-for-pc not-for-mb">
     <img src="<%= header.headIcon %>" alt="头像" class="user-head-icon">
     <div class="flex-column flex-items-center">
         <div class="resume-header__name"><%= header.name %></div>

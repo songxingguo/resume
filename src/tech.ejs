@@ -1,13 +1,13 @@
 <%- require('./layout/header.ejs')({item: tech}) -%>
 <div class="resume-item__body mt20">
-    <ul class="ml30 not-for-print not-for-print only-for-pc">
+    <ul class="ml30 not-for-print not-for-mb">
         <% tech.list.forEach(function (item)  { %>
             <li class="tech-item flex-row flex-items-center" style="width: 20%;">
                 <%= item %>
             </li>
         <% }) %>
     </ul>
-    <ul class="resume-item__text list-style only-for-print show-for-mb">
+    <ul class="resume-item__text list-style not-for-pc">
         <% tech.descList.forEach(function (item)  { %>
             <li><%= item %></li>
         <% }) %>

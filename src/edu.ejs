@@ -1,5 +1,6 @@
 <%- require('./layout/header.ejs')({item: edu}) -%>
-<div class="flex-row flex-content-center mt30 pl50 pr50 not-for-print only-for-pc">
+<!-- 桌面设备 -->
+<div class="flex-row flex-content-center mt30 pl50 pr50 not-for-print not-for-mb">
     <div class="edu-item pr100 flex-row">
         <div class="mr100">
             <ul class="resume-item__text list-style">
@@ -21,7 +22,8 @@
         </div>
     </div>
 </div>
-<div class="flex-column mt30 not-for-print only-for-print show-for-mb">
+<!--移动设备-->
+<div class="flex-column mt30 not-for-print not-for-pc">
     <div class="edu-item pb30 flex-row">
         <img src="<%= edu.list[0].logoUrl %>" alt="<%= edu.list[0].name %>">
         <div class="ml30">
@@ -43,7 +45,8 @@
         </div>
     </div>
 </div>
-<div class="flex-column mt10 only-for-print">
+<!-- 打印设备 -->
+<div class="flex-column mt10 not-for-pc not-for-mb">
     <% edu.list.forEach(function (item)  { %>
         <div class="flex-row flex-content-between">
             <div class="resume-item__desc"><%= item.major %></div>

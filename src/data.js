@@ -44,13 +44,21 @@ module.exports = {
       desc: '2018.12-至今',
       tagList: ['微信小程序'],
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
-      imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD.png'
+      link: {
+        name: '锦鲤多多',
+        imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD.png'
+      },
     }, {
       name: '知晓理工',
       desc: '2018.12-至今',
       tagList: ['HTML5', 'CSS'],
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
-      imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/cqut.png'
+      link: {
+        name: '知晓理工',
+        imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/cqut.png'
+      },
+      imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
+        'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
     }, {
       name: '相册',
       desc: '2018.12-至今',
@@ -60,7 +68,7 @@ module.exports = {
         name: '相册地址',
         url: 'https://album.songxingguo.com/'
       },
-      imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'
+      imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png']
     }]
   },
   works: {

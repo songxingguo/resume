@@ -1,8 +1,9 @@
 <%- require('./layout/header.ejs')({item: projects}) -%>
 <div class="project-container">
     <% projects.list.forEach(function (item)  { %>
-        <div class="project-item flex-row flex-content-between flex-wrap">
-            <div class="project-item__left flex-full">
+        <div class="project-item flex-row flex-wrap">
+            <!-- 桌面端 -->
+            <div class="project-item-left flex-full not-for-print not-for-mb">
                 <div class="flex-row flex-content-between flex-items-center">
                     <div class="project-item__title"><%= item.name %></div>
                     <div class="project-item__desc"><%= item.desc %></div>
@@ -17,14 +18,46 @@
                 </ul>
                 <% if (item.link) { %>
                     <div class="flex-row flex-content-end mt30 not-for-print">
-                        <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
+                        <% if (item.link.url) { %>
+                            <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
+                        <% } %>
+                        <% if (item.link.imgUrl) { %>
+                            <img src="<%= item.link.imgUrl %>" alt="<%= item.link.name %>">
+                        <% } %>
                     </div>
                 <% } %>
             </div>
-            <% if (item.imgUrl) { %>
-                <div class="project-item__img not-for-print">
-                    <img src="<%= item.imgUrl %>" alt="<%= item.name %>">
+            <!-- 移动端 -->
+            <div class="project-item-left not-for-print not-for-pc">
+                <div class="flex-row flex-content-between flex-items-center">
+                    <div class="project-item__title"><%= item.name %></div>
+                    <div class="project-item__desc"><%= item.desc %></div>
                 </div>
+                <div class="flex-row mt5 not-for-print">
+                    <% item.tagList.forEach(function (value) { %>
+                        <div class="tech-item__label flex-row flex-all-center"><%= value %></div>
+                    <% }) %>
+                </div>
+                <ul class="resume-item__text list-style mt10">
+                    <%= item.content %>
+                </ul>
+                <% if (item.link) { %>
+                    <div class="flex-row flex-content-end mt30 not-for-print">
+                        <% if (item.link.url) { %>
+                            <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
+                        <% } %>
+                        <% if (item.link.imgUrl) { %>
+                            <img src="<%= item.link.imgUrl %>" alt="<%= item.link.name %>">
+                        <% } %>
+                    </div>
+                <% } %>
+            </div>
+            <% if (item.imgUrls) { %>
+                <% item.imgUrls.forEach(function (url)  { %>
+                    <div class="project-item__img not-for-print">
+                        <img src="<%= url %>" alt="<%= item.name %>">
+                    </div>
+                <% }) %>
             <% } %>
         </div>
     <% }) %>
