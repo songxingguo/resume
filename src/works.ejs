@@ -2,22 +2,22 @@
 <div class="work-container">
     <% works.list.forEach(function (item)  { %>
         <% if (item.date) { %>
-            <div class="work__item-date flex-row flex-items-center">
-                <div class="work__item-dot"></div>
+            <div class="work-item__date flex-row flex-items-center">
+                <div class="work-item__dot"></div>
                 <span class="ml15"><%= item.date.start %></span>
             </div>
         <% } %>
-        <div class="work__item">
+        <div class="work-item">
             <div class="flex-row not-for-print">
                 <div class="flex-row ml10">
                     <img src="<%= item.logoUrl %>" alt="<%= item.name %>">
                 </div>
                 <div class="flex-column ml50">
                     <div class="flex-row flex-items-center">
-                        <div class="work__item-title"><%= item.name %></div>
-                        <div class="work__item-desc ml5">—<%= item.desc %></div>
+                        <div class="work-item__title"><%= item.name %></div>
+                        <div class="work-item__desc ml5">—<%= item.desc %></div>
                     </div>
-                    <ul class="resume__item-text list-style mt10">
+                    <ul class="resume-item__text list-style mt10">
                         <%= item.content %>
                     </ul>
                 </div>
@@ -25,10 +25,10 @@
             <div class="flex-row flex-content-between  only-for-print">
                 <div class="flex-column">
                     <div class="flex-row flex-items-center">
-                        <div class="work__item-title"><%= item.name %></div>
-                        <div class="work__item-desc ml5">—<%= item.desc %></div>
+                        <div class="work-item__title"><%= item.name %></div>
+                        <div class="work-item__desc ml5">—<%= item.desc %></div>
                     </div>
-                    <ul class="resume__item-text list-style mt10">
+                    <ul class="resume-item__text list-style mt10">
                         <%= item.content %>
                     </ul>
                 </div>

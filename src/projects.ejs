@@ -1,23 +1,23 @@
 <%- require('./layout/header.ejs')({item: projects}) -%>
 <div class="project-container">
     <% projects.list.forEach(function (item)  { %>
-        <div class="project__item flex-row flex-content-between flex-wrap">
-            <div class="project__item__left flex-full">
+        <div class="project-item flex-row flex-content-between flex-wrap">
+            <div class="project-item__left flex-full">
                 <div class="flex-row flex-content-between flex-items-center">
-                    <div class="project__item-title"><%= item.name %></div>
-                    <div class="project__item-desc"><%= item.desc %></div>
+                    <div class="project-item__title"><%= item.name %></div>
+                    <div class="project-item__desc"><%= item.desc %></div>
                 </div>
                 <div class="flex-row mt5 not-for-print">
                     <% item.tagList.forEach(function (value) { %>
-                        <div class="tech-label flex-row flex-all-center"><%= value %></div>
+                        <div class="tech-item__label flex-row flex-all-center"><%= value %></div>
                     <% }) %>
                 </div>
-                <ul class="resume__item-text list-style mt10">
+                <ul class="resume-item__text list-style mt10">
                     <%= item.content %>
                 </ul>
                 <% if (item.link) { %>
                     <div class="flex-row flex-content-end mt30 not-for-print">
-                        <a href="<%= item.link.url %>" class="resume-link"><%= item.link.name %></a>
+                        <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
                     </div>
                 <% } %>
             </div>

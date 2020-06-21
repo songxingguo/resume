@@ -1,17 +1,12 @@
-body {
-  -webkit-print-color-adjust: exact;
-  background-color: #fff;
-  box-sizing: border-box;
-}
-.resume__header {
+.resume-header {
   border-bottom: solid 1px #999;
   box-sizing: border-box;
-  .resume__header-name {
+  .resume-header__name {
     font-size: 40px;
     color: #333;
     line-height: 1;
   }
-  .resume__header-desc {
+  .resume-header__desc {
     font-size: 20px;
     color: #999;
     span {
@@ -26,12 +21,12 @@ body {
   padding: 2px 0 10px 10px;
   margin-left: 5px;
 }
-.work__item {
-  .work__item-title {
+.work-item {
+  .work-item__title {
     font-size: 24px;
     color: #333;
   }
-  .work__item-desc {
+  .work-item__desc {
     font-size: 18px;
     color: #999;
   }
@@ -40,29 +35,29 @@ body {
     height: 60px;
   }
 }
-.work__item-date {
+.work-item__date {
   position: relative;
   top: -10px;
   left: -16px;
   font-size: 10px;
   color: #999999;
   margin-top: 10px;
-  .work__item-dot {
+  .work-item__dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: dodgerblue;
   }
 }
-.project__item {
-  + .project__item {
+.project-item {
+  + .project-item {
     margin-top: 20px;
   }
-  .project__item-title {
+  .project-item__title {
     font-size: 24px;
     color: #333;
   }
-  .project__item-desc {
+  .project-item__desc {
     font-size: 18px;
     color: #999;
   }
@@ -71,7 +66,7 @@ body {
     height: auto;
   }
 }
-.resume__item-text {
+.resume-item__text {
   font-size: 18px;
   color: #666;
 }
@@ -82,10 +77,10 @@ body {
     margin-top: 5px;
   }
 }
-.resume__footer {
+.resume-footer {
   border-top: solid 1px #999999;
   box-sizing: border-box;
-  .resume__footer-desc {
+  .resume-footer__desc {
     font-size: 14px;
     color: #999;
   }
@@ -94,25 +89,25 @@ body {
     height: 10%;
   }
 }
-.tech-label {
+.tech-item__label {
   background-color: aquamarine;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 2px;
   font-size: 12px;
-  + .tech-label {
+  + .tech-item__label {
     margin-left: 20px;
   }
 }
-.resume-link {
+.resume__link {
   font-size: 20px;
   text-decoration: none;
   color: dodgerblue;
-  + .resume-link {
+  + .resume__link {
     margin-left: 20px;
   }
 }
-.resume-button {
+.resume__button {
   background-color: steelblue;
   font-size: 13px;
   text-decoration: none;
@@ -124,7 +119,7 @@ body {
 .split-line {
   border-left: dashed 1px #999999;
 }
-.edu__item {
+.edu-item {
   img {
     width: 100px;
     height: 100px;
@@ -138,13 +133,13 @@ body {
     .show-for-mb {
       display: block;
     }
-    .edu__item {
-      + .edu__item {
+    .edu-item {
+      + .edu-item {
         border-top: dashed 1px #999999;
       }
     }
-    .resume__header-item {
-      + .resume__header-item {
+    .resume-header-item {
+      + .resume-header-item {
         margin-top: 20px;
       }
     }
@@ -168,10 +163,10 @@ body {
       }
     }
   }
-  .resume__header, .resume__footer {
+  .resume-header, .resume-footer {
     padding: 20px 30px;
   }
-  .resume__item {
+  .resume-item {
     padding: 20px;
     &:nth-child(even) {
       background-color: #f4f4f4;
@@ -182,28 +177,28 @@ body {
     color: hsl($hue, $sat, 50%);
     border-left: solid 4px hsl($hue, $sat, 45%);
   }
-  .tech__item {
+  .tech-item {
     height: 50px;
     box-sizing: border-box;
     padding-left: 10px;
     font-size: 16px;
     @include comb—light(30);
-    + .tech__item {
+    + .tech-item {
       margin-top: 10px;
     }
   }
   .only-for-print {
     display: none;
   }
-  .resume__item-title {
+  .resume-item__title {
     font-size: 30px;
   }
-  .resume__item-desc {
+  .resume-item__desc {
     font-size: 20px;
     color: #999;
   }
-  .project__item {
-    + .project__item {
+  .project-item {
+    + .project-item {
       border-top: 1px dashed #999;
       box-sizing: border-box;
       padding-top: 50px;
@@ -218,39 +213,39 @@ body {
     size: A4 portrait;
     margin: 2.1cm 1.9cm;
   }
-  .resume__header-name, .resume__header-position {
+  .resume-header__name, .resume-header__position {
     text-align-last: justify;
     text-align: justify;
     text-justify: distribute-all-lines; // 这行必加，兼容ie浏览器
   }
-  .resume__header-name {
+  .resume-header__name {
     width: 150px;
   }
-  .resume__header-position {
+  .resume-header__position {
     width: 160px;
   }
-  .resume__item {
+  .resume-item {
     padding: 15px 0;
   }
-  .resume__item-title {
+  .resume-item__title {
     font-size: 30px;
     color: #333;
   }
-  .resume__item-desc {
+  .resume-item__desc {
     font-size: 20px;
     color: #333;
   }
   .not-for-print {
     display: none;
   }
-  .project__item {
-    + .project__item {
+  .project-item {
+    + .project-item {
       border-top: 1px dashed #999;
       box-sizing: border-box;
       padding-top: 10px;
     }
   }
-  .resume__header, .resume__footer {
+  .resume-header, .resume-footer {
     padding: 20px 10px;
   }
   .resume__content {

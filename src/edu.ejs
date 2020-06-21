@@ -1,8 +1,8 @@
 <%- require('./layout/header.ejs')({item: edu}) -%>
 <div class="flex-row flex-content-center mt30 pl50 pr50 not-for-print only-for-pc">
-    <div class="edu__item pr100 flex-row">
+    <div class="edu-item pr100 flex-row">
         <div class="mr100">
-            <ul class="resume__item-text list-style">
+            <ul class="resume-item__text list-style">
                 <% edu.list[0].descList.forEach(function (item)  { %>
                     <li><%= item %></li>
                 <% }) %>
@@ -10,10 +10,10 @@
         </div>
         <img src="<%= edu.list[0].logoUrl %>" alt="<%= edu.list[0].name %>">
     </div>
-    <div class="edu__item split-line flex-row pl100">
+    <div class="edu-item split-line flex-row pl100">
         <img src="<%= edu.list[1].logoUrl %>" alt="<%= edu.list[0].name %>">
         <div class="ml100">
-            <ul class="resume__item-text list-style">
+            <ul class="resume-item__text list-style">
                 <% edu.list[1].descList.forEach(function (item)  { %>
                     <li><%= item %></li>
                 <% }) %>
@@ -22,20 +22,20 @@
     </div>
 </div>
 <div class="flex-column mt30 not-for-print only-for-print show-for-mb">
-    <div class="edu__item pb30 flex-row">
+    <div class="edu-item pb30 flex-row">
         <img src="<%= edu.list[0].logoUrl %>" alt="<%= edu.list[0].name %>">
         <div class="ml30">
-            <ul class="resume__item-text list-style">
+            <ul class="resume-item__text list-style">
                 <% edu.list[0].descList.forEach(function (item)  { %>
                     <li><%= item %></li>
                 <% }) %>
             </ul>
         </div>
     </div>
-    <div class="edu__item pt30 flex-row">
+    <div class="edu-item pt30 flex-row">
         <img src="<%= edu.list[1].logoUrl %>" alt="<%= edu.list[0].name %>">
         <div class="ml30">
-            <ul class="resume__item-text list-style">
+            <ul class="resume-item__text list-style">
                 <% edu.list[1].descList.forEach(function (item)  { %>
                     <li><%= item %></li>
                 <% }) %>
@@ -46,9 +46,9 @@
 <div class="flex-column mt10 only-for-print">
     <% edu.list.forEach(function (item)  { %>
         <div class="flex-row flex-content-between">
-            <div class="resume__item-desc"><%= item.major %></div>
-            <div class="resume__item-desc"><%= item.term %></div>
-            <div class="resume__item-desc"><%= item.name %></div>
+            <div class="resume-item__desc"><%= item.major %></div>
+            <div class="resume-item__desc"><%= item.term %></div>
+            <div class="resume-item__desc"><%= item.name %></div>
         </div>
     <% }) %>
 </div>
