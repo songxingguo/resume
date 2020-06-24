@@ -2,8 +2,9 @@
 <div class="resume-item__body mt20">
     <ul class="ml30 not-for-print not-for-mb">
         <% tech.list.forEach(function (item)  { %>
-            <li class="tech-item flex-row flex-items-center" style="width: 20%;">
-                <%= item %>
+            <li class="tech-item flex-row flex-items-center <%= item.style %>" style="width: <%= item.grade %>;>"
+                data-title="<%= item.desc %>">
+                <%= item.name %>
             </li>
         <% }) %>
     </ul>

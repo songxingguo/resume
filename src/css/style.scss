@@ -181,17 +181,42 @@
   }
   @mixin comb—light($hue,$sat:100%) {
     background-color: hsl($hue, $sat, 90%);
-    color: hsl($hue, $sat, 50%);
-    border-left: solid 4px hsl($hue, $sat, 45%);
+    color: hsl($hue, $sat, 30%);
+    border-left: solid 4px hsl($hue, $sat, 50%);
   }
   .tech-item {
+    position: relative;
     height: 50px;
     box-sizing: border-box;
     padding-left: 10px;
     font-size: 16px;
-    @include comb—light(30);
+    &.orange {
+      @include comb—light(30);
+    }
+    &.green {
+      @include comb—light(85);
+    }
+    &.cyan {
+      @include comb—light(190);
+    }
     + .tech-item {
       margin-top: 10px;
+    }
+    &:hover::after {
+      content: attr(data-title);
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      z-index: 100;
+      text-align: center;
+      width: max-content;
+      background: #f00;
+      color: #fff;
+      padding: 1px 10px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 14px;
+      border-radius: 10px 10px 10px 0;
     }
   }
   .resume-item__title {

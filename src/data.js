@@ -23,7 +23,22 @@ module.exports = {
   tech: {
     title: '专注前端，涉猎后端',
     desc: '编织有艺术感的代码',
-    list: ['JavaScript', 'HTML', 'CSS'],
+    list: [{
+      name: 'JavaScript',
+      style: 'cyan',
+      desc: '熟悉掌握 JavaScript 基础，对基础数据类型和它们的 API 能够纯熟应用',
+      grade: '85%'
+    }, {
+      name: 'HTML&CSS',
+      style: 'green',
+      desc: '熟悉 HTML 和 CSS',
+      grade: '80%'
+    }, {
+      name: 'Node.js',
+      style: 'orange',
+      desc: '了解 Node.js 的基本使用',
+      grade: '20%'
+    }],
     descList: ['坚持和善于用技术和工具解决问题。',
       '熟悉掌握 JavaScript 基础，对基础数据类型和它们的 API 能够纯熟应用。',
       '熟悉 React、 ES6、 Webpack 、JQuery 等技术。',
