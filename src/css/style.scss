@@ -90,13 +90,29 @@
   }
 }
 .tech-item__label {
-  background-color: aquamarine;
-  border-radius: 4px;
   box-sizing: border-box;
-  padding: 2px;
-  font-size: 12px;
+  border-radius: .4em;
+  padding: .3em .8em;
+  font-size: 50%;
+  line-height: 1.5;
   + .tech-item__label {
     margin-left: 20px;
+  }
+  &.tech-item--strong {
+    background-color: #99b898;
+    color: #f4f6ff;
+  }
+  &.tech-item--normal {
+    background-color: #e84a5f;
+    color: #f4f6ff;
+  }
+  &.tech-item--light {
+    background-color: #ff847c;
+    color: #f4f6ff;
+  }
+  &.tech-item--lighter {
+    background-color: #d6efc7;
+    color: #333;
   }
 }
 .resume__link {

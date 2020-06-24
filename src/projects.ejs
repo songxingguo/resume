@@ -9,8 +9,8 @@
                     <div class="project-item__desc"><%= item.desc %></div>
                 </div>
                 <div class="flex-row mt5 not-for-print">
-                    <% item.tagList.forEach(function (value) { %>
-                        <div class="tech-item__label flex-row flex-all-center"><%= value %></div>
+                    <% item.tagList.forEach(function (tag) { %>
+                        <div class="tech-item__label flex-row flex-all-center <%= tag.style %>"><%= tag.name %></div>
                     <% }) %>
                 </div>
                 <ul class="resume-item__text list-style mt10">
@@ -34,8 +34,8 @@
                     <div class="project-item__desc"><%= item.desc %></div>
                 </div>
                 <div class="flex-row mt5 not-for-print">
-                    <% item.tagList.forEach(function (value) { %>
-                        <div class="tech-item__label flex-row flex-all-center"><%= value %></div>
+                    <% item.tagList.forEach(function (tag) { %>
+                        <div class="tech-item__label flex-row flex-all-center <%= tag.style %>"><%= tag.name %></div>
                     <% }) %>
                 </div>
                 <ul class="resume-item__text list-style mt10">

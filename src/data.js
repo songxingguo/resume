@@ -51,7 +51,10 @@ module.exports = {
     list: [{
       name: '锦鲤多多',
       desc: '2018.12-至今',
-      tagList: ['微信小程序'],
+      tagList: [{
+        name: '微信小程序',
+        style: 'tech-item--lighter'
+      }],
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
       link: {
         name: '锦鲤多多',
@@ -60,7 +63,10 @@ module.exports = {
     }, {
       name: '知晓理工',
       desc: '2018.12-至今',
-      tagList: ['HTML5', 'CSS'],
+      tagList: [{
+        name: '微信小程序',
+        style: 'tech-item--lighter'
+      }],
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
       link: {
         name: '知晓理工',
@@ -71,7 +77,16 @@ module.exports = {
     }, {
       name: '相册',
       desc: '2018.12-至今',
-      tagList: ['HTML5', 'CSS', 'JavaScript'],
+      tagList: [{
+        name: 'HTML5',
+        style: 'tech-item--strong'
+      }, {
+        name: 'CSS',
+        style: 'tech-item--normal'
+      }, {
+        name: 'JavaScript',
+        style: 'tech-item--light'
+      }],
       content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
       link: {
         name: '相册地址',
