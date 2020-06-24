@@ -1,13 +1,13 @@
 <%- require('./layout/header.ejs')({item: works}) -%>
 <div class="work-container">
     <% works.list.forEach(function (item)  { %>
-        <% if (item.date) { %>
-            <div class="work-item__date flex-row flex-items-center">
-                <div class="work-item__dot"></div>
-                <span class="ml15"><%= item.date.start %></span>
-            </div>
-        <% } %>
         <div class="work-item">
+            <% if (item.date) { %>
+                <div class="work-item__date flex-row flex-items-center">
+                    <div class="work-item__dot"></div>
+                    <span class="ml15"><%= item.date.start %></span>
+                </div>
+            <% } %>
             <div class="flex-row not-for-print">
                 <% if (item.logoUrl) { %>
                     <div class="flex-row ml10">
