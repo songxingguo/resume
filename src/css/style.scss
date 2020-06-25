@@ -183,14 +183,14 @@
       margin-left: 20px;
     }
     img {
-      max-height: 400px;
+      max-height: 300px;
     }
   }
   @media (min-width: 639px) {
     .project-item__img {
       margin-left: 50px;
       img {
-        max-height: 500px;
+        max-height: 300px;
       }
     }
     .not-for-pc {
@@ -201,7 +201,7 @@
     padding: 20px 30px;
   }
   .resume-item {
-    padding: 20px;
+    padding: 20px 40px;
     &:nth-child(even) {
       background-color: #f4f4f4;
     }
