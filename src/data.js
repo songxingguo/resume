@@ -50,25 +50,42 @@ module.exports = {
     title: '丰富的项目经验',
     desc: '业余项目与公司项目相得益彰',
     list: [{
-      name: '锦鲤多多',
+      name: '大约旗下微信小程序及后台管理',
       desc: '2018.12-至今',
       tagList: [{
-        name: '微信小程序',
-        style: 'tech-item--lighter'
+        name: 'WXML',
+        style: 'tech-item--strong'
+      }, {
+        name: 'SCSS',
+        style: 'tech-item--normal'
+      }, {
+        name: 'JavaScript',
+        style: 'tech-item--light'
       }],
-      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+      content: [
+        `参与了「锦鲤多多」和「锦鲤内购小程序」两个小程序和后台管理系统的开发。
+        `,
+        `并且项目采用命令行工具「dev-box」对项目进行编译以及自动化发布。`],
       link: {
         name: '锦鲤多多',
         imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD.png'
       },
+      imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-1.jpeg',
+        'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-3.jpeg'],
     }, {
       name: '知晓理工',
       desc: '2018.12-至今',
       tagList: [{
-        name: '微信小程序',
-        style: 'tech-item--lighter'
+        name: 'WXML',
+        style: 'tech-item--strong'
+      }, {
+        name: 'WXSS',
+        style: 'tech-item--normal'
+      }, {
+        name: 'JavaScript',
+        style: 'tech-item--light'
       }],
-      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+      content: [`参与了「锦鲤多多」和「锦鲤内购小程序」两个小程序的开发，均使用 「vue-on-wechat」框架。`],
       link: {
         name: '知晓理工',
         imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/cqut.png'
@@ -82,13 +99,16 @@ module.exports = {
         name: 'HTML5',
         style: 'tech-item--strong'
       }, {
-        name: 'CSS',
+        name: 'CSS3',
         style: 'tech-item--normal'
       }, {
         name: 'JavaScript',
         style: 'tech-item--light'
+      }, {
+        name: 'TravisCI',
+        style: 'tech-item--grey'
       }],
-      content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+      content: [`参与了「锦鲤多多」和「锦鲤内购小程序」两个小程序的开发，均使用 「vue-on-wechat」框架。`],
       link: {
         name: '相册地址',
         url: 'https://album.songxingguo.com/'

@@ -14,7 +14,9 @@
                     <% }) %>
                 </div>
                 <ul class="resume-item__text list-style mt10">
-                    <%= item.content %>
+                    <% item.content.forEach(function (item) { %>
+                        <div class="project-item__text"><%= item %></div>
+                    <% }) %>
                 </ul>
                 <% if (item.link) { %>
                     <div class="flex-row flex-content-end mt30 not-for-print">

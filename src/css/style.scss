@@ -68,6 +68,11 @@
     width: auto;
     height: auto;
   }
+  .project-item__text {
+    + .project-item__text {
+      margin-top: 10px;
+    }
+  }
 }
 .resume-item__text {
   font-size: 18px;
@@ -101,21 +106,29 @@
   + .tech-item__label {
     margin-left: 20px;
   }
+  &.tech-item--grey {
+    background-color: #303960;
+    color: #f4f6ff;
+  }
+  &.tech-item--dark {
+    background-color: #1b6ca8;
+    color: #f4f6ff;
+  }
   &.tech-item--strong {
-    background-color: #99b898;
+    background-color: #f05d23;
     color: #f4f6ff;
   }
   &.tech-item--normal {
-    background-color: #e84a5f;
+    background-color: #f4a548;
     color: #f4f6ff;
   }
   &.tech-item--light {
-    background-color: #ff847c;
-    color: #f4f6ff;
+    background-color: #ffcd3c;
+    color: #333;
   }
   &.tech-item--lighter {
-    background-color: #d6efc7;
-    color: #333;
+    background-color: #76a21e;
+    color: #f4f6ff;
   }
 }
 .resume__link {
