@@ -112,7 +112,25 @@ const JLDDTemplate =
           name: '相册地址',
           url: 'https://album.songxingguo.com/'
         },
-        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png']
+        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'],
+        mClass: 'not-for-print'
+      }, {
+        name: '结网',
+        desc: '2018.12-至今',
+        tagList: [{
+          name: 'Node.js',
+          style: 'tech-item--lighter'
+        }, {
+          name: 'Webpack',
+          style: 'tech-item--dark'
+        }],
+        cName: 'STAGE',
+        link: {
+          name: '相册地址',
+          url: 'https://album.songxingguo.com/'
+        },
+        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
+        mClass: 'not-for-print'
       }]
     },
     works: {

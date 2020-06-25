@@ -166,6 +166,7 @@
   }
 }
 .project-item-left {
+  width: 100%;
   img {
     width: 100px;
     height: 100px;
@@ -196,6 +197,7 @@
       margin-left: 20px;
     }
     img {
+      max-width: 100%;
       max-height: 300px;
     }
   }
@@ -203,6 +205,7 @@
     .project-item__img {
       margin-left: 50px;
       img {
+        width: auto;
         max-height: 300px;
       }
     }

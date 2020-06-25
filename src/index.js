@@ -12,5 +12,6 @@ if (isDev) {
   require('raw-loader!../src/works.ejs')
   require('raw-loader!../src/projects.ejs')
   require('raw-loader!../src/layout/header.ejs')
+  require('raw-loader!../src/layout/content.ejs')
   require('../src/data.js')
 }

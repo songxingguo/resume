@@ -1,7 +1,7 @@
 <%- require('./layout/header.ejs')({item: projects}) -%>
 <div class="project-container">
     <% projects.list.forEach(function (item)  { %>
-        <div class="project-item flex-row flex-wrap">
+        <div class="project-item flex-row flex-wrap <%= item.mClass %>">
             <!-- 桌面设备 -->
             <div class="project-item-left flex-full not-for-print not-for-mb">
                 <div class="flex-row flex-content-between flex-items-center">
@@ -19,7 +19,7 @@
                     </div>
                 <% } %>
                 <% if (item.link) { %>
-                    <div class="flex-row flex-content-end mt30 not-for-print">
+                    <div class="flex-row flex-content-end mt10 not-for-print">
                         <% if (item.link.url) { %>
                             <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
                         <% } %>
@@ -46,7 +46,7 @@
                     </div>
                 <% } %>
                 <% if (item.link) { %>
-                    <div class="flex-row flex-content-end mt30 not-for-print">
+                    <div class="flex-row flex-content-end mt10 not-for-print">
                         <% if (item.link.url) { %>
                             <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
                         <% } %>
