@@ -125,10 +125,6 @@ const JLDDTemplate =
           style: 'tech-item--dark'
         }],
         cName: 'STAGE',
-        link: {
-          name: '相册地址',
-          url: 'https://album.songxingguo.com/'
-        },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
         mClass: 'not-for-print'
       }]
@@ -137,16 +133,16 @@ const JLDDTemplate =
       title: '3 年工作经验',
       desc: '有所经历才会有所收获',
       list: [{
-        name: '重庆理工大学 B305 实验室',
-        desc: '2016.10-2018.02',
-        content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+        name: '上海大约网络科技有限公司',
+        desc: '前端开发工程师',
+        cName: 'DAYUE',
         date: {
           start: '2018/06'
         }
       }, {
-        name: '上海大约网络科技有限公司',
-        desc: '2018.12-至今',
-        content: '负责协助工程师完成数据安全产品的开发、问题解决；根据项目具体要求，承担开发任务，按计划完成任务目标；完成领导交办的其他工作。',
+        name: '重庆理工大学 B305 实验室',
+        desc: '软件研发工程师',
+        cName: 'B305',
         date: {
           start: '2018/06'
         }

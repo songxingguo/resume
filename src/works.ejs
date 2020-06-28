@@ -19,9 +19,11 @@
                         <div class="work-item__title"><%= item.name %></div>
                         <div class="work-item__desc ml5">—<%= item.desc %></div>
                     </div>
-                    <ul class="resume-item__text list-style mt10">
-                        <%= item.content %>
-                    </ul>
+                    <% if (item.cName) { %>
+                        <div class="resume-item__text mt10">
+                            <%- require('./layout/content.ejs')({cName: item.cName}) -%>
+                        </div>
+                    <% } %>
                 </div>
             </div>
             <div class="flex-row flex-content-between  not-for-pc not-for-mb">
@@ -30,9 +32,11 @@
                         <div class="work-item__title"><%= item.name %></div>
                         <div class="work-item__desc ml5">—<%= item.desc %></div>
                     </div>
-                    <ul class="resume-item__text list-style mt10">
-                        <%= item.content %>
-                    </ul>
+                    <% if (item.cName) { %>
+                        <div class="resume-item__text mt10">
+                            <%- require('./layout/content.ejs')({cName: item.cName}) -%>
+                        </div>
+                    <% } %>
                 </div>
                 <% if (item.logoUrl) { %>
                     <div class="ml100">
