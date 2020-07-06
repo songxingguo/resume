@@ -18,7 +18,7 @@ const JLDDTemplate =
         name: '重庆理工大学',
         descList: ['高等数学，c 语言、Java、 数据结 构、计算机网络、线性代数、操作系统、数据 库、网络协议分析、概率论与统计、软件质量 保证与测试、算法、编译原理、设计模式、软件项目管理。'],
         logoUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/cqut_logo.png',
-        term: '2015.9-2019.6',
+        term: '2015.09-2019.06',
         major: '软件工程',
         education: '本科'
       }]
@@ -53,7 +53,7 @@ const JLDDTemplate =
       desc: '业余项目与公司项目相得益彰',
       list: [{
         name: '大约旗下微信小程序及后台管理',
-        desc: '2018.12-至今',
+        desc: '2018.12-2020.07',
         tagList: [{
           name: 'WXML',
           style: 'tech-item--strong'
@@ -72,8 +72,8 @@ const JLDDTemplate =
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-1.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-3.jpeg'],
       }, {
-        name: '知晓理工',
-        desc: '2018.12-至今',
+        name: '知晓理工(开源项目）',
+        desc: '2018.06-至今',
         tagList: [{
           name: 'WXML',
           style: 'tech-item--strong'
@@ -92,8 +92,8 @@ const JLDDTemplate =
         imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
           'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
       }, {
-        name: '相册',
-        desc: '2018.12-至今',
+        name: '相册（开源项目）',
+        desc: '2020.01-至今',
         tagList: [{
           name: 'HTML5',
           style: 'tech-item--strong'
@@ -116,7 +116,7 @@ const JLDDTemplate =
         mClass: 'not-for-print'
       }, {
         name: '结网',
-        desc: '2018.12-至今',
+        desc: '2020.01-至今',
         tagList: [{
           name: 'Node.js',
           style: 'tech-item--lighter'
@@ -134,23 +134,28 @@ const JLDDTemplate =
       desc: '有所经历才会有所收获',
       list: [{
         name: '上海大约网络科技有限公司',
+        nameStyle: 'work-item__title--red',
         desc: '前端开发工程师',
         cName: 'DAYUE',
         date: {
-          start: '2018/06'
+          start: '2018/12',
+          end: '2020/07'
         }
       }, {
         name: '重庆理工大学 B305 实验室',
+        nameStyle: 'work-item__title--blue',
         desc: '软件研发工程师',
         cName: 'B305',
         date: {
-          start: '2018/06'
+          start: '2016/10',
+          end: '2018/02'
         }
       }]
     },
     footer: {
-      scanDesc: '查看完整版简历',
-      updatedDesc: '最后更新于2018年9月23日',
+      scanDescForPrint: '查看完整版简历',
+      scanDescForPC: '在移动设备上打开本页',
+      updatedDesc: '最后更新于2020年07月06日',
       QRCode: 'https://graphbed.qiniu.songxingguo.com/resume/resume.songxinguo.com.png'
     }
   }

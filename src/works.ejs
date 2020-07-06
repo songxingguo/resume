@@ -2,10 +2,10 @@
 <div class="work-container">
     <% works.list.forEach(function (item)  { %>
         <div class="work-item">
-            <% if (item.date) { %>
-                <div class="work-item__date flex-row flex-items-center">
+            <% if (item.date.end) { %>
+                <div class="work-item__date work-item__date--end flex-row flex-items-center">
                     <div class="work-item__dot"></div>
-                    <span class="ml15"><%= item.date.start %></span>
+                    <span class="ml15"><%= item.date.end %></span>
                 </div>
             <% } %>
             <div class="flex-row not-for-print">
@@ -16,7 +16,7 @@
                 <% } %>
                 <div class="flex-column ml10">
                     <div class="flex-row flex-items-center">
-                        <div class="work-item__title"><%= item.name %></div>
+                        <div class="work-item__title <%= item.nameStyle %>"><%= item.name %></div>
                         <div class="work-item__desc ml5">—<%= item.desc %></div>
                     </div>
                     <% if (item.cName) { %>
@@ -26,7 +26,7 @@
                     <% } %>
                 </div>
             </div>
-            <div class="flex-row flex-content-between  not-for-pc not-for-mb">
+            <div class="flex-row flex-content-between not-for-pc not-for-mb">
                 <div class="flex-column">
                     <div class="flex-row flex-items-center">
                         <div class="work-item__title"><%= item.name %></div>
@@ -44,6 +44,12 @@
                     </div>
                 <% } %>
             </div>
+            <% if (item.date.start) { %>
+                <div class="work-item__date work-item__date--start flex-row flex-items-center">
+                    <div class="work-item__dot"></div>
+                    <span class="ml15"><%= item.date.start %></span>
+                </div>
+            <% } %>
         </div>
     <% }) %>
 </div>
