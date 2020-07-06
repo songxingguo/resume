@@ -43,27 +43,27 @@
         <div class="edu-item flex-row flex-items-center flex-full pt10">
             <img src="<%= item.logoUrl %>" alt="<%= item.name %>">
             <div class="flex-column flex-full ml20">
-                <div class="flex-row flex-content-between flex-items-center not-for-mb">
+                <div class="flex-row flex-items-center flex-content-between flex-items-center not-for-mb">
                     <div class="edu-item__title"><%= item.name %></div>
                     <div class="edu-item__desc"><%= item.term %></div>
                 </div>
-                <div class="flex-row mt10 not-for-pc">
+                <div class="flex-row flex-items-center mt10 not-for-pc">
                     <div class="resume-item__text">学校：</div>
                     <div class="resume-item__text"><%= item.name %></div>
                 </div>
-                <div class="flex-row mt10">
+                <div class="flex-row flex-items-center mt10">
                     <div class="resume-item__text">学历：</div>
                     <div class="resume-item__text"><%= item.education %></div>
                 </div>
-                <div class="flex-row mt10">
+                <div class="flex-row flex-items-center mt10">
                     <div class="resume-item__text">专业：</div>
                     <div class="resume-item__text"><%= item.major %></div>
                 </div>
-                <div class="flex-row mt10 not-for-pc">
+                <div class="flex-row flex-items-center mt10 not-for-pc">
                     <div class="resume-item__text">就读时间：</div>
                     <div class="resume-item__text"><%= item.term %></div>
                 </div>
-                <div class="flex-row mt10 not-for-mb">
+                <div class="flex-row flex-items-center mt10 not-for-mb">
                     <div class="resume-item__text">主修课程：</div>
                     <div class="flex-row resume-item__text flex-full">
                         <% item.descList.forEach(function (item)  { %>
