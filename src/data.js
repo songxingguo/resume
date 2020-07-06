@@ -71,6 +71,7 @@ const JLDDTemplate =
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-1.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-3.jpeg'],
+        imgClass: "project-item__img--mb"
       }, {
         name: '知晓理工(开源项目）',
         desc: '2018.06-至今',
@@ -91,6 +92,7 @@ const JLDDTemplate =
         },
         imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
           'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
+        imgClass: "project-item__img--mb"
       }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',

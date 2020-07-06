@@ -57,11 +57,13 @@
                 <% } %>
             </div>
             <% if (item.imgUrls) { %>
-                <% item.imgUrls.forEach(function (url)  { %>
-                    <div class="project-item__img not-for-print">
-                        <img src="<%= url %>" alt="<%= item.name %>">
-                    </div>
-                <% }) %>
+                <div class="project-img-container flex-row flex-items-center">
+                    <% item.imgUrls.forEach(function (url)  { %>
+                        <div class="project-item__img <%= item.imgClass %> not-for-print">
+                            <img src="<%= url %>" alt="<%= item.name %>">
+                        </div>
+                    <% }) %>
+                </div>
             <% } %>
         </div>
     <% }) %>
