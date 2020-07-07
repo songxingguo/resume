@@ -43,10 +43,11 @@ const JLDDTemplate =
         grade: '20%'
       }],
       descList: ['坚持和善于用技术和工具解决问题。',
-        '熟悉掌握 JavaScript 基础，对基础数据类型和它们的 API 能够纯熟应用。',
-        '熟悉 React、 ES6、 Webpack 、JQuery 等技术。',
-        '具有 Web 应用前后端研发经验。',
-        '了解 npm、Webpack 等工具的基本原理。',]
+        '熟练掌握 JavaScript （ES6）、HTML、CSS。',
+        '熟练使用 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术。',
+        '熟练运用 Gulp｜Webpack 模块管理打包工具。',
+        '熟悉前端相关标准，了解浏览器兼容问题以及JavaScript性能调优相关技术。',
+        '掌握 Java 语言，具有 Web 应用前后端开发经验。']
     },
     projects: {
       title: '丰富的项目经验',
@@ -63,6 +64,9 @@ const JLDDTemplate =
         }, {
           name: 'JavaScript',
           style: 'tech-item--light'
+        }, {
+          name: 'Gulp',
+          style: 'tech-item--dark'
         }],
         cName: 'JLDD',
         link: {
