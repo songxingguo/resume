@@ -6,7 +6,7 @@ const JLDDTemplate =
       position: '前端开发工程师',
       telNum: '18983642737',
       email: 'xg.song@qq.com',
-      wxChat: 's1328989942',
+      wxChat: 'sxg961014',
       blog: 'www.songxingguo.com',
       blogUrl: 'https://www.songxingguo.com',
       headIcon: 'https://graphbed.qiniu.songxingguo.com/resume/header.png'
