@@ -73,7 +73,7 @@ const JLDDTemplate =
           'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-3.jpeg'],
         imgClass: "project-item__img--mb"
       }, {
-        name: '知晓理工(开源项目）',
+        name: '知晓理工',
         desc: '2018.06-至今',
         tagList: [{
           name: 'WXML',
@@ -93,6 +93,25 @@ const JLDDTemplate =
         imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
           'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
         imgClass: "project-item__img--mb"
+      }, {
+        name: '简历（开源项目）',
+        desc: '2020.06-至今',
+        tagList: [{
+          name: 'EJS',
+          style: 'tech-item--strong'
+        }, {
+          name: 'SCSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'Webpack',
+          style: 'tech-item--dark'
+        }, {
+          name: 'TravisCI',
+          style: 'tech-item--grey'
+        }],
+        cName: 'RESUME',
+        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E7%AE%80%E5%8E%86.png'],
+        mClass: 'not-for-print'
       }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',
@@ -125,6 +144,9 @@ const JLDDTemplate =
         }, {
           name: 'Webpack',
           style: 'tech-item--dark'
+        }, {
+          name: 'TravisCI',
+          style: 'tech-item--grey'
         }],
         cName: 'STAGE',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
