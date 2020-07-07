@@ -49,7 +49,10 @@
         </div>
     </div>
     <!-- 底部区域 -->
-    <div class="resume-footer flex-row flex-content-between flex-items-center">
+    <div class="resume-footer flex-row flex-content-between flex-items-center sticky not-for-mb not-for-print">
+        <%- require('./footer.ejs')({footer}) -%>
+    </DIV>
+    <div class="resume-footer flex-row flex-content-between flex-items-center not-for-pc">
         <%- require('./footer.ejs')({footer}) -%>
     </div>
 </div>
