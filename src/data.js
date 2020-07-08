@@ -96,7 +96,8 @@ const JLDDTemplate =
         },
         imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
           'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
-        imgClass: "project-item__img--mb"
+        imgClass: "project-item__img--mb",
+        mClass: 'not-for-print'
       }, {
         name: '简历（开源项目）',
         desc: '2020.06-至今',
@@ -115,7 +116,6 @@ const JLDDTemplate =
         }],
         cName: 'RESUME',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E7%AE%80%E5%8E%86.png'],
-        mClass: 'not-for-print'
       }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',
@@ -166,8 +166,8 @@ const JLDDTemplate =
         desc: '前端开发工程师',
         cName: 'DAYUE',
         date: {
-          start: '2018/12',
-          end: '2020/07'
+          start: '2018.12',
+          end: '2020.07'
         }
       }, {
         name: '重庆理工大学 B305 实验室',
@@ -175,8 +175,8 @@ const JLDDTemplate =
         desc: '软件研发工程师',
         cName: 'B305',
         date: {
-          start: '2016/10',
-          end: '2018/02'
+          start: '2016.10',
+          end: '2018.02'
         }
       }]
     },
