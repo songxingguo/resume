@@ -29,8 +29,8 @@
                     </div>
                 <% } %>
             </div>
-            <!-- 移动设备/打印设备 -->
-            <div class="project-item-left not-for-pc">
+            <!-- 移动设备 -->
+            <div class="project-item-left not-for-pc not-for-print">
                 <div class="flex-row flex-content-between flex-items-center">
                     <div class="project-item__title"><%= item.name %></div>
                     <div class="project-item__desc"><%= item.desc %></div>
@@ -46,9 +46,9 @@
                     </div>
                 <% } %>
                 <% if (item.link) { %>
-                    <div class="flex-row flex-content-end mt10 not-for-print">
+                    <div class="flex-row flex-content-end mt10">
                         <% if (item.link.url) { %>
-                            <a href="<%= item.link.url %>" class="resume__link"><%= item.link.name %></a>
+                            <a href="<%= item.link.url %>" class="resume__link not-for-print"><%= item.link.name %></a>
                         <% } %>
                         <% if (item.link.imgUrl) { %>
                             <img src="<%= item.link.imgUrl %>" alt="<%= item.link.name %>">
@@ -56,10 +56,36 @@
                     </div>
                 <% } %>
             </div>
+            <!-- 打印设备 -->
+            <div class="project-item-left not-for-pc not-for-mb">
+                <div class="flex-row flex-content-between flex-items-center">
+                    <div class="project-item__title"><%= item.name %></div>
+                    <div class="project-item__desc"><%= item.desc %></div>
+                </div>
+                <div class="flex-row mt5 not-for-print">
+                    <% item.tagList.forEach(function (tag) { %>
+                        <div class="tech-item__label flex-row flex-all-center <%= tag.style %>"><%= tag.name %></div>
+                    <% }) %>
+                </div>
+                <div class="flex-row flex-content-between">
+                    <% if (item.cName) { %>
+                        <div class="resume-item__text mt10">
+                            <%- require('./layout/content.ejs')({cName: item.cName}) -%>
+                        </div>
+                    <% } %>
+                    <% if (item.link) { %>
+                        <div class="flex-row flex-content-end mt10 ml20">
+                            <% if (item.link.imgUrl) { %>
+                                <img src="<%= item.link.imgUrl %>" alt="<%= item.link.name %>">
+                            <% } %>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
             <% if (item.imgUrls) { %>
                 <div class="project-img-container flex-row flex-items-center">
                     <% item.imgUrls.forEach(function (url)  { %>
-                        <div class="project-item__img <%= item.imgClass %> not-for-print">
+                        <div class="project-item__img <%= item.imgClass %>">
                             <img src="<%= url %>" alt="<%= item.name %>">
                         </div>
                     <% }) %>
