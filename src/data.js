@@ -162,25 +162,6 @@ const JLDDTemplate =
         mClass: 'not-for-print',
         imgClass: "not-for-print",
       }, {
-        name: '简历（开源项目）',
-        desc: '2020.06-至今',
-        tagList: [{
-          name: 'EJS',
-          style: 'tech-item--strong'
-        }, {
-          name: 'SCSS',
-          style: 'tech-item--normal'
-        }, {
-          name: 'Webpack',
-          style: 'tech-item--dark'
-        }, {
-          name: 'TravisCI',
-          style: 'tech-item--grey'
-        }],
-        cName: 'RESUME',
-        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E7%AE%80%E5%8E%86.png'],
-        imgClass: "not-for-print",
-      }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',
         tagList: [{
@@ -202,6 +183,29 @@ const JLDDTemplate =
           url: 'https://album.songxingguo.com/'
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'],
+        imgClass: "not-for-print",
+      }, {
+        name: '简历（开源项目）',
+        desc: '2020.06-至今',
+        tagList: [{
+          name: 'EJS',
+          style: 'tech-item--strong'
+        }, {
+          name: 'SCSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'Webpack',
+          style: 'tech-item--dark'
+        }, {
+          name: 'TravisCI',
+          style: 'tech-item--grey'
+        }],
+        link: {
+          name: '简历地址',
+          imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/%E7%AE%80%E5%8E%86%E4%BA%8C%E7%BB%B4%E7%A0%81-removebg.png'
+        },
+        cName: 'RESUME',
+        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E7%AE%80%E5%8E%86.png'],
         imgClass: "not-for-print",
       }, {
         name: '结网',
