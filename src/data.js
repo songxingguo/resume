@@ -43,18 +43,19 @@ const JLDDTemplate =
         grade: '20%'
       }],
       descList: ['坚持和善于用技术和工具解决问题。',
-        '熟练掌握 JavaScript （ES6）、HTML、CSS。',
+        '熟练掌握 JavaScript （ES6）、HTML（5）、CSS（3）。',
         '熟练使用 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术。',
         '熟练运用 Gulp｜Webpack 模块管理打包工具。',
         '熟悉前端相关标准，了解浏览器兼容问题以及JavaScript性能调优相关技术。',
-        '掌握 Java 语言，具有 Web 应用前后端开发经验。']
+        '掌握 Java 语言，具有 Web 应用前后端开发经验。',
+        '熟练使用 Vant、 Bootstrap、Ant Design 等前端开发框架，熟悉微信小程序开发。']
     },
     projects: {
       title: '丰富的项目经验',
       desc: '业余项目与公司项目相得益彰',
       list: [{
         name: '大约旗下微信小程序及后台管理',
-        desc: '2018.12-2020.07',
+        desc: '2018.12-2020.06',
         tagList: [{
           name: 'WXML',
           style: 'tech-item--strong'
@@ -75,9 +76,9 @@ const JLDDTemplate =
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-1.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-3.jpeg'],
-        imgClass: "project-item__img--mb"
+        imgClass: "project-item__img--mb not-for-print"
       }, {
-        name: '知晓理工',
+        name: '知晓理工（独立设计与开发）',
         desc: '2018.06-至今',
         tagList: [{
           name: 'WXML',
@@ -96,8 +97,70 @@ const JLDDTemplate =
         },
         imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
           'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
-        imgClass: "project-item__img--mb",
-        mClass: 'not-for-print'
+        imgClass: "project-item__img--mb not-for-print",
+      }, {
+        name: '大学校园生活共享平台（独立设计与开发）',
+        desc: '2019.05-2019.06',
+        tagList: [{
+          name: 'WXML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'WXSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }],
+        cName: 'STORE',
+        link: {
+          imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/%E7%90%86%E5%B7%A5%E5%B0%8F%E9%93%BA-removebg.png'
+        },
+        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/store-1.jpeg',
+          'https://graphbed.qiniu.songxingguo.com/resume/test/store-3.jpeg',
+          'https://graphbed.qiniu.songxingguo.com/resume/test/store-4.jpeg',
+          'https://graphbed.qiniu.songxingguo.com/resume/test/store-2.jpeg'],
+        imgClass: "not-for-print",
+      }, {
+        name: '嗨大白（独立设计与开发）',
+        desc: '2019.01-至今',
+        tagList: [{
+          name: 'WXML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'WXSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }],
+        cName: 'AI',
+        link: {
+          imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/%E5%97%A8%E5%A4%A7%E7%99%BD-removebg.png'
+        },
+        imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/ai-1.jpeg',
+          'https://graphbed.qiniu.songxingguo.com/resume/test/ai-2.jpeg',
+          'https://graphbed.qiniu.songxingguo.com/resume/test/ai-3.jpeg',
+          'https://graphbed.qiniu.songxingguo.com/resume/test/ai-5.jpeg'],
+        imgClass: "not-for-print",
+      }, {
+        name: 'WeUI 库（开源项目）',
+        desc: '2018.10-至今',
+        tagList: [{
+          name: 'WXML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'WXSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }],
+        cName: 'WEUI',
+        link: {
+          imgUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/WeUI_%E5%BA%93-removebg.png'
+        },
+        mClass: 'not-for-print',
+        imgClass: "not-for-print",
       }, {
         name: '简历（开源项目）',
         desc: '2020.06-至今',
@@ -116,6 +179,7 @@ const JLDDTemplate =
         }],
         cName: 'RESUME',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E7%AE%80%E5%8E%86.png'],
+        imgClass: "not-for-print",
       }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',
@@ -138,7 +202,7 @@ const JLDDTemplate =
           url: 'https://album.songxingguo.com/'
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'],
-        mClass: 'not-for-print'
+        imgClass: "not-for-print",
       }, {
         name: '结网',
         desc: '2020.01-至今',
@@ -154,7 +218,7 @@ const JLDDTemplate =
         }],
         cName: 'STAGE',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
-        mClass: 'not-for-print'
+        imgClass: "mt10",
       }]
     },
     works: {
@@ -167,7 +231,7 @@ const JLDDTemplate =
         cName: 'DAYUE',
         date: {
           start: '2018.12',
-          end: '2020.07'
+          end: '2020.06'
         }
       }, {
         name: '重庆理工大学 B305 实验室',
@@ -177,7 +241,7 @@ const JLDDTemplate =
         date: {
           start: '2016.10',
           end: '2018.02'
-        }
+        },
       }]
     },
     footer: {

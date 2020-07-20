@@ -1,7 +1,7 @@
 <%- require('./layout/header.ejs')({item: works}) -%>
 <div class="work-container">
     <% works.list.forEach(function (item)  { %>
-        <div class="work-item">
+        <div class="work-item <%= item.mClass %>">
             <% if (item.date.end) { %>
                 <div class="work-item__date work-item__date--end flex-row flex-items-center">
                     <div class="work-item__dot"></div>
