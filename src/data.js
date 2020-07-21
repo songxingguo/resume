@@ -66,6 +66,9 @@ const JLDDTemplate =
           name: 'JavaScript',
           style: 'tech-item--light'
         }, {
+          name: 'Vue',
+          style: 'tech-item--vue'
+        }, {
           name: 'Gulp',
           style: 'tech-item--dark'
         }],
@@ -141,6 +144,7 @@ const JLDDTemplate =
           'https://graphbed.qiniu.songxingguo.com/resume/test/ai-2.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/ai-3.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/ai-5.jpeg'],
+        mClass: 'not-for-print',
         imgClass: "not-for-print",
       }, {
         name: 'WeUI 库（开源项目）',
@@ -183,6 +187,7 @@ const JLDDTemplate =
           url: 'https://album.songxingguo.com/'
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'],
+        mClass: 'not-for-print',
         imgClass: "not-for-print",
       }, {
         name: '简历（开源项目）',
@@ -212,7 +217,7 @@ const JLDDTemplate =
         desc: '2020.01-至今',
         tagList: [{
           name: 'Node.js',
-          style: 'tech-item--lighter'
+          style: 'tech-item--node'
         }, {
           name: 'Webpack',
           style: 'tech-item--dark'
@@ -223,6 +228,30 @@ const JLDDTemplate =
         cName: 'STAGE',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
         imgClass: "mt10",
+      }, {
+        name: '新能源物流车综合运营平台',
+        desc: '2016.07-2018.02',
+        tagList: [{
+          name: 'WXML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'SCSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }, {
+          name: 'AngularJS',
+          style: 'tech-item--angular'
+        }, {
+          name: 'Java',
+          style: 'tech-item--java'
+        }, {
+          name: 'MySQL',
+          style: 'tech-item--my-sql'
+        }],
+        cName: 'XNY',
+        imgClass: "project-item__img--mb not-for-print"
       }]
     },
     works: {

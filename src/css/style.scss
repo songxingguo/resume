@@ -155,9 +155,25 @@ ol > li {
     background-color: #ffcd3c;
     color: #333;
   }
-  &.tech-item--lighter {
-    background-color: #76a21e;
-    color: #f4f6ff;
+  &.tech-item--node {
+    background-color: #066d04;
+    color: #fff;
+  }
+  &.tech-item--java {
+    background-color: #00688e;
+    color: #fff;
+  }
+  &.tech-item--my-sql {
+    background-color: #2f4c62;
+    color: #fff;
+  }
+  &.tech-item--angular {
+    background-color: #c30e2e;
+    color: #fff;
+  }
+  &.tech-item--vue {
+    background-color: #40b982;
+    color: #35495d;
   }
 }
 .resume__link {
