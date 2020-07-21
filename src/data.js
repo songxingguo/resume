@@ -16,7 +16,7 @@ const JLDDTemplate =
       desc: '学生时代就踏上开发之路',
       list: [{
         name: '重庆理工大学',
-        descList: ['高等数学，c 语言、Java、 数据结 构、计算机网络、线性代数、操作系统、数据 库、网络协议分析、概率论与统计、软件质量 保证与测试、算法、编译原理、设计模式、软件项目管理。'],
+        descList: ['高等数学，c 语言、Java、 数据结构、计算机网络、线性代数、操作系统、数据库、网络协议分析、概率论与统计、软件质量 保证与测试、算法、编译原理、设计模式、软件项目管理。'],
         logoUrl: 'https://graphbed.qiniu.songxingguo.com/resume/test/cqut_logo.png',
         term: '2015.09-2019.06',
         major: '软件工程',
@@ -166,6 +166,30 @@ const JLDDTemplate =
         mClass: 'not-for-print',
         imgClass: "not-for-print",
       }, {
+        name: '新能源物流车综合运营平台',
+        desc: '2016.07-2018.02',
+        tagList: [{
+          name: 'HTML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'Less',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }, {
+          name: 'AngularJS',
+          style: 'tech-item--angular'
+        }, {
+          name: 'Java',
+          style: 'tech-item--java'
+        }, {
+          name: 'MySQL',
+          style: 'tech-item--my-sql'
+        }],
+        cName: 'XNY',
+        imgClass: "project-item__img--mb not-for-print"
+      }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',
         tagList: [{
@@ -187,7 +211,6 @@ const JLDDTemplate =
           url: 'https://album.songxingguo.com/'
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'],
-        mClass: 'not-for-print',
         imgClass: "not-for-print",
       }, {
         name: '简历（开源项目）',
@@ -231,30 +254,6 @@ const JLDDTemplate =
         cName: 'STAGE',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
         imgClass: "mt10",
-      }, {
-        name: '新能源物流车综合运营平台',
-        desc: '2016.07-2018.02',
-        tagList: [{
-          name: 'HTML',
-          style: 'tech-item--strong'
-        }, {
-          name: 'Less',
-          style: 'tech-item--normal'
-        }, {
-          name: 'JavaScript',
-          style: 'tech-item--light'
-        }, {
-          name: 'AngularJS',
-          style: 'tech-item--angular'
-        }, {
-          name: 'Java',
-          style: 'tech-item--java'
-        }, {
-          name: 'MySQL',
-          style: 'tech-item--my-sql'
-        }],
-        cName: 'XNY',
-        imgClass: "project-item__img--mb not-for-print"
       }]
     },
     works: {
