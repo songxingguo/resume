@@ -44,11 +44,11 @@ const JLDDTemplate =
       }],
       descList: ['坚持和善于用技术和工具解决问题。',
         '熟练掌握 JavaScript （ES6）、HTML（5）、CSS（3）。',
-        '熟练使用 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术。',
-        '熟练运用 Webpack 模块管理打包工具。',
-        '熟悉前端相关标准，了解浏览器兼容问题以及页面性能优化相关技术。',
-        '掌握 Java 语言，具有 Web 应用前后端开发经验。',
-        '熟练使用 Vant、 Bootstrap、Ant Design 等前端开发框架，熟悉微信小程序开发。']
+        '熟练使用 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术并了解相关原理。',
+        '熟悉前端相关标准，了解浏览器原理和兼容问题，了解页面性能优化以及安全相关技术。',
+        '熟练运用 Webpack 模块管理打包工具，了解前端工程化，具有有独立设计与开发项目的能力。',
+        '熟练使用 Vant、 Bootstrap、Ant Design 等前端开发框架，熟悉微信小程序开发，了解 TypeScript 开发。',
+        '熟练使用 Node.js、 Java 等后端语言，具有 Web 应用前后端开发经验。']
     },
     projects: {
       title: '丰富的项目经验',
@@ -216,6 +216,9 @@ const JLDDTemplate =
         name: '结网',
         desc: '2020.01-至今',
         tagList: [{
+          name: 'TypeScript',
+          style: 'tech-item--light'
+        }, {
           name: 'Node.js',
           style: 'tech-item--node'
         }, {
@@ -232,10 +235,10 @@ const JLDDTemplate =
         name: '新能源物流车综合运营平台',
         desc: '2016.07-2018.02',
         tagList: [{
-          name: 'WXML',
+          name: 'HTML',
           style: 'tech-item--strong'
         }, {
-          name: 'SCSS',
+          name: 'Less',
           style: 'tech-item--normal'
         }, {
           name: 'JavaScript',
