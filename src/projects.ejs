@@ -8,7 +8,7 @@
                     <div class="project-item__title"><%= item.name %></div>
                     <div class="project-item__desc"><%= item.desc %></div>
                 </div>
-                <div class="flex-row mt5 not-for-print">
+                <div class="flex-row flex-wrap mt5 not-for-print">
                     <% item.tagList.forEach(function (tag) { %>
                         <div class="tech-item__label flex-row flex-all-center <%= tag.style %>"><%= tag.name %></div>
                     <% }) %>
@@ -35,7 +35,7 @@
                     <div class="project-item__title"><%= item.name %></div>
                     <div class="project-item__desc"><%= item.desc %></div>
                 </div>
-                <div class="flex-row mt5 not-for-print">
+                <div class="flex-row flex-wrap mt5 not-for-print">
                     <% item.tagList.forEach(function (tag) { %>
                         <div class="tech-item__label flex-row flex-all-center <%= tag.style %>"><%= tag.name %></div>
                     <% }) %>

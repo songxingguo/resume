@@ -45,8 +45,8 @@ const JLDDTemplate =
       descList: ['坚持和善于用技术和工具解决问题。',
         '熟练掌握 JavaScript （ES6）、HTML（5）、CSS（3）。',
         '熟练使用 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术。',
-        '熟练运用 Gulp｜Webpack 模块管理打包工具。',
-        '熟悉前端相关标准，了解浏览器兼容问题以及JavaScript性能调优相关技术。',
+        '熟练运用 Webpack 模块管理打包工具。',
+        '熟悉前端相关标准，了解浏览器兼容问题以及页面性能优化相关技术。',
         '掌握 Java 语言，具有 Web 应用前后端开发经验。',
         '熟练使用 Vant、 Bootstrap、Ant Design 等前端开发框架，熟悉微信小程序开发。']
     },
