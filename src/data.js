@@ -257,7 +257,7 @@ const JLDDTemplate =
       }]
     },
     works: {
-      title: '3 年工作经验',
+      title: '3 年开发经验',
       desc: '有所经历才会有所收获',
       list: [{
         name: '上海大约网络科技有限公司',
