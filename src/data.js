@@ -42,13 +42,13 @@ const JLDDTemplate =
         desc: '了解 Node.js 的基本使用',
         grade: '20%'
       }],
-      descList: ['坚持和善于用技术和工具解决问题。',
-        '熟练掌握 JavaScript （ES6）、HTML（5）、CSS（3）。',
-        '熟练使用 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术并了解相关原理。',
-        '熟悉前端相关标准，了解浏览器原理和兼容问题，了解页面性能优化以及安全相关技术。',
-        '熟练运用 Webpack 模块管理打包工具，了解前端工程化，具有有独立设计与开发项目的能力。',
-        '熟练使用 Vant、 Bootstrap、Ant Design 等前端开发框架，熟悉微信小程序开发，了解 TypeScript 开发。',
-        '熟练使用 Node.js、 Java 等后端语言，具有 Web 应用前后端开发经验。']
+      descList: ['具有三年项目开发经验，熟悉前后端的开发流程，能够独立设计与开发项目。',
+        '熟练掌握 JavaScript （ES6+）、HTML（5）、CSS（3）。',
+        '熟练掌握 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术并了解相关原理。',
+        '熟练掌握 Vant、 Bootstrap、Ant Design 等前端开发框架。',
+        '熟练掌握 WebStorm、Git 等工具，熟悉 Webpack 模块管理打包工具。',
+        '熟练掌握「微信小程序」和 「移动端 H5」 开发，熟悉常见「动画效果」的实现和「组件」的封装。',
+        '熟悉前端相关标准，了解浏览器原理和兼容问题，了解页面性能优化以及安全相关技术。']
     },
     projects: {
       title: '丰富的项目经验',
@@ -257,7 +257,7 @@ const JLDDTemplate =
       }]
     },
     works: {
-      title: '3 年开发经验',
+      title: '1 年工作经验',
       desc: '有所经历才会有所收获',
       list: [{
         name: '上海大约网络科技有限公司',
