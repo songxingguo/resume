@@ -81,6 +81,30 @@ const JLDDTemplate =
           'https://graphbed.qiniu.songxingguo.com/resume/test/JLDD-3.jpeg'],
         imgClass: "project-item__img--mb not-for-print"
       }, {
+        name: '新能源物流车综合运营平台',
+        desc: '2016.07-2018.02',
+        tagList: [{
+          name: 'HTML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'Less',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }, {
+          name: 'AngularJS',
+          style: 'tech-item--angular'
+        }, {
+          name: 'Java',
+          style: 'tech-item--java'
+        }, {
+          name: 'MySQL',
+          style: 'tech-item--my-sql'
+        }],
+        cName: 'XNY',
+        imgClass: "project-item__img--mb not-for-print"
+      }, {
         name: '知晓理工（独立设计与开发）',
         desc: '2018.06-至今',
         tagList: [{
@@ -165,30 +189,6 @@ const JLDDTemplate =
         },
         mClass: 'not-for-print',
         imgClass: "not-for-print",
-      }, {
-        name: '新能源物流车综合运营平台',
-        desc: '2016.07-2018.02',
-        tagList: [{
-          name: 'HTML',
-          style: 'tech-item--strong'
-        }, {
-          name: 'Less',
-          style: 'tech-item--normal'
-        }, {
-          name: 'JavaScript',
-          style: 'tech-item--light'
-        }, {
-          name: 'AngularJS',
-          style: 'tech-item--angular'
-        }, {
-          name: 'Java',
-          style: 'tech-item--java'
-        }, {
-          name: 'MySQL',
-          style: 'tech-item--my-sql'
-        }],
-        cName: 'XNY',
-        imgClass: "project-item__img--mb not-for-print"
       }, {
         name: '相册（开源项目）',
         desc: '2020.01-至今',
