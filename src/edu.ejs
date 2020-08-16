@@ -85,4 +85,9 @@
             <div class="resume-item__desc"><%= item.name %></div>
         </div>
     <% }) %>
+    <% if (edu.cName) { %>
+        <div class="resume-item__text mt10">
+            <%- require('./layout/content.ejs')({cName: edu.cName}) -%>
+        </div>
+    <% } %>
 </div>

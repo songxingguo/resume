@@ -21,7 +21,8 @@ const JLDDTemplate =
         term: '2015.09-2019.06',
         major: '软件工程',
         education: '本科'
-      }]
+      }],
+      cName: 'PRIZE'
     },
     tech: {
       title: '专注前端，涉猎后端',
@@ -46,7 +47,7 @@ const JLDDTemplate =
         '熟练掌握 JavaScript （ES6+）、HTML（5）、CSS（3）。',
         '熟练掌握 Vue(Vue2  + vue-router + Vuex + Axios) 全家桶相关技术并了解相关原理。',
         '熟练掌握 Vant、 Bootstrap、Ant Design 等前端开发框架。',
-        '熟练掌握 WebStorm、Git 等工具，熟悉 Webpack 模块管理打包工具。',
+        '熟练掌握 WebStorm、Git 等开发工具，熟悉 Webpack 模块管理打包工具。',
         '熟练掌握「微信小程序」和 「移动端 H5」 开发，熟悉常见「动画效果」的实现和「组件」的封装。',
         '熟悉前端相关标准，了解浏览器原理和兼容问题，了解页面性能优化以及安全相关技术。']
     },
@@ -125,6 +126,7 @@ const JLDDTemplate =
         imgUrls: ['https://media.ifanrusercontent.com/user_files/trochili/44/17/44170385601da97f7fb47d542f4c41fbb19afadc-5c20dcbcfbab07ab6c2df7e27444d5ac2afca569.png',
           'https://media.ifanrusercontent.com/user_files/trochili/9f/6b/9f6b0b4e631f081554a9a7f4f5985704fc93b06e-cd738a722fd3838065f6fa1e747cad6f62c703a5.png'],
         imgClass: "project-item__img--mb not-for-print",
+        mClass: 'not-for-print',
       }, {
         name: '大学校园生活共享平台（独立设计与开发）',
         desc: '2019.05-2019.06',
@@ -146,6 +148,7 @@ const JLDDTemplate =
           'https://graphbed.qiniu.songxingguo.com/resume/test/store-3.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/store-4.jpeg',
           'https://graphbed.qiniu.songxingguo.com/resume/test/store-2.jpeg'],
+        mClass: 'not-for-print',
         imgClass: "not-for-print",
       }, {
         name: '嗨大白（独立设计与开发）',
@@ -212,6 +215,7 @@ const JLDDTemplate =
         },
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/%E6%9D%A8%E6%B5%A6.png'],
         imgClass: "not-for-print",
+        mClass: 'not-for-print',
       }, {
         name: '简历（开源项目）',
         desc: '2020.06-至今',
@@ -254,10 +258,11 @@ const JLDDTemplate =
         cName: 'STAGE',
         imgUrls: ['https://graphbed.qiniu.songxingguo.com/resume/test/%E6%9E%B6%E6%9E%84%E5%9B%BE.png'],
         imgClass: "mt10",
+        mClass: 'not-for-print',
       }]
     },
     works: {
-      title: '1 年工作经验',
+      title: '3 年开发经验',
       desc: '有所经历才会有所收获',
       list: [{
         name: '上海大约网络科技有限公司',
@@ -280,9 +285,9 @@ const JLDDTemplate =
       }]
     },
     footer: {
-      scanDescForPrint: '查看完整版简历',
+      scanDescForPrint: '查看线上版简历',
       scanDescForPC: '在移动设备上打开本页',
-      updatedDesc: '最后更新于2020年07月06日',
+      updatedDesc: '最后更新于2020年08月15日',
       QRCode: 'https://graphbed.qiniu.songxingguo.com/resume/resume.songxinguo.com.png'
     }
   }
