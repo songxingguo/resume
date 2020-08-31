@@ -55,6 +55,30 @@ const JLDDTemplate =
       title: '丰富的项目经验',
       desc: '业余项目与公司项目相得益彰',
       list: [{
+        name: '竞阅旗下 Web 平台',
+        desc: '2020.08-至今',
+        tagList: [{
+          name: 'WXML',
+          style: 'tech-item--strong'
+        }, {
+          name: 'SCSS',
+          style: 'tech-item--normal'
+        }, {
+          name: 'JavaScript',
+          style: 'tech-item--light'
+        }, {
+          name: 'Vue',
+          style: 'tech-item--vue'
+        }],
+        cName: 'XINYUE',
+        link: {
+          name: '新阅',
+          imgUrl: ''
+        },
+        imgUrls: [],
+        imgClass: "project-item__img--mb not-for-print",
+        mClass: 'not-for-print',
+      }, {
         name: '大约旗下微信小程序及后台管理',
         desc: '2018.12-2020.06',
         tagList: [{
@@ -265,6 +289,16 @@ const JLDDTemplate =
       title: '3 年开发经验',
       desc: '有所经历才会有所收获',
       list: [{
+        name: '上海阅竞网络科技有限公司',
+        nameStyle: 'work-item__title--blue',
+        desc: '前端开发工程师',
+        cName: 'JINYUE',
+        date: {
+          start: '2020.08',
+          end: '至今'
+        },
+        mClass: 'not-for-print',
+      }, {
         name: '上海大约网络科技有限公司',
         nameStyle: 'work-item__title--red',
         desc: '前端开发工程师',
