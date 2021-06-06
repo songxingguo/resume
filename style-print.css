@@ -1,0 +1,68 @@
+
+
+@media print {
+@page {
+    size: A4 portrait;
+    margin: 2.1cm 1.9cm;
+}
+
+  .resume-header__name,
+  .resume-header__position {
+    -moz-text-align-last: justify;
+         text-align-last: justify;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+  }
+
+  .resume-header__name {
+    width: 2rem;
+  }
+
+  .resume-header__position {
+    width: 2.66666667rem;
+  }
+
+  .resume-item {
+    padding: 0.2rem 0;
+  }
+
+  .resume-item__title {
+    font-size: 0.4rem;
+    color: #333;
+  }
+
+  .resume-item__desc {
+    font-size: 0.26666667rem;
+    color: #333;
+  }
+
+  .not-for-print {
+    display: none;
+  }
+
+  .project-item+.project-item {
+    border-top: 0.01333333rem dashed #999;
+    box-sizing: border-box;
+    padding-top: 0.13333333rem;
+  }
+
+  .resume-header,
+  .resume-footer {
+    padding: 0.26666667rem 0.13333333rem;
+  }
+
+  .resume__content {
+    padding: 0 0.13333333rem;
+  }
+
+  .work-container,
+  .project-container {
+    margin-top: 0.13333333rem;
+  }
+
+  .user-head-icon {
+    width: 1.33333333rem;
+    height: 1.33333333rem;
+    border-radius: 50%;
+  }
+}

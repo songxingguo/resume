@@ -1,0 +1,85 @@
+
+
+@media screen {
+  .resume-header,
+  .resume-footer {
+    padding: 0.26666667rem 0.4rem;
+  }
+
+  .resume-item {
+    padding: 0.26666667rem 0.53333333rem;
+  }
+
+  .resume-item:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+
+  .tech-item {
+    position: relative;
+    height: 0.66666667rem;
+    box-sizing: border-box;
+    padding-left: 0.13333333rem;
+    font-size: 0.21333333rem;
+  }
+
+  .tech-item.orange {
+    background-color: #ffe6cc;
+    color: #994d00;
+    border-left: solid 0.05333333rem #ff8000;
+  }
+
+  .tech-item.green {
+    background-color: #eaffcc;
+    color: #599900;
+    border-left: solid 0.05333333rem #95ff00;
+  }
+
+  .tech-item.cyan {
+    background-color: #ccf7ff;
+    color: #008099;
+    border-left: solid 0.05333333rem #00d5ff;
+  }
+
+  .tech-item+.tech-item {
+    margin-top: 0.13333333rem;
+  }
+
+  .tech-item:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    top: -0.2rem;
+    left: 0.26666667rem;
+    z-index: 3;
+    text-align: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    background: #f00;
+    color: #fff;
+    padding: 0.01333333rem 0.13333333rem;
+    height: 0.33333333rem;
+    line-height: 0.33333333rem;
+    font-size: 0.18666667rem;
+    border-radius: 0.13333333rem 0.13333333rem 0.13333333rem 0;
+  }
+
+  .resume-item__title {
+    font-size: 0.37333333rem;
+  }
+
+  .resume-item__desc {
+    font-size: 0.26666667rem;
+    color: #999;
+  }
+
+  .project-item+.project-item {
+    border-top: 0.01333333rem dashed #999;
+    box-sizing: border-box;
+    padding-top: 0.66666667rem;
+  }
+
+  .work-container,
+  .project-container {
+    margin-top: 0.4rem;
+  }
+}
