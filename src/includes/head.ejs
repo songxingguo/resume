@@ -1,0 +1,213 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="<%= locals.description %>" />
+<title><%= locals.title %></title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 4px 12px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 2px 0;
+    line-height: 1.8;
+  }
+  time {
+    flex: 0 0 150px;
+    text-align: right;
+    white-space: nowrap;
+  }
+  dialog .qrcode {
+    width: 150px;
+  }
+  dialog .text {
+    text-align: center;
+    font-size: 14px;
+  }
+  dialog .close-btn {
+    -webkit-appearance: none;
+    bottom: -50px;
+    display: block;
+    height: 30px;
+    position: absolute;
+    width: 100px;
+    left: 50px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 0;
+    font-weight: bolder;
+  }
+  .space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  section header {
+    background-color: #d5d5d5;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 6px 4px;
+    margin: 4px 0;
+    line-height: 1;
+  }
+  section header small {
+    transform: scale(0.8);
+    color: #5e5e5e;
+    transform: scale(0.6) translateX(-45px) translateY(7px);
+    position: absolute;
+  }
+  section main {
+    display: block;
+    font-size: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 4px;
+  }
+  section main time.fr {
+    font-weight: 600;
+  }
+  section main dl {
+    margin: 2px 0;
+  }
+  section main dl dt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  section main dl dd {
+    margin-left: 25px;
+    display: list-item;
+    list-style-type: disc;
+    line-height: 1.6;
+  }
+  section main table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  section main table td,
+  section main table th {
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: center;
+  }
+  body > section:last-of-type {
+    margin-bottom: 50px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 12px;
+    box-shadow: 0 1px 1px 1px #f6f6f6;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fafafa),
+      to(#f4f4f4)
+    );
+  }
+  footer button {
+    -webkit-appearance: none;
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+    padding: 0 8px;
+  }
+  @media print {
+    footer {
+      display: none;
+    }
+    a {
+      color: #1890ff;
+    }
+  }
+  @page {
+    size: auto A4 landscape;
+    margin: 10mm 3mm;
+  }
+  dialog {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border: 1px solid;
+    padding: 1em;
+    background: #fff;
+    color: #000;
+    display: block;
+    width: 150px;
+    max-height: 200px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  dialog:not([open]) {
+    display: none;
+  }
+  dialog::-webkit-backdrop {
+    background: hsla(0, 0%, 100%, 0.6);
+  }
+  dialog::backdrop {
+    background: hsla(0, 0%, 100%, 0.6);
+  }
+  dialog[open] {
+    -webkit-animation: slide-up 0.4s ease-out;
+    animation: slide-up 0.4s ease-out;
+  }
+  dialog + .backdrop {
+    background: hsla(0, 0%, 100%, 0.6);
+  }
+  ._dialog_overlay,
+  dialog + .backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  dialog.fixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @-webkit-keyframes slide-up {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
