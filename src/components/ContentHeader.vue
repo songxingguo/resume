@@ -1,12 +1,17 @@
 <template>
   <div class="flex-column flex-items-center not-for-print">
-    <div class="resume-item__title">标题</div>
-    <div class="resume-item__desc">描述</div>
+    <div class="resume-item__title">{{ title }}</div>
+    <div class="resume-item__desc">{{desc}}</div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    title: String,
+    desc: String,
+  },
+};
 </script>
 
 <style>

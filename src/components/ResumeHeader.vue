@@ -4,8 +4,8 @@
     <!-- 桌面设备 -->
     <div class="flex-row flex-content-between flex-wrap not-for-print not-for-mb">
       <div class="resume-header-item flex-row flex-items-end">
-        <div class="resume-header__name">宋兴国</div>
-        <div class="resume-header__desc ml20">职位</div>
+        <div class="resume-header__name">{{ header.name }}</div>
+        <div class="resume-header__desc ml20">{{  header.position }}</div>
       </div>
       <div class="resume-header-item flex-row flex-items-center">
         <div class="resume-header__desc flex-row flex-items-center">
@@ -26,7 +26,7 @@
               fill="#353535"
               p-id="17897"></path>
           </svg>
-          <span class="ml10">电话</span>
+          <span class="ml10">{{ header.telNum }}</span>
         </div>
         <div class="resume-header__desc flex-row flex-items-center ml50">
           <svg t="1592117028658"
@@ -46,7 +46,7 @@
               fill="#5A5A68"
               p-id="17652"></path>
           </svg>
-          <span class="ml10">邮箱</span>
+          <span class="ml10">{{ header.email }}</span>
         </div>
         <div class="resume-header__desc ml50">
           <a href="<%= header.blogUrl %>"
@@ -59,7 +59,15 @@
 </template>
 
 <script>
-export default {};
+import { initData } from "./../stores/data";
+
+export default {
+  data() {
+    return {
+      header: initData().header,
+    };
+  },
+};
 </script>
 
 <style lang="scss">
