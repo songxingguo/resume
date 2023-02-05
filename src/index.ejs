@@ -7,82 +7,78 @@
     <h4><%= basics.name %></h4>
     <h6 class="space-between">
       <%= basics.label %>
-      <time>年龄: <span><%= basics.age %></span> | 工作经验: <span><%= basics.work %></span><br /></time>
+      <time
+        >年龄: <span><%= basics.age %></span> | 工作经验:
+        <span><%= basics.work %></span><br
+      /></time>
     </h6>
     <h6>
       电话:
-      <a href="tel:<%= basics.phone %>" target="_blank"><%= basics.phone %></a> |
-      邮箱:
-      <a href="mailto:<%= basics.email %>" target="_blank"><%= basics.email %></a
-      ><br />个人主页:
-      <a href="<%= basics.url %>"><%= basics.url %></a> |
+      <a href="tel:<%= basics.phone %>" target="_blank"><%= basics.phone %></a>
+      | 邮箱:
+      <a href="mailto:<%= basics.email %>" target="_blank"
+        ><%= basics.email %></a
+      ><br />个人主页: <a href="<%= basics.url %>"><%= basics.url %></a> |
       GitHub:
-      <a href="<%= basics.profiles[0].url %>"
-        ><%= basics.profiles[0].url %></a
-      >
+      <a href="<%= basics.profiles[0].url %>"><%= basics.profiles[0].url %></a>
     </h6>
+    <section>
+      <header>技术特点</header>
+      <main>
+        <dl>
+          <% skills.forEach(function(skill){ %>
+          <dd><%- skill %></dd>
+          <% }); %>
+        </dl>
+      </main>
+    </section>
     <section>
       <header>教育经历</header>
       <% education.forEach(function(item){ %>
-        <main class="space-between">
-          <%= item.institution %> - <%= item.studyType %><time><%= item.startDate %> -  <%= item.endDate %></time>
-        </main>
+      <main class="space-between">
+        <%= item.institution %> - <%= item.studyType %> - <%= item.area %><time
+          ><%= item.startDate %> - <%= item.endDate %></time
+        >
+      </main>
       <% }); %>
     </section>
-    <!-- <section>
-      <header>个人介绍</header>
-      <main>
-        <dl>
-          <dt>乐于分享</dt>
-          <dd>
-            在
-            <a href="<%= basics.profiles[1].url %>">个人独立博客</a
-            >
-          </dd>
-        </dl>
-        <dl>
-          <dt>持续保持知识积累，对新技术好奇</dt>
-          <dd>
-            每周于<a
-              href="<%= basics.profiles[2].url %>"
-              >语雀知识库</a
-            >中编写技术总结，对 CSS Houdini、Serverless、PWA
-            等新技术持续保持好奇心
-          </dd>
-        </dl>
-      </main>
-    </section> -->
     <section>
       <header>工作经历</header>
       <% work.forEach(function(item){ %>
-        <main>
-          <dl>
-            <dt>
-              <%= item.name %> -  <%= item.position %> <time> <%= item.startDate %> -  <%= item.endDate %></time>
-            </dt>
-            <% item.highlights.forEach(function(highlight){ %>
-              <dd><%= highlight %></dd>
-            <% }); %>
-          </dl>  
-        </main>
+      <main>
+        <dl>
+          <dt>
+            <%= item.name %> - <%= item.position %>
+            <time> <%= item.startDate %> - <%= item.endDate %></time>
+          </dt>
+          <% item.highlights.forEach(function(highlight){ %>
+          <dd><%= highlight %></dd>
+          <% }); %>
+        </dl>
+      </main>
       <% }); %>
     </section>
     <section>
       <header>部分项目经历</header>
       <% projects.forEach(function(project){ %>
-        <main>
-          <dl>
-            <dt>
-              <%= project.name %> - <%= project.keywords %><time><%= project.startDate %> - <%= project.endDate %></time>
-            </dt>
-            <dd>
-              介绍：<%= project.description %>
-            </dd>
-            <% project.highlights.forEach(function(highlight){ %>
-              <dd><%= highlight %></dd>
-            <% }); %>
-          </dl>
-        </main>
+      <main>
+        <dl>  
+          <dt>
+            <%= project.name %> 
+            <% if (project.keywords.length > 0) { %>
+              - <%= project.keywords %>
+            <% } %>
+            <time><%= project.startDate %> - <%= project.endDate %></time>
+          </dt>
+          <% if (project.description) { %>
+            <dd>简介：<%= project.description %></dd>
+          <% } %>
+          <% project.highlights.forEach(function(highlight){ %>
+          <dd><%= highlight %></dd>
+          <% }); %>
+        </dl>
+      </main>
       <% }); %>
+    </section>
   </body>
 </html>
