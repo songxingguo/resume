@@ -4,28 +4,30 @@
     <%- include('./includes/head'); %>
   </head>
   <body>
-    <h4>宋兴国</h4>
+    <h4><%= basics.name %></h4>
     <h6 class="space-between">
-      前端开发工程师
-      <time>年龄: <span>26岁</span> | 工作经验: <span>3年</span><br /></time>
+      <%= basics.label %>
+      <time>年龄: <span><%= basics.age %></span> | 工作经验: <span><%= basics.work %></span><br /></time>
     </h6>
     <h6>
       Tel:
-      <a href="tel:(+86) 18983642737" target="_blank">(+86) 189-8364-2737</a> |
+      <a href="tel:<%= basics.phone %>" target="_blank"><%= basics.phone %></a> |
       Email:
-      <a href="mailto:xg.song@qq.com" target="_blank">xg.song@qq.com</a
+      <a href="mailto:<%= basics.email %>" target="_blank"><%= basics.email %></a
       ><br />Blog:
-      <a href="https://www.songxingguo.com/" target="_blank">https://www.songxingguo.com/</a> |
+      <a href="<%= basics.url %>"><%= basics.url %></a> |
       GitHub:
-      <a href="https://github.com/songxingguo" target="_blank"
-        >https://github.com/songxingguo</a
+      <a href="<%= basics.profiles[0].url %>"
+        ><%= basics.profiles[0].url %></a
       >
     </h6>
     <section>
       <header>教育经历</header>
-      <main class="space-between">
-        重庆理工大学 <time>2015.09 - 2019.06</time>
-      </main>
+      <% education.forEach(function(item){ %>
+        <main class="space-between">
+          <%= item.institution %> - <%= item.studyType %><time><%= item.startDate %> -  <%= item.endDate %></time>
+        </main>
+      <% }); %>
     </section>
     <section>
       <header>个人介绍</header>
@@ -34,7 +36,7 @@
           <dt>乐于分享</dt>
           <dd>
             在
-            <a href="https://blog.songxingguo.com/" target="_blank">个人独立博客</a
+            <a href="<%= basics.profiles[1].url %>">个人独立博客</a
             >
           </dd>
         </dl>
@@ -42,8 +44,7 @@
           <dt>持续保持知识积累，对新技术好奇</dt>
           <dd>
             每周于<a
-              href="https://www.yuque.com/songxingguo/devhints"
-              target="_blank"
+              href="<%= basics.profiles[2].url %>"
               >语雀知识库</a
             >中编写技术总结，对 CSS Houdini、Serverless、PWA
             等新技术持续保持好奇心
@@ -53,44 +54,35 @@
     </section>
     <section>
       <header>工作经历</header>
-      <main>
-        <dl>
-          <dt>
-            广州滴普科技有限公司 - 前端开发工程师 <time>2019.04 - 2021.01</time>
-          </dt>
-          <dd>负责前端项目交付、公司组件库维护、新技术预研、前端分享等工作</dd>
-          <dd>
-            参与业务脚手架维护，负责 Composition
-            API，TypeScript等接入，应用到了公司十余个项目中，得到了较好的评价
-          </dd>
-        </dl>  
-      </main>
+      <% work.forEach(function(item){ %>
+        <main>
+          <dl>
+            <dt>
+              <%= item.name %> -  <%= item.position %> <time> <%= item.startDate %> -  <%= item.endDate %></time>
+            </dt>
+            <% item.highlights.forEach(function(highlight){ %>
+              <dd><%= highlight %></dd>
+            <% }); %>
+          </dl>  
+        </main>
+      <% }); %>
     </section>
     <section>
       <header>部分项目经历</header>
-      <main>
-        <dl>
-          <dt>
-            研发效能平台 - 中后台系统 - Vue<time>2020.06 - 2020.09 广州</time>
-          </dt>
-          <dd>
-            介绍：该项目是一个敏捷开发管理平台，用于管理软件开发流程中各迭代的开发进度。项目基于
-            Nuxt.js 与 qiankun 与微前端主应用对接
-          </dd>
-          <dd>
-            负责 TypeScript 和 Vue Composition API 的接入，保障类型检查和<a
-              href="https://www.yuque.com/shoyuf/knowledge-base/dprbzd#IXF4O"
-              target="_blank"
-              >分享接入总结</a
-            >
-          </dd>
-          <dd>
-            负责开发模块的 Cypress 测试用例编写，保障产品质量并总结<a
-              href="https://www.yuque.com/shoyuf/knowledge-base/gvg3nm#Ev3pY"
-              target="_blank"
-              >使用感受</a
-            >
-          </dd>
-        </dl>
+      <% projects.forEach(function(project){ %>
+        <main>
+          <dl>
+            <dt>
+              <%= project.name %> - <%= project.keywords %><time><%= project.startDate %> - <%= project.endDate %></time>
+            </dt>
+            <dd>
+              介绍：<%= project.description %>
+            </dd>
+            <% project.highlights.forEach(function(highlight){ %>
+              <dd><%= highlight %></dd>
+            <% }); %>
+          </dl>
+        </main>
+      <% }); %>
   </body>
 </html>
