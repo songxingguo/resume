@@ -10,11 +10,11 @@
       <time>年龄: <span><%= basics.age %></span> | 工作经验: <span><%= basics.work %></span><br /></time>
     </h6>
     <h6>
-      Tel:
+      电话:
       <a href="tel:<%= basics.phone %>" target="_blank"><%= basics.phone %></a> |
-      Email:
+      邮箱:
       <a href="mailto:<%= basics.email %>" target="_blank"><%= basics.email %></a
-      ><br />Blog:
+      ><br />个人主页:
       <a href="<%= basics.url %>"><%= basics.url %></a> |
       GitHub:
       <a href="<%= basics.profiles[0].url %>"
@@ -29,7 +29,7 @@
         </main>
       <% }); %>
     </section>
-    <section>
+    <!-- <section>
       <header>个人介绍</header>
       <main>
         <dl>
@@ -51,7 +51,7 @@
           </dd>
         </dl>
       </main>
-    </section>
+    </section> -->
     <section>
       <header>工作经历</header>
       <% work.forEach(function(item){ %>

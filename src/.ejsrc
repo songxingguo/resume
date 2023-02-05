@@ -1,0 +1,161 @@
+{
+  "basics": {
+    "name": "宋兴国",
+    "label": "前端开发工程师",
+    "image": "",
+    "email": "xg.song@qq.com",
+    "phone": "(+86) 189-8364-2737",
+    "url": "https://www.songxingguo.com",
+    "summary": "简介",
+    "age": "26岁",
+    "work": "3年",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [{
+      "network": "github",
+      "username": "songxingguo",
+      "url": "https://github.com/songxingguo"
+    }, {
+      "network": "blog",
+      "username": "宋兴国",
+      "url": "https://blog.songxingguo.com/"
+    }, {
+      "network": "语雀",
+      "username": "宋玉",
+      "url": "https://www.yuque.com/songxingguo/devhints"
+    }]
+  },
+  "work": [{
+    "name": "上海阅竞网络科技有限公司",
+    "position": "前端开发工程师",
+    "url": "https://www.yueliu.cn/",
+    "startDate": "2020.08",
+    "endDate": "2022.06",
+    "summary": "描述",
+    "highlights": [
+      "负责阅流播放器开发"
+    ]
+  }, {
+    "name": "上海大约网络科技有限公司",
+    "position": "前端开发工程师",
+    "url": "https://company.com",
+    "startDate": "2018.12",
+    "endDate": "2020.06",
+    "summary": "描述",
+    "highlights": [
+      "负责小程序端和后台项目开发",
+      "负责项目中UI组件库封装"
+    ]
+  }, {
+    "name": "重庆理工大学B305实验室",
+    "position": "软件研发工程师",
+    "url": "https://company.com",
+    "startDate": "2016.10",
+    "endDate": "2018.02",
+    "summary": "描述",
+    "highlights": [
+      "负责前后端项目开发",
+      "负责产品需求沟通以及制定开发计划和分配开发任务"
+    ]
+  }],
+  "education": [{
+    "institution": "重庆理工大学",
+    "url": "https://institution.com/",
+    "area": "Software Development",
+    "studyType": "软件工程",
+    "startDate": "2015.09",
+    "endDate": "2019.06",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "projects": [{
+    "name": "阅流",
+    "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作",
+    "highlights": [
+      "独立负责从零到一搭建阅流播放器并进行维护和升级",
+      "为灵活应对需求，对播放器进行了组件化拆分，分为接口组件、容器组件、功能组件3类，共计30+组件，提升了50%的开发效率",
+      "为实现播放器同时兼容Web端和微信小程序端，使用submodule对播放器模块进行分离，为进一步实现播放器的独立化奠定了基础",
+      "基于西瓜播放器、腾讯播放器、hls.js等实现了对视频、音频、图片、文档、3D模型、直播等多种文件格式的支持",
+      "为满足用户在线审片的需求，播放器现已支持圈点画、视频裁切、图片缩略图、雪碧图、文件对比、直播多屏等功能",
+      "为保证播放器的开发质量以及与各项目组的对接效率，制定了统一的编码规范、命名规范和分支管理规范，开发时进行单元测试，开发后编写播放器使用文档，并自动化部署"
+    ],
+    "keywords": [
+      "uni-app",
+      "Vue"
+    ],
+    "startDate": "2018.12",
+    "endDate": "2020.06",
+    "url": "https://project.com/",
+    "roles": [
+      "Team Lead"
+    ],
+    "entity": "Entity",
+    "type": "application"
+  }, {
+    "name": "大约旗下项目",
+    "description": "该项目属于付费会员制电商，涉及小程序端和后台管理",
+    "highlights": [
+      "参与了【锦鲤多多】和【锦鲤内购】及后台管理项目，负责前端页面开发和动画实现",
+      "实现了对【栅格布局】和【Flex布局】的封装，提升了团队的开发效率",
+      "运用了Promise异步等待的特性解决了弹窗混乱问题"
+    ],
+    "keywords": [
+      "微信小程序",
+      "Vue"
+    ],
+    "startDate": "2018.12",
+    "endDate": "2020.06",
+    "url": "https://project.com/",
+    "roles": [
+      "Team Lead"
+    ],
+    "entity": "Entity",
+    "type": "application"
+  }]
+}
