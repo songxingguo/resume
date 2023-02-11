@@ -8,7 +8,7 @@
     "build": "parcel build"
   },
   "keywords": [],
-  "author": "Salifu Sani Rich <salifusanirich@gmail.com>",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "parcel": "^2.8.1",
