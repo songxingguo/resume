@@ -81,7 +81,7 @@
             <dd>简介：<%= project.description %></dd>
           <% } %>
           <% project.highlights.forEach(function(highlight){ %>
-          <dd><%= highlight %></dd>
+          <dd><%- highlight %></dd>
           <% }); %>
         </dl>
       </main>
