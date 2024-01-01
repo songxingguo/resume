@@ -28,7 +28,9 @@
   "有扎实的 HTML 和 CSS 功底，熟悉Flex布局和栅格布局，了解CSS基本原理，能使用优雅的代码实现功能。",
   "熟练掌握工程化。<b>从零到一</b>搭建了阅流播放器，并对其进行模块化、组件化、规范化、自动化的维护和升级。",
   "熟悉音视频开发，了解hls.js、flv.js、video.js、西瓜播放器、腾讯播放器、阿里播放器等视频库技术优劣。",
-  "熟练使用VScode、Git等开发工具。","了解前端可视化，能使用three.js进行基础开发。"
+  "熟练使用VScode、Git等开发工具。",
+  "熟练掌握高等数学和线性代数，熟悉计算机图形学和数字图像处理底层原理，能流畅阅读英文文档。",
+  "了解前端可视化，能使用three.js进行基础开发。"
   ],
   "work": [{
     "name": "上海阅竞网络科技有限公司",
@@ -171,6 +173,14 @@
     "studyType": "本科",
     "startDate": "2015.09",
     "endDate": "2019.06",
+  }],
+  "postgraduate":[{
+    "institution": "上海大学·上海电影学院",
+    "url": "https://gmis.shu.edu.cn/ZSJZ/SS/2023/ShowMajor.php-ID=527.htm",
+    "area": "图形图像技术（专）",
+    "studyType": "电子信息",
+    "startDate": "2022.06",
+    "endDate": "2023.12",
   }],
   "awards": [],
   "certificates": [],
