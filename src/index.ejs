@@ -4,24 +4,33 @@
     <%- include('./includes/head'); %>
   </head>
   <body>
-    <h4><%= basics.name %></h4>
-    <h6 class="space-between">
-      <%= basics.label %>
-      <time
-        >年龄: <span><%= basics.age %></span> | 工作经验:
-        <span><%= basics.work %></span><br
-      /></time>
-    </h6>
-    <h6>
-      电话:
-      <a href="tel:<%= basics.phone %>" target="_blank"><%= basics.phone %></a>
-      | 邮箱:
-      <a href="mailto:<%= basics.email %>" target="_blank"
-        ><%= basics.email %></a
-      >
-      | 个人主页:
-      <a href="<%= basics.url %>" target="_blank"><%= basics.url %></a>
-    </h6>
+    <header id="header">
+      <img src="../public/images/avatar.jpg" alt="avatar" id="avatar" />
+      <div style="margin-left: 20px">
+        <div>
+          <h4><%= basics.name %></h4>
+          <h6>
+            <%= basics.label %> |
+            <time
+              >年龄: <span><%= basics.age %></span> | 工作经验:
+              <span><%= basics.work %></span><br
+            /></time>
+          </h6>
+        </div>
+        <h6>
+          电话:
+          <a href="tel:<%= basics.phone %>" target="_blank"
+            ><%= basics.phone %></a
+          >
+          | 邮箱:
+          <a href="mailto:<%= basics.email %>" target="_blank"
+            ><%= basics.email %></a
+          >
+          | 个人主页:
+          <a href="<%= basics.url %>" target="_blank"><%= basics.url %></a>
+        </h6>
+      </div>
+    </header>
     <section>
       <header>技术特点</header>
       <main>
