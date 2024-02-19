@@ -144,13 +144,36 @@
     cursor: pointer;
     padding: 0 8px;
   }
-  @media print {
-    footer {
+  @media screen {
+    .not-for-screen {
       display: none;
     }
-    a {
-      color: #1890ff;
+  }
+  @media print {
+    body > section:last-of-type {
+      margin-bottom: 20px;
     }
+    footer {
+      align-items: center;
+      position: static;
+      box-shadow: none;
+      background: none;
+      padding: 20px 0 0 0;
+      font-size: 14px;
+    }
+    .not-for-print {
+      display: none;
+    }
+  }
+  footer .QR-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  footer .resume-QR {
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
   }
   @page {
     size: auto A4 landscape;
