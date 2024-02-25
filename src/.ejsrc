@@ -7,8 +7,8 @@
     "url": "https://www.songxingguo.com",
     "resume": "https://resume.songxingguo.com",
     "summary": "爱技术，也爱生活。",
-    "age1": "28岁",
-    "work": "5年",
+    "age": "27岁",
+    "work": "3年",
     "location": {
       "city": "重庆",
       "region": "永川"
@@ -25,25 +25,22 @@
     }]
   },
   "skills": [
-  "曾<b>从零到一</b>为公司搭建了<a href='https://home20-pub-develop.oss-cn-hangzhou.aliyuncs.com/player/'>前端播放器系统</a>，对前端工程化、组件化、模块化有自己的理解。",
-  "熟练掌握JavaScript（ES6+）、HTML（5）、CSS（3） 等前端技术。",
-  "熟练掌握Vue (Vue2 + vue-router + Vuex + Axios) 全家桶相关技术并了解相关原理。",
-  "熟练使用uni-app、微信小程序、Ant Design等库或框架，了解 TypeScript 开发，曾独⽴设计、开发和上线过微信小程序。",
-  "熟练掌握 React 框架，了解Redux、Router等相关生态工具，能快速完成项目开发。",
-  "熟悉计算机网络概念，熟悉HTTP/HTTPS协议，掌握TCP/IP的工作原理。",
-  "了解Node.js、Java等后端语⾔，具有 Web 应⽤前后端开发经验。",
-  "熟练使用VScode、Git、Webpack等开发工具。",
-  "对three.js 和 WebGL 等3D库或接口有一定了解，熟悉计算机图形学和数字图像处理底层原理。",
-  "熟悉音视频开发，了解hls.js、flv.js、video.js、西瓜播放器、腾讯播放器、阿里播放器等视频库技术优劣。",
+  "曾<b>从0到1</b>为公司搭建了<a href='https://home20-pub-develop.oss-cn-hangzhou.aliyuncs.com/player/'>前端播放器系统</a>，熟悉 hls.js、flv.js、video.js 等6+视频库的技术优劣。",
+  "熟练掌握Vue开发并了解相关原理，3+上线项目。",
+  "熟练使用uni-app和原生微信小程序，7+上线项目。",
+  "熟练掌握 React 框架，1个Demo项目。",
+  "具有后端开发经验，1个开发工具项目（Node.js）+ 1个上线项目(Java)。",
+  "了解计算机图形学和数字图像处理, 使用three.js实现了1个Demo项目。",
    "有良好的高等数学和线性代数基础，能流畅阅读英文文档。",
    "具有书写文档和代码注释的习惯，热爱技术，<a href='https://www.yuque.com/songxingguo'>乐于分享</a>，紧跟技术潮流。",
   ],
   "work": [{
     "name": "上海阅竞网络科技有限公司",
-    "position": "前端开发工程师",
+    "position": "前端开发工程师（开发负责人）",
     "url": "https://www.yueliu.cn/",
     "startDate": "2020.08",
     "endDate": "2022.06",
+
     "highlights": [
       "负责阅流播放器开发"
     ]
@@ -59,7 +56,7 @@
     ]
   }, {
     "name": "重庆理工大学B305实验室",
-    "position": "软件研发工程师",
+    "position": "软件研发工程师（项目负责人）",
     "url": "https://company.com",
     "startDate": "2016.10",
     "endDate": "2018.02",
@@ -69,8 +66,8 @@
     ]
   }],
    "projects": [{
-    "name": "阅流",
-    "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。",
+    "name": "阅流（上线，18人，前端 8 人）",
+    "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。目前服务于<a href='https://www.ysjf.com/index'>影视飓风</a>、少年得到、特赞等50+家企业以及100w+个人用户",
     "highlights": [
       "为灵活应对需求，对播放器进行了组件化拆分，分为接口组件、容器组件、功能组件3类，共计30+组件，提升了<b>50%</b>的开发效率。",
       "为解决播放器的复杂性问题，整体设计上对播放器进行了分层，并明确定义每个层的角色和任务，以降低单层的复杂性，播放器自下而上分为<a href='https://www.yuque.com/songxingguo/cpvl3s/susqc1'>功能层、容器层、接口层</a>。",
@@ -87,7 +84,7 @@
     "endDate": "2022.06",
     "url": "https://www.yueliu.cn/",
   }, {
-    "name": "大约旗下项目",
+    "name": "大约旗下项目（上线， 5人，前端3人）",
     "description": "该项目属于付费会员制电商，涉及小程序端和后台管理。",
     "highlights": [
       "参与了【锦鲤多多】和【锦鲤内购】及后台管理项目，负责前端页面开发和动画实现。",
@@ -117,11 +114,13 @@
     "endDate": "至今",
     "url": "https://github.com/songxingguo/resume",
   },{
-    "name": "相册（开源项⽬）",
+    "name": "Dev-Box",
     "highlights": [
-      "⽤「cloudﬂare」作为ServerLess服务器调⽤「七⽜云」接⼝读取图⽚数据，然后对图⽚EXIF信息进⾏处理后显示在⻚⾯中。",
+      "使用Node.js 和 gulp 封装的开发工具箱，用于封装常用脚手架以及API调用等，以此提高项目开发效率。",
     ],
     "keywords": [
+      'Node.js',
+      'gulp'
     ],
     "startDate": "2018.12",
     "endDate": "2020.08",
@@ -157,7 +156,7 @@
     "endDate": "2020.06",
     "url": "",
   },{
-    "name": "新能源物流⻋综合运营平台",
+    "name": "新能源物流⻋综合运营平台(上线, 19人)",
     "description": "该平台是新能源汽⻋的在线监管、追踪定位、故障处理以及交易合同管理平台，致⼒于为销售或购买新能源汽⻋的⽤户的提供⼀个实时监控的综合性管理平台。",
     "highlights": [
       "作为项⽬组⻓参与了“新能源物流⻋综合运营平台”项⽬的设计、开发与测试。",
