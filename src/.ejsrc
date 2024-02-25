@@ -27,12 +27,11 @@
   "skills": [
   "曾<b>从0到1</b>为公司搭建了<a href='https://home20-pub-develop.oss-cn-hangzhou.aliyuncs.com/player/'>前端播放器系统</a>，熟悉 hls.js、flv.js、video.js 等6+视频库的技术优劣。",
   "熟练掌握Vue开发并了解相关原理，3+上线项目。",
-  "熟练使用uni-app和原生微信小程序，7+上线项目。",
+  "熟练使用uni-app和原生微信小程序，3个上线项目和4个Demo项目",
   "熟练掌握 React 框架，1个Demo项目。",
-  "具有后端开发经验，1个开发工具项目（Node.js）+ 1个上线项目(Java)。",
+  "具有后端开发经验，1个开发工具项目（Node.js）和 1个上线项目(Java)。",
   "了解计算机图形学和数字图像处理, 使用three.js实现了1个Demo项目。",
    "有良好的高等数学和线性代数基础，能流畅阅读英文文档。",
-   "具有书写文档和代码注释的习惯，热爱技术，<a href='https://www.yuque.com/songxingguo'>乐于分享</a>，紧跟技术潮流。",
   ],
   "work": [{
     "name": "上海阅竞网络科技有限公司",
@@ -104,7 +103,6 @@
     "highlights": [
       "首先通过parcel-transformer-ejs将ejs语法构建成html代码。",
       "然后通过媒体查询兼容不同设备。",
-      "最后通过Github-Action实现自动化部署。"
     ],
     "keywords": [
       "ejs",
@@ -115,27 +113,26 @@
     "url": "https://github.com/songxingguo/resume",
   },{
     "name": "Dev-Box",
-    "highlights": [
-      "使用Node.js 和 gulp 封装的开发工具箱，用于封装常用脚手架以及API调用等，以此提高项目开发效率。",
-    ],
+    "description": "使用Node.js 和 gulp 封装的开发工具箱，用于封装常用脚手架以及API调用等，以此提高项目开发效率。",
+    'highlights': [],
     "keywords": [
       'Node.js',
       'gulp'
     ],
     "startDate": "2018.12",
-    "endDate": "2020.08",
+    "endDate": "至今",
     "url": "",
   },{
-    "name": "知晓理工（个人独立设计开发）",
+    "name": "知晓理工（独立设计与开发）",
     "description": "该项目是一个校内资讯类小程序，支持校园资讯、校园通知和校内导航。",
     "highlights": [
       "基于云函数和cheerio.js进行开发，实时爬取校园通知和新闻信息。",
-      "AntDesign作为UI框架，搭建后台管理系统，对校园地点数据进行管理。",
-      "使用云数据库存储校园地点数据。"
+      "AntD作为UI框架，搭建后台管理系统，对校园地点数据进行管理，使用云数据库存储校园地点数据。",
     ],
     "keywords": [
       "微信小程序",
-      "Vue"
+      "Vue",
+      "AntD"
     ],
     "startDate": "2018.02",
     "endDate": "2020.06",
@@ -145,12 +142,13 @@
     "description": "该项目⼀款校园内部物品共享平台，由微信小程序端和后台管理系统两部分组成。",
     "highlights": [
       "小程序端基于云函数进行开发，实现了物品查看、物品发布、物品收藏等功能。",
-      "后台管理基于AntDesign作为UI框架进行开发，支持物品分类管理、物品审核、实名审核等功能。",
+      "后台管理基于AntD作为UI框架进行开发，支持物品分类管理、物品审核、实名审核等功能。",
       "使用云数据库存储物品数据。"
     ],
     "keywords": [
       "微信小程序",
-      "Vue"
+      "Vue",
+      "AntD"
     ],
     "startDate": "2018.02",
     "endDate": "2020.06",
@@ -170,6 +168,16 @@
     "startDate": "2016.10",
     "endDate": "2018.02",
     "url": "",
+  },{
+    "name": "个人博客",
+    "description": "本人热爱技术，<a href='https://www.yuque.com/songxingguo'>乐于分享</a>，使用Hexo搭建了一个属于自己的博客，将自己学习的内容分享给大家。",
+    'highlights': ["博客使用Github Action 将代码分别推送到Coding和Github Pages，并使用腾讯云部署静态博客。"],
+    "keywords": [
+      "Hexo"
+    ],
+    "startDate": "2016.10",
+    "endDate": "至今",
+    "url": "https://blog.songxingguo.com/"
   }],
   "education": [{
     "institution": "重庆理工大学",
