@@ -10,10 +10,10 @@
         <div>
           <h4><%= basics.name %></h4>
           <h6>
-            <%= basics.label %> |
-            <time
-              >年龄: <span><%= basics.age %></span> | 工作经验:
-              <span><%= basics.work %></span><br
+            求职意向：<%= basics.label %> |
+            <time></time>
+              <% if (basics.age) { %> 年龄: <span><%= basics.age %></span> | <%
+              } %> 工作经验: <span><%= basics.work %></span><br
             /></time>
           </h6>
         </div>
@@ -26,7 +26,7 @@
           <a href="mailto:<%= basics.email %>" target="_blank"
             ><%= basics.email %></a
           >
-          | 个人主页:
+          | 主页:
           <a href="<%= basics.url %>" target="_blank"><%= basics.url %></a>
         </h6>
       </div>
