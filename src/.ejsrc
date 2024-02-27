@@ -67,7 +67,7 @@
     "name": "阅流（上线，18人，前端 8 人）",
     "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。目前服务于<a href='https://www.ysjf.com/index'>影视飓风</a>、少年得到、特赞等<b>50+</b>家企业以及<b>100w+</b>个人用户",
     "highlights": [
-      "为灵活应对需求，对播放器进行了组件化拆分，分为接口组件、容器组件、功能组件3类，共计<a href='https://www.yuque.com/office/yuque/0/2022/xmind/394169/1654594102547-6a4066ba-5977-436b-82ad-273cf93a7410.xmind?from=https%3A%2F%2Fwww.yuque.com%2Fsongxingguo%2Fcpvl3s%2Fsusqc1'>30+组件</a>，提升了<b>50%</b>的开发效率。例如，<a href='https://www.yuque.com/songxingguo/cpvl3s/gguh8s'>多屏播放器组件</a>支持同时播放<b>2～4</b>个视频。",
+      "为灵活应对需求，对播放器进行了组件化拆分，分为接口组件、容器组件、功能组件3类，共计<a href='./../public//images//player.png'>30+组件</a>，提升了<b>50%</b>的开发效率。例如，<a href='https://www.yuque.com/songxingguo/cpvl3s/gguh8s'>多屏播放器组件</a>支持同时播放<b>2～4</b>个视频。",
       "为方便用户可以在视频上方进行圈点和画图，在Canvas工具库fabricjs的基础上封装出一套属于自己的<a href='https://www.yuque.com/songxingguo/cpvl3s/xw2ie2'>绘图工具组件</a>",
       "使用hls.js、flv.js、video.js封装了一套属于公司的专属视频播放器组件，能够同时执行MP4、m3u8、flv等多种视频格式的播放，其中直播视频能将延迟控制在<b>300ms</b>以内，能很好的满足用户实时审片的需求。",
       "由于公司对对播放器进度条有特殊需求，为播放器封装了新的进度条组件，除了时间跳转的基础功能之外，还能选择播放区域，以及hover后<a href='https://www.yuque.com/songxingguo/cpvl3s/qooonl'>预览视频画面</a>。",
