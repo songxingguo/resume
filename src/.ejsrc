@@ -74,7 +74,7 @@
       "为应对用户需要在不同比例下查看视频的需求，使用Canvas实现了对视频画面分别进行2.35、1.85、16:9、9:16、4:3、1:1等<a href='https://www.yuque.com/songxingguo/cpvl3s/lzg7ek'>多种比例的裁切</a>。",
       "除了以上的组件外，还封装了<a href='https://www.yuque.com/songxingguo/cpvl3s/ousi9t'>图片缩放预览组件</a>、<a href='https://www.yuque.com/songxingguo/cpvl3s/lt4yft'>视频画面旋转组件</a>、文件对比组件、3D文件预览组件、音频播放器组件等。",
       "为实现播放器能<b>跨平台兼容</b>Web端和微信小程序端，以及在多项目中使用，使用submodule对播放器模块进行分离，后续可以将播放器单独发布成<b>npm</b>包。现已有<b>3+</b>项目在使用播放器相关功能，已服务于<b>14+</b>开发同事。",
-      "项目开发后期，播放器团队已从<b>1</b>人增加到<b>2</b>人，为保证播放器的开发质量以及与各项目组的对接效率，制定了<a href='https://www.yuque.com/songxingguo/cpvl3s/lv4opb'>统一的编码规范</a>、命名规范和分支管理规范，开发时进行单元测试，开发后编写<a href='https://home20-pub-develop.oss-cn-hangzhou.aliyuncs.com/player/'>播放器使用文档</a>，并自动化部署。"
+      "项目开发后期，播放器团队已从<b>1</b>人增加到<b>2</b>人，为保证播放器的开发质量以及与各项目组的对接效率，制定了<a href='https://www.yuque.com/songxingguo/cpvl3s/lv4opb'>统一的编码规范</a>、命名规范和分支管理规范，开发时进行<b>单元测试</b>，开发后编写<a href='https://home20-pub-develop.oss-cn-hangzhou.aliyuncs.com/player/'>播放器使用文档</a>，并自动化<b>集成</b>和<b>部署</b>。"
     ],
     "keywords": [
       "uni-app",
