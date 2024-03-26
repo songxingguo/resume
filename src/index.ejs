@@ -58,10 +58,28 @@
             <time><%= project.startDate %> - <%= project.endDate %></time>
           </dt>
           <% if (project.description) { %>
-          <dd>简介：<%- project.description %></dd>
-          <% } %> <% project.highlights.forEach(function(highlight){ %>
-          <dd><%- highlight %></dd>
-          <% }); %>
+            <dd><strong>项目概述：</strong><%- project.description %></dd>
+          <% } %> 
+          <% if (project.duty) { %>
+            <dd>
+              <strong>个人职责：</strong> <%- project.duty.join("；")%>。
+            </dd>
+          <% } %>
+          <% if (project.difficulty) { %>
+            <dd>
+              <strong>项目难点：</strong><%- project.difficulty.join("；")%>。
+            </dd>
+          <% } %>
+          <% if (project.highlights) { %>
+            <dd>
+              <strong>工作成果：</strong>
+              <ul>
+                <% project.highlights.forEach(function(highlight){ %>
+                    <li><%- highlight %></li>
+                <% }); %>
+              </ul>
+            </dd>
+          <% } %>
         </dl>
       </main>
       <% }); %>
@@ -84,10 +102,22 @@
             <time><%= project.startDate %> - <%= project.endDate %></time>
           </dt>
           <% if (project.description) { %>
-          <dd>简介：<%- project.description %></dd>
-          <% } %> <% project.highlights.forEach(function(highlight){ %>
-          <dd><%- highlight %></dd>
-          <% }); %>
+          <dd><strong>项目概述：</strong><%- project.description %></dd>
+          <% } %>
+          <% if (project.difficulty) { %>
+            <dd>
+              <strong>项目难点：</strong><%- project.difficulty.join("；")%>。
+            </dd>
+          <% } %>
+          <% if (project.highlights) { %>
+            <dd><strong>项目成果：</strong>
+              <ul>
+                <% project.highlights.forEach(function(highlight){ %>
+                  <li><%- highlight %></li>
+                <% }); %>
+              </ul>
+            </dd>
+          <% } %>
         </dl>
       </main>
       <% }); %>
