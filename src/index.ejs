@@ -41,8 +41,34 @@
       </main>
     </section>
     <section>
-      <header>部分项目经历</header>
-      <% projects.forEach(function(project){ %>
+      <header>公司项目</header>
+      <% projects.slice(0,3).forEach(function(project){ %>
+      <main>
+        <dl>
+          <dt>
+            <span>
+              <% if (project.url) { %>
+              <a href="<%= project.url %>" target="_blank"
+                ><%= project.name %></a
+              >
+              <% } %> <% if (!project.url) { %> <%= project.name %> <% } %> <%
+              if (project.keywords.length > 0) { %> - <%= project.keywords %> <%
+              } %>
+            </span>
+            <time><%= project.startDate %> - <%= project.endDate %></time>
+          </dt>
+          <% if (project.description) { %>
+          <dd>简介：<%- project.description %></dd>
+          <% } %> <% project.highlights.forEach(function(highlight){ %>
+          <dd><%- highlight %></dd>
+          <% }); %>
+        </dl>
+      </main>
+      <% }); %>
+    </section>
+    <section>
+      <header>个人开源项目</header>
+      <% projects.slice(3).forEach(function(project){ %>
       <main>
         <dl>
           <dt>
