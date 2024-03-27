@@ -25,12 +25,12 @@
     }]
   },
   "skills": [
-  "曾<strong>从0到1</strong>为公司搭建了<a href='./../public//images//framework.png'>前端播放器项目</a>，熟悉 hls.js、flv.js、video.js 等6+视频库的技术优劣。",
-  "熟练掌握Vue开发并了解相关原理，拥有3+上线项目。",
-  "熟练使用uniapp和原生微信小程序，拥有3个上线项目和4个Demo项目。",
-  "熟练掌握 React 框架，了解TypeScript，实现了1个Demo项目。",
-  "具有后端开发经验，拥有1个开发工具项目（Node.js）和 1个上线项目(Java)。",
-  "了解计算机图形学和数字图像处理, 使用three.js实现了1个Demo项目。",
+  "承担播放器项目<strong>技术选型</strong>工作，<strong>从0到1</strong>为公司搭建了<a href='./../public//images//framework.png'>前端播放器</a>，注重<strong>前端标准化</strong>，在部门内部推行前端规范的落地。",
+  "熟练掌握Vue开发并了解相关原理，拥有3个上线项目。",
+  "熟练使用uniapp和微信小程序进行多端的开发，拥有3个上线项目和4个Demo项目。",
+  "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
+  "了解React、TypeScript、计算机图形学等前端框架或领域, 使用three.js实现了1个Demo项目。",
+  "具有后端开发经验，拥有1个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
   ],
   "work": [{
     "name": "上海阅竞网络科技有限公司",
@@ -65,7 +65,7 @@
   }],
    "projects": [{
     "name": "阅流（上线，18人，前端 8 人）",
-    "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。目前服务于<a href='https://www.ysjf.com/index'>影视飓风</a>、少年得到、特赞等<strong>50+</strong>家企业以及<strong>100w+</strong>个人用户",
+    "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。目前服务于<a href='https://www.ysjf.com/index'>影视飓风</a>、少年得到、特赞等<strong>50+</strong>家企业以及<strong>100w+</strong>个人用户。",
     "duty":["作为<strong>开发负责人</strong>对播放器进行<strong>技术选型</strong>", "播放器业务功能开发", "统一项目组开发规范"],
     "difficulty":["PC、H5、小程序<strong>多端适配</strong>", "播放器适配<strong>多种使用场景</strong>", "<strong>视频画面的圈点和标注</strong>"],
     "highlights": [
