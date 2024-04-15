@@ -29,7 +29,7 @@
   "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有3个上线项目。",
   "熟练使用uniapp和微信小程序进行多端的开发，拥有3个上线项目和4个Demo项目。",
   "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
-  "了解计算机图形学, 使用three.js实现了1个Demo项目。",
+  "了解<a href='https://brain.songxingguo.com/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用three.js实现了1个Demo项目。",
   "具有后端开发经验，拥有1个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
   ],
   "work": [{
@@ -88,9 +88,9 @@
   }, {
     "name": "大约旗下项目（上线， 5人，前端3人）",
     "description": "该项目属于付费会员制电商，涉及小程序端和后台管理。",
-    "duty": [ "【锦鲤多多】和【锦鲤内购】小程序开发", "后台管理项目开发", "特殊动画实现"],
+    "duty": [ "【锦鲤多多】和【锦鲤内购】小程序开发", "后台管理项目开发", "特殊<a href='https://brain.songxingguo.com/web/frontend/css/Animation.html'>动画</a>实现"],
     "highlights": [
-      "由于原生的布局语法过于繁琐，实现了对【栅格布局】和【Flex布局】的封装，团队<strong>开发效率提升80%</strong>",
+      "由于原生的布局语法过于繁琐，实现了对【栅格布局】和<a href='https://brain.songxingguo.com/web/frontend/css/FlexLayout.html'>【Flex布局】</a>的封装，团队<strong>开发效率提升80%</strong>",
       "由于抽奖活动弹窗过多导致管理混乱，运用了Promise异步等待的特性解决了这个问题，使得<strong>用户体验</strong>得到了极大提升。"
     ],
     "keywords": [
