@@ -29,7 +29,7 @@
   "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有3个上线项目。",
   "熟练使用uniapp和微信小程序进行多端的开发，拥有3个上线项目和4个Demo项目。",
   "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
-  "了解<a href='https://brain.songxingguo.com/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用three.js实现了1个Demo项目。",
+  "了解<a href='https://brain.songxingguo.com/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用<a href='https://brain.songxingguo.com/dv/three/getting_started/ThreeDemo.html'>three.js</a>实现了1个Demo项目。",
   "具有后端开发经验，拥有1个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
   ],
   "work": [{
