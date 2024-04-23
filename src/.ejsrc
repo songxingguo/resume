@@ -70,7 +70,7 @@
     "difficulty":["PC、H5、小程序<strong>多端适配</strong>", "播放器适配<strong>多种使用场景</strong>", "<strong>视频画面的圈点和标注</strong>","项目的<strong>组件化</strong>和<strong>工程化</strong>"],
     "highlights": [
       "为灵活应对需求，对播放器进行了<strong>组件化</strong>拆分，分为接口组件、容器组件、功能组件3类，共计<a href='./../public//images//player.png'>30+组件</a>，提升了<strong>50%</strong>的开发效率。例如，<a href='https://www.yuque.com/songxingguo/cpvl3s/gguh8s'>多屏播放器组件</a>支持同时播放<strong>2～4</strong>个视频。",
-      "为方便用户可以在视频上方进行圈点和标注，在Canvas工具库fabricjs的基础上封装出一套属于自己的<a href='https://www.yuque.com/songxingguo/cpvl3s/xw2ie2'>绘图工具组件</a>",
+      "为方便用户可以在视频上方进行圈点和标注，在<a href='https://brain.songxingguo.com/web/frontend/html/CanvasBasic.html'>Canvas</a>工具库fabricjs的基础上封装出一套属于自己的<a href='https://www.yuque.com/songxingguo/cpvl3s/xw2ie2'>绘图工具组件</a>",
       "使用hls.js、flv.js、video.js封装了一套属于公司的<strong>专属视频播放器组件</strong>，能够同时支持MP4、m3u8、flv等多种视频格式的播放，其中直播视频能将延迟控制在<strong>300ms</strong>以内，能很好的满足用户实时审片的需求。",
       "由于用户对播放器进度条有特殊需求，为播放器封装了新的进度条组件，除了时间跳转的基础功能之外，还能选择播放区域，以及hover后<a href='https://www.yuque.com/songxingguo/cpvl3s/qooonl'>预览视频画面</a>。",
       "为应对用户需要在不同比例下查看视频的需求，使用Canvas实现了对视频画面分别进行2.35、1.85、16:9、9:16、4:3、1:1等<a href='https://www.yuque.com/songxingguo/cpvl3s/lzg7ek'>多种比例的裁切</a>。",
