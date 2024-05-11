@@ -123,17 +123,6 @@
       <% }); %>
     </section>
     <section>
-      <header>考研经历</header>
-      <% postgraduate.forEach(function(item){ %>
-      <main class="space-between">
-        <div>
-          <%- item.institution %>-<%- item.studyType %>-<%= item.area %>
-        </div>
-        <time><%= item.startDate %> - <%= item.endDate %></time>
-      </main>
-      <% }); %>
-    </section>
-    <section>
       <header>工作经历</header>
       <% work.forEach(function(item){ %>
       <main>
@@ -146,6 +135,17 @@
           <dd><%= highlight %></dd>
           <% }); %>
         </dl>
+      </main>
+      <% }); %>
+    </section>
+        <section>
+      <header>考研经历</header>
+      <% postgraduate.forEach(function(item){ %>
+      <main class="space-between">
+        <div>
+          <%- item.institution %>-<%- item.studyType %>-<%= item.area %>
+        </div>
+        <time><%= item.startDate %> - <%= item.endDate %></time>
       </main>
       <% }); %>
     </section>

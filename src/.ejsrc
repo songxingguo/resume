@@ -33,6 +33,16 @@
   "具有后端开发经验，拥有1个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
   ],
   "work": [{
+    "name": "重庆天籁教育科技有限公司（兼职）",
+    "position": "前端开发工程师",
+    "url": "http://www.yesedu.cn/",
+    "startDate": "2024.05",
+    "endDate": "至今",
+
+    "highlights": [
+      "负责智慧美育艺术素质测评项目（后台，Vue3, TS）"
+    ]
+  },{
     "name": "上海阅竞网络科技有限公司",
     "position": "前端开发工程师",
     "url": "https://www.yueliu.cn/",
