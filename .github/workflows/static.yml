@@ -2,7 +2,7 @@ name: GitHub Actions Build and Deploy
 on:
   push:
     branches:
-      - feature-ejs
+      - feature-ejs1
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -19,9 +19,9 @@ jobs:
       - name: 推送到代码仓库
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GH_REF: 'github.com/songxingguo/resume.git'
+          GH_REF: "github.com/songxingguo/resume.git"
           CO_TOKEN: ${{ secrets.CO_TOKEN }}
-          CO_REF: 'e.coding.net/songxingguo/songxingguo.coding.me/resume.git'
+          CO_REF: "e.coding.net/songxingguo/songxingguo.coding.me/resume.git"
         run: |
           cd ./dist
           git init
