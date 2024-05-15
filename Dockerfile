@@ -1,4 +1,4 @@
-FROM node:20.12.1
-COPY ./dist /project/resume
-WORKDIR /project/resume
-EXPOSE 3000
+FROM nginx:latest
+LABEL maintainer "xg.song@qq.com"
+ADD . /usr/share/nginx/html
+EXPOSE 1234
