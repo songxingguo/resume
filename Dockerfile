@@ -1,4 +1,6 @@
 FROM nginx:latest
 LABEL maintainer "xg.song@qq.com"
 ADD . /usr/share/nginx/html
-EXPOSE 1234
+WORKDIR /usr/share/nginx/html/
+RUN chown -R daemon:daemon * && chmod -R 755 *
+EXPOSE 80
