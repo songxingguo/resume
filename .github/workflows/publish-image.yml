@@ -1,0 +1,61 @@
+name: Publish Image
+
+on:
+  push: # push 到主分支自动 发布
+    branches: ["main"]
+    paths-ignore: # 忽略一些不必要的文件
+      - ".gitignore"
+      - "README.md"
+      - ".vscode/**"
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker/login-action@v1
+        with:
+          registry: registry.cn-shanghai.aliyuncs.com # 声明镜像源
+          username: ${{ secrets.ALIYUN_USER }} # 当前github 用户名
+          password: ${{ secrets.ALIYUN_PWD }} # 需要去 https://github.com/settings/tokens 生成一个 名为 token，注意此token 需要读写 packages 等权限
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "20.12.1"
+      - uses: actions/cache@v2
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+        # Runs a single command using the runners shell
+      - name: pnpm install
+        run: npm install -g pnpm --registry http://registry.npmmirror.com
+      - name: Install
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm config set registry http://registry.npmmirror.com && pnpm i
+
+      - name: Build
+        run: npm run build
+      - name: Show Dir
+        run: ls
+
+      - name: Build the  Docker image
+        run:
+          | # 使用 上一步写的 Dockerfile 构建镜像并发布到私有仓库； 发布完成可以去 https://github.com/songxingguo?tab=packages 查看
+          docker build . --file Dockerfile --tag registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest 
+          docker push registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
+      - name: 更新服务器
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.SERVER_HOST }} # 服务器ip地址 ; 需要去仓库的 settings/secrets/actions 去创建
+          username: ${{ secrets.SERVER_USER }} # 服务器用户名称；需要去仓库的 settings/secrets/actions 去创建
+          password: ${{ secrets.SERVER_PWD }} # 服务器密码；需要去仓库的 settings/secrets/actions 去创建
+          port: ${{ secrets.SERVER_PORT }} # 服务器端口，默认22；需要去仓库的 settings/secrets/actions 去创建
+          script: | # 重启更新镜像
+            docker stop registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
+            docker rm registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
+            docker pull registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
+            docker run -dp 8080:8080  --restart=always --name registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
