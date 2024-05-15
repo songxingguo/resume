@@ -42,7 +42,8 @@ jobs:
           password: ${{ secrets.SERVER_PWD }} # 服务器密码；需要去仓库的 settings/secrets/actions 去创建
           port: ${{ secrets.SERVER_PORT }} # 服务器端口，默认22；需要去仓库的 settings/secrets/actions 去创建
           script: | # 重启更新镜像
-            docker stop resume
-            docker rm resume
+            docker rmi registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest -f
+            docker stop resume-image
+            docker rm resume-image
             docker pull registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
-            docker run -dp 8081:80  --restart=always registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
+            docker run -dp 8081:80  --restart=always --name resume-image registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
