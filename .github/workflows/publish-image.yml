@@ -21,22 +21,11 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "20.12.1"
-      - uses: actions/cache@v2
-        id: cache
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-        # Runs a single command using the runners shell
-      - name: pnpm install
-        run: npm install -g pnpm --registry http://registry.npmmirror.com
-      - name: Install
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: npm config set registry http://registry.npmmirror.com && pnpm i
+      - name: Install and Build 🔧
+        run: |
+          npm i
+          npm run build
 
-      - name: Build
-        run: npm run build
       - name: Show Dir
         run: ls
 
