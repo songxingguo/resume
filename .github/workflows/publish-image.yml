@@ -32,7 +32,7 @@ jobs:
       - name: Build the  Docker image
         run:
           | # 使用 上一步写的 Dockerfile 构建镜像并发布到私有仓库； 发布完成可以去 https://github.com/songxingguo?tab=packages 查看
-          docker build . --file Dockerfile --tag registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest --add-host resume.songxingguo.com:172.17.0.2
+          docker build . --file Dockerfile --tag registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
           docker push registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
       - name: 更新服务器
         uses: appleboy/ssh-action@v0.1.10
@@ -46,4 +46,4 @@ jobs:
             docker stop resume
             docker rm resume
             docker pull registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
-            docker run -dp 8081:80  --restart=always --name resume registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
+            docker run -dp 8081:80 --add-host resume.songxingguo.com:172.17.0.2 --restart=always --name resume registry.cn-shanghai.aliyuncs.com/songxingguo/resume:latest
