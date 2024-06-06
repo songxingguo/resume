@@ -74,6 +74,22 @@
     ]
   }],
    "projects": [{
+    "name": "智慧美育艺术素质测评项目",
+    "description": "贵州省艺术素质测评项目，系贵州省教育厅携手课堂内外—智慧美育研究院共同打造的经典案例。以教育部级美育专家为引领，结合贵州省地域属性特征，个性化定制的艺术素质测评云平台及专属题库。",
+    "duty":["负责题库、作品评分等模块的<strong>15+</strong>页面开发"],
+    "difficulty":["文件上传、下载"],
+    "highlights": [
+      "为提升项目的开发效率并增强可维护性，封装了<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useUpload()%EF%BC%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0'>useUpload</a>、<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useTable()'>useTable</a>等多个Vue Hooks和代码生成工具，减少了<strong>50%</strong>的代码量和工作量，从而避免了重复开发文件上传、表格列表以及分页等功能。",
+    ],
+    "keywords": [
+      "Vue3",
+      "TypeScript",
+      "Element-plus"
+    ],
+    "startDate": "2024.05",
+    "endDate": "2024.06",
+    "url": "https://cp.ocart.cn/#/",
+  },{
     "name": "阅流（上线，18人，前端 8 人）",
     "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。目前服务于<a href='https://www.ysjf.com/index'>影视飓风</a>、少年得到、特赞等<strong>50+</strong>家企业以及<strong>100w+</strong>个人用户。",
     "duty":["作为<strong>开发负责人</strong>对播放器进行<strong>技术选型</strong>", "播放器业务功能开发", "统一项目组开发规范"],
