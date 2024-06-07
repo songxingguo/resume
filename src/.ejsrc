@@ -79,7 +79,7 @@
     "duty":["负责题库、作品评分等模块的<strong>15+</strong>页面开发"],
     "difficulty":["文件上传、下载"],
     "highlights": [
-      "为提升项目的开发效率并增强可维护性，封装了<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useUpload()%EF%BC%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0'>useUpload</a>、<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useTable()'>useTable</a>等多个Vue Hooks和代码生成工具，减少了<strong>50%</strong>的代码量和工作量，从而避免了重复开发文件上传、表格列表以及分页等功能。",
+      "为提升项目的开发效率并增强可维护性，封装了<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useUpload()%EF%BC%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0'>useUpload</a>、<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useTable()'>useTable</a>等<strong>10+</strong>个Vue Hooks和代码生成工具，减少了<strong>50%</strong>的代码量和工作量，从而避免了重复开发文件上传、表格列表以及分页等功能。",
     ],
     "keywords": [
       "Vue3",
