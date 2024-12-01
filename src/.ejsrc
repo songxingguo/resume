@@ -33,12 +33,21 @@
   "具有后端开发经验，拥有1个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
   ],
   "work": [{
+    "name": "上海淘米网络科技有限公司",
+    "position": "前端开发工程师",
+    "url": "http://www.yesedu.cn/",
+    "startDate": "2024.07",
+    "endDate": "至今",
+    "highlights": [
+      "负责客服管理后台开发（Vue、低代码）",
+      "负责游戏活动相关的基础组件（jQuery）和命令行工具（kf-cli, Node.js）的开发"
+    ]
+  },{
     "name": "重庆天籁教育科技有限公司（兼职）",
     "position": "前端开发工程师",
     "url": "http://www.yesedu.cn/",
     "startDate": "2024.05",
     "endDate": "2024.06",
-
     "highlights": [
       "负责智慧美育艺术素质测评项目（后台，Vue3, TS）"
     ]
@@ -48,7 +57,6 @@
     "url": "https://www.yueliu.cn/",
     "startDate": "2020.08",
     "endDate": "2022.06",
-
     "highlights": [
       "负责阅流播放器开发"
     ]
