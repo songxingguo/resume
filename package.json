@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "resume",
   "version": "0.1.0",
   "description": "",
   "source": "src/index.ejs",
@@ -16,6 +16,11 @@
     "@commitlint/config-conventional": "^19.2.2",
     "husky": "^9.0.11",
     "parcel": "^2.8.1",
-    "parcel-transformer-ejs": "^1.0.1"
-  }
+    "parcel-transformer-ejs": "file:packages/parcel-transformer-ejs",
+    "parcel-transformer-ejs1": "^1.0.0"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
