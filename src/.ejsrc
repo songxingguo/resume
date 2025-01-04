@@ -25,12 +25,13 @@
     }]
   },
   "skills": [
+  "<strong>从0到1</strong>搭建了<strong>低代码</strong>平台和游戏活动脚手架工具（kf-cli）。",
   "承担播放器项目<strong>技术选型</strong>工作，<strong>从0到1</strong>为公司搭建了<a href='./../public//images//framework.png'>前端播放器</a>，注重<strong>前端标准化</strong>，在部门内部推行前端规范的落地。",
-  "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有3个上线项目。",
+  "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有5个上线项目。",
   "熟练使用uniapp和微信小程序进行多端的开发，具有移动端适配经验，拥有3个上线项目和4个Demo项目。",
   "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
   "了解<a href='https://brain.songxingguo.com/content/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用<a href='https://brain.songxingguo.com/content/dv/three/getting_started/ThreeDemo.html'>three.js</a>实现了1个Demo项目。",
-  "具有后端开发经验，拥有1个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
+  "具有后端开发经验，拥有2个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
   ],
   "work": [{
     "name": "上海淘米网络科技有限公司",
@@ -39,8 +40,9 @@
     "startDate": "2024.07",
     "endDate": "至今",
     "highlights": [
-      "负责客服管理后台开发（Vue、低代码）",
-      "负责游戏活动相关的基础组件（jQuery）和命令行工具（kf-cli, Node.js）的开发"
+      "负责客服平台开发（Vue、低代码）",
+      "负责游戏活动模版（jQuery）和活动脚手架工具（kf-cli, Node.js）的开发",
+      "负责从0到1搭建发布平台（Vue3、TS、低代码）",
     ]
   },{
     "name": "重庆天籁教育科技有限公司（兼职）",
@@ -82,6 +84,27 @@
     ]
   }],
    "projects": [{
+    "name": "淘米旗下相关项目",
+    "description": "淘米旗下相关项目包括客服平台（<strong>低代码</strong>）、游戏活动模版（jQuery）、游戏活动脚手架（kf-cli）以及发布系统（<strong>低代码</strong>）。",
+    "duty":[
+      "优化和重构客服平台，封装公共组件并提取公共逻辑",
+      "整理游戏活动模版并<strong>从0到1</strong>搭建脚手架工具（kf-cli）",
+      "<strong>从0到1</strong>搭建发布系统"
+    ],
+    "difficulty":["低代码平台的整体设计、平台中组件的事件处理以及组件的数据获取"],
+    "highlights":[
+      "封装了kf-table、kf-dialog、富文本、v-auth、api.js等组件和核心模块，对路由和表单验证逻辑进行了优化，并进一步对组件的数据结构进行了重新设计，让组件能以组合的方式速响应业务需求。",
+      "游戏活动模版中封装了用户信息栏、页面切换等常用组件，并完成脚手架的搭建，能支持快速从模版生成游戏活动。",
+      "使用Vue3+Vite+TypeScript+ElementPlus+Axios+VueRouter+Pinia的技术栈搭建了全新的发布系统，采用低代码的设计思想，通过配置文件快速开发项目，保证了在新增功能时<strong>至少减少了50%</strong>的工作量。"
+    ],
+    "keywords": [
+      "Vue3",
+      "TypeScript",
+      "Element-plus"
+    ], 
+    "startDate": "2024.07",
+    "endDate": "至今",
+  },{
     "name": "智慧美育艺术素质测评项目",
     "description": "贵州省艺术素质测评项目，系贵州省教育厅携手课堂内外—智慧美育研究院共同打造的经典案例。以教育部级美育专家为引领，结合贵州省地域属性特征，个性化定制的艺术素质测评云平台及专属题库。",
     "duty":["负责题库、作品评分等模块的<strong>15+</strong>页面开发"],
