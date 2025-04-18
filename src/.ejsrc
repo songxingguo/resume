@@ -7,8 +7,8 @@
     "url": "sxg.im",
     "resume": "https://resume.songxingguo.com",
     "summary": "爱技术，也爱生活。",
-    "age": "27岁",
-    "work": "5年",
+    "age": "28岁",
+    "work": "6年",
     "location": {
       "city": "重庆",
       "region": "永川"
@@ -25,9 +25,9 @@
     }]
   },
   "skills": [
-  "<strong>从0到1</strong>搭建了<strong>低代码</strong>平台和游戏活动脚手架工具（kf-cli）。",
+  "<strong>从0到1</strong>搭建了<strong>低代码</strong>平台和游戏活动脚手架工具（kf-cli）, 使用乾坤（qiankun）搭建了<strong>微前端</strong>应用。",
   "承担播放器项目<strong>技术选型</strong>工作，<strong>从0到1</strong>为公司搭建了<a href='./../public//images//framework.png'>前端播放器</a>，注重<strong>前端标准化</strong>，在部门内部推行前端规范的落地。",
-  "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有5个上线项目。",
+  "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有8个上线项目。",
   "熟练使用uniapp和微信小程序进行多端的开发，具有移动端适配经验，拥有3个上线项目和4个Demo项目。",
   "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
   "了解<a href='https://brain.songxingguo.com/content/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用<a href='https://brain.songxingguo.com/content/dv/three/getting_started/ThreeDemo.html'>three.js</a>实现了1个Demo项目。",
@@ -85,17 +85,20 @@
   }],
    "projects": [{
     "name": "淘米旗下相关项目",
-    "description": "淘米旗下相关项目包括客服平台（<strong>低代码</strong>）、游戏活动模版（jQuery）、游戏活动脚手架（kf-cli）以及发布系统（<strong>低代码</strong>）。",
+    "description": "淘米旗下相关项目包括客服平台（<strong>低代码</strong>）、游戏活动模版（jQuery）、游戏活动脚手架（kf-cli）、发布系统（<strong>低代码</strong>）、【淘米会员中心】小程序和小程序管理后台。",
     "duty":[
       "优化和重构客服平台，封装公共组件并提取公共逻辑",
       "整理游戏活动模版并<strong>从0到1</strong>搭建脚手架工具（kf-cli）",
-      "<strong>从0到1</strong>搭建发布系统"
+      "<strong>从0到1</strong>搭建发布系统",
+      "使用乾坤（qiankun）搭建微前端应用小程序管理后台（Vue3）",
     ],
-    "difficulty":["低代码平台的整体设计、平台中组件的事件处理以及组件的数据获取"],
+    "difficulty":["低代码平台的整体设计、平台中组件的事件处理以及组件的数据获取","从0探索微前端框架qiankun的使用, 并解决框架中遇到的问题"],
     "highlights":[
       "封装了kf-table、kf-dialog、富文本、v-auth、api.js等组件和核心模块，对路由和表单验证逻辑进行了优化，并进一步对组件的数据结构进行了重新设计，让组件能以组合的方式速响应业务需求。",
       "游戏活动模版中封装了用户信息栏、页面切换等常用组件，并完成脚手架的搭建，能支持快速从模版生成游戏活动。",
-      "使用Vue3+Vite+TypeScript+ElementPlus+Axios+VueRouter+Pinia的技术栈搭建了全新的发布系统，采用低代码的设计思想，通过配置文件快速开发项目，保证了在新增功能时<strong>至少减少了50%</strong>的工作量。"
+      "使用Vue3+Vite+TypeScript+ElementPlus+Axios+VueRouter+Pinia的技术栈搭建了全新的发布系统，采用低代码的设计思想，通过配置文件快速开发项目，保证了在新增功能时<strong>至少减少了50%</strong>的工作量。",
+      "使用原生微信小程序从0到1搭建了【淘米会员中心】小程序，封装了useLogin、api.ts、flex.css等基础功能，支持在多种环境中快速切换。",
+      "使用乾坤（qiankun）搭建了微前端应用，实现了主应用和子应用的<strong>动态加载</strong>，并解决了子应用的路由query参数不显示、主子应用主题色同步切换、主子应用之间的<strong>样式冲突</strong>等问题，而且在多个项目中进行了推广使用。",
     ],
     "keywords": [
       "Vue3",
