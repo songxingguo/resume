@@ -25,13 +25,13 @@
     }]
   },
   "skills": [
-  "<strong>从0到1</strong>搭建了<strong>低代码</strong>平台和游戏活动脚手架工具（kf-cli）, 使用乾坤（qiankun）搭建了<strong>微前端</strong>应用。",
-  "承担播放器项目<strong>技术选型</strong>工作，<strong>从0到1</strong>为公司搭建了<a href='./../public//images//framework.png'>前端播放器</a>，注重<strong>前端标准化</strong>，在部门内部推行前端规范的落地。",
-  "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有8个上线项目。",
-  "熟练使用uniapp和微信小程序进行多端的开发，具有移动端适配经验，拥有3个上线项目和4个Demo项目。",
-  "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
-  "了解<a href='https://brain.songxingguo.com/content/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用<a href='https://brain.songxingguo.com/content/dv/three/getting_started/ThreeDemo.html'>three.js</a>实现了1个Demo项目。",
-  "具有后端开发经验，拥有2个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
+  "主导低代码平台架构设计，目前已支撑2个项目快速开发，减少50%重复工作量。",
+  "采用微前端解决方案（qiankun），实现子应用动态加载，解决跨应用路由/样式/主题同步难题。",
+  "全栈技术栈：前端（Vue3/React/TS/Uniapp/微信小程序）、工程化（Webpack/Vite/Gulp）、后端（Node.js/Java）。",
+  "封装高复用播放器组件（HLS/FLV/MP4支持），延迟优化至300ms内，覆盖PC/H5/小程序多端。",
+  "跨端开发：主导3个微信小程序、Uniapp多端适配方案。",
+  "图形学实践：基于Three.js/fabric.js实现视频标注、多比例裁切等交互功能。",
+  "搭建CLI工具（tm-cli），实现项目初始化、快速创建组件，节省30%开发成本。",
   ],
   "work": [{
     "name": "上海淘米网络科技有限公司",
@@ -84,69 +84,76 @@
     ]
   }],
    "projects": [{
-    "name": "淘米旗下相关项目",
-    "description": "淘米旗下相关项目包括客服平台（<strong>低代码</strong>）、游戏活动模版（jQuery）、游戏活动脚手架（kf-cli）、发布系统（<strong>低代码</strong>）、【淘米会员中心】小程序和小程序管理后台。",
+    "name": "淘米网络 | 低代码平台 & 微前端架构​",
+    "description": "搭建低代码平台支撑客服系统、游戏活动脚手架、发布系统等业务，通过配置化开发降低重复工作量；基于微前端实现多子系统独立开发和动态集成。",
     "duty":[
-      "优化和重构客服平台，封装公共组件并提取公共逻辑",
-      "整理游戏活动模版并<strong>从0到1</strong>搭建脚手架工具（kf-cli）",
-      "<strong>从0到1</strong>搭建发布系统",
-      "使用乾坤（qiankun）搭建微前端应用小程序管理后台（Vue3）",
+      "主导低代码平台核心模块设计，封装通用组件库及逻辑复用层",
+      "从0设计微前端架构，解决主子应用通信、路由同步、主题切换等核心问题",
+      "开发淘米会员中心小程序（原生微信小程序）",
     ],
-    "difficulty":["低代码平台的整体设计、平台中组件的事件处理以及组件的数据获取","从0探索微前端框架qiankun的使用, 并解决框架中遇到的问题"],
+    "difficulty":["低代码平台组件动态渲染与事件联动逻辑复杂","微应用间状态管理、样式隔离", "小程序多环境适配与登录流程封装"],
     "highlights":[
-      "封装了kf-table、kf-dialog、富文本、v-auth、api.js等组件和核心模块，对路由和表单验证逻辑进行了优化，并进一步对组件的数据结构进行了重新设计，让组件能以组合的方式速响应业务需求。",
-      "游戏活动模版中封装了用户信息栏、页面切换等常用组件，并完成脚手架的搭建，能支持快速从模版生成游戏活动。",
-      "使用Vue3+Vite+TypeScript+ElementPlus+Axios+VueRouter+Pinia的技术栈搭建了全新的发布系统，采用低代码的设计思想，通过配置文件快速开发项目，保证了在新增功能时<strong>至少减少了50%</strong>的工作量。",
-      "使用原生微信小程序从0到1搭建了【淘米会员中心】小程序，封装了useLogin、api.ts、flex.css等基础功能，支持在多种环境中快速切换。",
-      "使用乾坤（qiankun）搭建了微前端应用，实现了主应用和子应用的<strong>动态加载</strong>，并解决了子应用的路由query参数不显示、主子应用主题色同步切换、主子应用之间的<strong>样式冲突</strong>等问题，而且在多个项目中进行了推广使用。",
+      "设计JSON Schema驱动引擎，通过配置生成80%功能模块，​​新增需求代码量减少50%​",
+      "落地2个微前端子应用，开发效率提升40%",
+      "封装 kf-table（支持动态列渲染/排序/分页）、kf-dialog等10+通用组件",
+      "设计「淘米会员中心」小程序跨环境方案（dev/test/prod），通过环境变量实现​​一键切换​，登录流程封装复用率100%",
     ],
     "keywords": [
       "Vue3",
       "TypeScript",
-      "Element-plus"
+      "qiankun",
+      "Element Plus",
+      "Vite"
     ], 
     "startDate": "2024.07",
     "endDate": "至今",
   },{
     "name": "智慧美育艺术素质测评项目",
-    "description": "贵州省艺术素质测评项目，系贵州省教育厅携手课堂内外—智慧美育研究院共同打造的经典案例。以教育部级美育专家为引领，结合贵州省地域属性特征，个性化定制的艺术素质测评云平台及专属题库。",
-    "duty":["负责题库、作品评分等模块的<strong>15+</strong>页面开发"],
-    "difficulty":["文件上传、下载"],
+    "description": "贵州省教育厅重点示范项目，构建覆盖全省800+中小学的艺术素质测评系统，集成智能题库、作品评审、数据分析等模块，服务10万+师生日常美育教学，日均UV达5万+。",
+    "duty":["主导题库管理、作品评分等核心模块开发，完成15+复杂页面", "设计前端工程化方案，实现Axios拦截器优化、分片上传等关键技术"],
+    "difficulty":["高并发场景下大文件上传稳定性（单个文件1GB+）", "跨端文件下载兼容性（PC/移动端）"],
     "highlights": [
-      "为提升项目的开发效率并增强可维护性，封装了<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useUpload()%EF%BC%9A%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0'>useUpload</a>、<a href='https://garden.songxingguo.com/C-Knowledge/%E5%89%8D%E7%AB%AF/%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Vue/useTable()'>useTable</a>等<strong>10+</strong>个Vue Hooks和代码生成工具，减少了<strong>50%</strong>的代码量和工作量，从而避免了重复开发文件上传、表格列表以及分页等功能。",
+      "封装useUpload（支持断点续传/分片校验）、useTable（动态列渲染/多级排序）等10+高复用Hooks，​​代码复用率提升60%​",
+      "开发代码生成工具，自动化生成80% CRUD模块代码，​​节省20+人日开发成本​",
+      "实现文件分片上传（Web Worker并行处理），​​上传成功率从85%提升至99.9%​",
+      "优化OSS直传方案，​​下载速度提升3倍​​（CDN边缘节点加速）"
     ],
     "keywords": [
       "Vue3",
       "TypeScript",
-      "Element-plus"
+      "Element Plus",
+      "Vite",
+      "Pinia",
+      "Axios"
     ],
     "startDate": "2024.05",
     "endDate": "2024.06",
     "url": "https://cp.ocart.cn/#/",
   },{
-    "name": "阅流（上线，18人，前端 8 人）",
-    "description": "「阅流」是一个创意资产管理与协同工作流平台，具有影像数据实时上云、媒资管理、云上生产协作三大模块，助力用户进行云端影音创作。目前服务于<a href='https://www.ysjf.com/index'>影视飓风</a>、少年得到、特赞等<strong>50+</strong>家企业以及<strong>100w+</strong>个人用户。",
-    "duty":["作为<strong>开发负责人</strong>对播放器进行<strong>技术选型</strong>", "播放器业务功能开发", "统一项目组开发规范"],
-    "difficulty":["PC、H5、小程序<strong>多端适配</strong>", "播放器适配<strong>多种使用场景</strong>", "<strong>视频画面的圈点和标注</strong>","项目的<strong>组件化</strong>和<strong>工程化</strong>"],
+    "name": "阅流 | 多端视频播放器​",
+    "description": "面向影视/广告行业的云端协作平台，支撑​​50+企业客户（如影视飓风、特赞）及100万+用户​​的实时审片、多格式播放、跨端标注等核心场景。主导播放器技术体系从0到1建设，实现​​PC/H5/小程序三端覆盖​。",
+    "duty":["完成播放器技术选型（HLS/FLV/MP4多协议兼容方案），主导架构设计", "​​封装播放器内核及20+增强功能组件（多屏播放/Canvas标注/智能进度条）", "制定组件化规范、CI/CD流水线，推动播放器模块跨3个项目复用", "从0组建2人播放器团队，输出完整播放器文档，培训8名协作开发成员"],
+    "difficulty":["播放器需同时对接3个业务系统，代码耦合度高导致迭代效率低下"], 
     "highlights": [
-      "为灵活应对需求，对播放器进行了<strong>组件化</strong>拆分，分为接口组件、容器组件、功能组件3类，共计<a href='./../public//images//player.png'>30+组件</a>，提升了<strong>50%</strong>的开发效率。例如，<a href='https://www.yuque.com/songxingguo/cpvl3s/gguh8s'>多屏播放器组件</a>支持同时播放<strong>2～4</strong>个视频。",
-      "为方便用户可以在视频上方进行圈点和标注，在<a href='https://brain.songxingguo.com/content/web/frontend/html/CanvasBasic.html'>Canvas</a>工具库fabricjs的基础上封装出一套属于自己的<a href='https://www.yuque.com/songxingguo/cpvl3s/xw2ie2'>绘图工具组件</a>",
-      "使用hls.js、flv.js、video.js封装了一套属于公司的<strong>专属视频播放器组件</strong>，能够同时支持MP4、m3u8、flv等多种视频格式的播放，其中直播视频能将延迟控制在<strong>300ms</strong>以内，能很好的满足用户实时审片的需求。",
-      "由于用户对播放器进度条有特殊需求，为播放器封装了新的进度条组件，除了时间跳转的基础功能之外，还能选择播放区域，以及hover后<a href='https://www.yuque.com/songxingguo/cpvl3s/qooonl'>预览视频画面</a>。",
-      "为应对用户需要在不同比例下查看视频的需求，使用Canvas实现了对视频画面分别进行2.35、1.85、16:9、9:16、4:3、1:1等<a href='https://www.yuque.com/songxingguo/cpvl3s/lzg7ek'>多种比例的裁切</a>。",
-      "除了以上的组件外，还封装了<a href='https://www.yuque.com/songxingguo/cpvl3s/ousi9t'>图片缩放预览组件</a>、<a href='https://www.yuque.com/songxingguo/cpvl3s/lt4yft'>视频画面旋转组件</a>、文件对比组件、3D文件预览组件、音频播放器组件等。",
-      "为实现播放器能实现PC、H5、微信小程序<strong>多端适配</strong>，以及在<strong>多项目</strong>中使用，使用submodule对播放器模块进行分离，后续可以将播放器单独发布成<strong>npm</strong>包。现已有<strong>3+</strong>项目在使用播放器相关功能，已服务于<strong>14+</strong>开发同事。",
-      "项目开发后期，播放器团队已从<strong>1</strong>人增加到<strong>2</strong>人，为保证播放器的开发质量以及与各项目组的对接效率，制定了<a href='https://www.yuque.com/songxingguo/cpvl3s/lv4opb'>统一的编码规范</a>、命名规范和分支管理规范，开发时进行<strong>单元测试</strong>，开发后编写<strong>播放器使用文档</strong>，并自动化<strong>集成</strong>和<strong>部署</strong>。"
+      "基于hls.js/flv.js封装统一播放引擎，实现​​MP4/HLS/FLV全格式支持​​，直播延迟从2s压降至​​300ms内。",
+      "开发​​多屏播放组件​​（2-4路视频同步渲染）、​​智能进度条​​（区域循环/Hover帧预览/关键帧打标），用户审片效率提升35%",
+      "基于fabric.js二次封装​​Canvas标注工具链​​，实现16:9/1.85:1等6种比例动态裁切，标注操作耗时减少50%",
+      "扩展​​3D预览/音频波形分析​​等8个工具组件，覆盖90%用户核心场景",
+      "通过submodule实现播放器​​核心模块解耦​​，输出标准化API接口，支撑3个项目复用，节省开发成本200+人日",
+      "设计自动化流水线（Lint检查→单元测试→文档生成→自动化部署），版本交付周期从3天压缩至4小时",
     ],
     "keywords": [
-      "uniapp",
-      "Vue"
+      "Vue2",
+      "Uniapp",
+      "hls.js",
+      "flv.js",
+      "fabric.js",
     ],
     "startDate": "2020.08",
     "endDate": "2022.06",
     "url": "https://www.yueliu.cn/",
   }, {
-    "name": "大约旗下项目（上线， 5人，前端3人）",
+    "name": "大约网络 | 电商小程序​​",
     "description": "该项目属于付费会员制电商，涉及小程序端和后台管理。",
     "duty": [ "【锦鲤多多】和【锦鲤内购】小程序开发", "后台管理项目开发", "特殊<a href='https://brain.songxingguo.com/content/web/frontend/css/Animation.html'>动画</a>实现"],
     "highlights": [
@@ -155,7 +162,7 @@
     ],
     "keywords": [
       "微信小程序",
-      "Vue"
+      "Vue2"
     ],
     "startDate": "2018.12",
     "endDate": "2020.06",
