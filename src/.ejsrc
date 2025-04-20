@@ -25,13 +25,13 @@
     }]
   },
   "skills": [
-  "<strong>从0到1</strong>搭建了<strong>低代码</strong>平台和游戏活动脚手架工具（kf-cli）, 使用乾坤（qiankun）搭建了<strong>微前端</strong>应用。",
-  "承担播放器项目<strong>技术选型</strong>工作，<strong>从0到1</strong>为公司搭建了<a href='./../public//images//framework.png'>前端播放器</a>，注重<strong>前端标准化</strong>，在部门内部推行前端规范的落地。",
-  "熟练掌握Vue、React、TypeScript开发并了解相关原理，拥有8个上线项目。",
-  "熟练使用uniapp和微信小程序进行多端的开发，具有移动端适配经验，拥有3个上线项目和4个Demo项目。",
-  "熟悉 parcel、Webpack、Git、gulp、VSCode 等前端工具。",
-  "了解<a href='https://brain.songxingguo.com/content/dv/audio-visual/WebRTC/WebRTC%20DEMO.html'>WebRTC</a>和计算机图形学, 使用<a href='https://brain.songxingguo.com/content/dv/three/getting_started/ThreeDemo.html'>three.js</a>实现了1个Demo项目。",
-  "具有后端开发经验，拥有2个<strong>CLI</strong>项目（Node.js）和 1个上线项目(Java)。",
+  "主导低代码平台架构设计，目前已支撑2个项目快速开发，减少50%重复工作量。",
+  "采用微前端解决方案（qiankun），实现子应用动态加载，解决跨应用路由/样式/主题同步难题。",
+  "全栈技术栈：前端（Vue3/React/TS/Uniapp/微信小程序）、工程化（Webpack/Vite/Gulp）、后端（Node.js/Java）。",
+  "封装高复用播放器组件（HLS/FLV/MP4支持），延迟优化至300ms内，覆盖PC/H5/小程序多端。",
+  "跨端开发：主导3个微信小程序、Uniapp多端适配方案。",
+  "图形学实践：基于Three.js/fabric.js实现视频标注、多比例裁切等交互功能。",
+  "搭建CLI工具（tm-cli），实现项目初始化、快速创建组件，节省30%开发成本。",
   ],
   "work": [{
     "name": "上海淘米网络科技有限公司",
