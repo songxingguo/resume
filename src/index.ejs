@@ -51,15 +51,12 @@
               <a href="<%= project.url %>" target="_blank"
                 ><%= project.name %></a
               >
-              <% } %> <% if (!project.url) { %> <%= project.name %> <% } %> 
+              <% } %> <% if (!project.url) { %> <%= project.name %> <% } %> <%
+              if (project.keywords.length > 0) { %> - <%= project.keywords %> <%
+              } %>
             </span>
             <time><%= project.startDate %> - <%= project.endDate %></time>
           </dt>
-          <% if (project.keywords) { %>
-            <dd><strong>技术栈：</strong><%
-              if (project.keywords.length > 0) { %> <%= project.keywords.join(' + ') %> <%
-              } %></dd>
-          <% } %>
           <% if (project.description) { %>
             <dd><strong>项目概述：</strong><%- project.description %></dd>
           <% } %> 
