@@ -32,6 +32,5 @@ coverage
 *.sw?
 .parcel-cache
 package-lock.json
-.trae/
 
 .trae/
