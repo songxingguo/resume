@@ -27,12 +27,18 @@ module.exports = new Transformer({
       });
     }
 
-    return contents;
+    return { contents, filePath };
   },
   async transform({ asset, config }) {
     const includes = [];
 
-    const ejsConfig = config || {};
+    const ejsConfig = config?.contents || {};
+    const configFilePath = config?.filePath;
+    
+    if (configFilePath) {
+      await asset.invalidateOnFileChange(configFilePath);
+    }
+    
     const source = await asset.getCode();
     const compiled = ejs.compile(source, {
       compileDebug: false,
