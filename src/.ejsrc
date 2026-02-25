@@ -145,36 +145,6 @@
     "startDate": "2020.08",
     "endDate": "2022.06",
     "url": "https://www.yueliu.cn/",
-  }, {
-    "name": "大约旗下项目（上线， 5人，前端3人）",
-    "description": "该项目属于付费会员制电商，涉及小程序端和后台管理。",
-    "duty": [ "【锦鲤多多】和【锦鲤内购】小程序开发", "后台管理项目开发", "特殊<a href='https://brain.songxingguo.com/content/web/frontend/css/Animation.html'>动画</a>实现"],
-    "highlights": [
-      "由于原生的布局语法过于繁琐，实现了对【栅格布局】和<a href='https://brain.songxingguo.com/content/web/frontend/css/FlexLayout.html'>【Flex布局】</a>的封装，团队<strong>开发效率提升80%</strong>",
-      "由于抽奖活动弹窗过多导致管理混乱，运用了Promise异步等待的特性解决了这个问题，使得<strong>用户体验</strong>得到了极大提升。"
-    ],
-    "keywords": [
-      "微信小程序",
-      "Vue"
-    ],
-    "startDate": "2018.12",
-    "endDate": "2020.06",
-    "url": "",
-  },{
-    "name": "新能源物流⻋综合运营平台(上线, 19人)",
-    "description": "该平台是新能源汽⻋的在线监管、追踪定位、故障处理以及交易合同管理平台，致⼒于为销售或购买新能源汽⻋的⽤户的提供⼀个实时监控的综合性管理平台。",
-    "duty":["作为<strong>项⽬组⻓</strong>参与了“新能源物流⻋综合运营平台”项⽬的设计、开发与测试"],
-    "highlights": [
-      "完成了故障流程、派⻋流程、合同管理等核⼼模块的开发以及重构。",
-    ],
-    "keywords": [
-      "AngularJS",
-      "Java",
-      "MySQL"
-    ],
-    "startDate": "2016.10",
-    "endDate": "2018.02",
-    "url": "",
   }],
   "education": [{
     "institution": "重庆理工大学",

@@ -41,7 +41,7 @@
       </main>
     </section>
     <section>
-      <header>公司项目</header>
+      <header>项目经验</header>
       <% projects.slice(0,4).forEach(function(project){ %>
       <main>
         <dl>
@@ -76,44 +76,6 @@
               <ul>
                 <% project.highlights.forEach(function(highlight){ %>
                     <li><%- highlight %></li>
-                <% }); %>
-              </ul>
-            </dd>
-          <% } %>
-        </dl>
-      </main>
-      <% }); %>
-    </section>
-    <section>
-      <header>个人开源项目</header>
-      <% projects.slice(5).forEach(function(project){ %>
-      <main>
-        <dl>
-          <dt>
-            <span>
-              <% if (project.url) { %>
-              <a href="<%= project.url %>" target="_blank"
-                ><%= project.name %></a
-              >
-              <% } %> <% if (!project.url) { %> <%= project.name %> <% } %> <%
-              if (project.keywords.length > 0) { %> - <%= project.keywords %> <%
-              } %>
-            </span>
-            <time><%= project.startDate %> - <%= project.endDate %></time>
-          </dt>
-          <% if (project.description) { %>
-          <dd><strong>项目概述：</strong><%- project.description %></dd>
-          <% } %>
-          <% if (project.difficulty) { %>
-            <dd>
-              <strong>项目难点：</strong><%- project.difficulty.join("；")%>。
-            </dd>
-          <% } %>
-          <% if (project.highlights) { %>
-            <dd><strong>项目成果：</strong>
-              <ul>
-                <% project.highlights.forEach(function(highlight){ %>
-                  <li><%- highlight %></li>
                 <% }); %>
               </ul>
             </dd>
