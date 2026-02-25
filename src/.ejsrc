@@ -175,45 +175,6 @@
     "startDate": "2016.10",
     "endDate": "2018.02",
     "url": "",
-  },{
-    "name": "简历",
-    "description": "⼀份通过JSON进行配置，兼容PC、⼿机和平板设备，还可以通过浏览器直接打印的⽹⻚版简历。",
-    "highlights": [
-      "首先通过parcel-transformer-ejs将ejs语法构建成html代码。",
-      "然后通过媒体查询兼容不同设备。",
-    ],
-    "keywords": [
-      "ejs",
-      "parcel"
-    ],
-    "startDate": "2020.06",
-    "endDate": "至今",
-    "url": "https://github.com/songxingguo/resume",
-  },{
-    "name": "Dev-Box",
-    "description": "使用Node.js 和 gulp 封装的开发工具箱，用于封装常用脚手架以及API调用等，以此提高项目开发效率。",
-    "highlights": ["为实现快速发布静态网站，将创建Github Action工作流、添加环境变量、创建Coding仓库和腾讯云对象存储桶、设置自定义域名、创建域名解析记录、申请HTTPS域名证书集成到工具箱中，实现了<strong>一键部署静态网站</strong>。"],
-    "keywords": [
-      'Node.js',
-      'gulp'
-    ],
-    "startDate": "2018.12",
-    "endDate": "至今",
-    "url": "",
-  },{
-    "name": "个人博客",
-    "description": "本人热爱技术，乐于分享，持续更新<a href='https://www.yuque.com/songxingguo'>语雀</a>300多天，累计获得<strong>关注数340+</strong>。",
-    "difficulty":["将语雀文章发布到Hexo博客"],
-    'highlights': [
-      "通过钉钉和<strong>云函数</strong>实现了语雀文章发布到Hexo博客，并且<a href='https://www.yuque.com/songxingguo/devhints/gwpsg4dq6tp27z3s'>教程文章</a>获得<strong>语雀精选</strong>，<strong>访问量1500+</strong>",
-      "博客首先使用Hexo进行开发，然后使用Github Action 将代码分别推送到Coding和Github Pages，最后使用腾讯云部署静态博客。"
-      ],
-    "keywords": [
-      "Hexo"
-    ],
-    "startDate": "2016.10",
-    "endDate": "至今",
-    "url": "https://blog.songxingguo.com/"
   }],
   "education": [{
     "institution": "重庆理工大学",
