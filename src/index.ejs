@@ -100,17 +100,6 @@
       </main>
       <% }); %>
     </section>
-        <section>
-      <header>考研经历</header>
-      <% postgraduate.forEach(function(item){ %>
-      <main class="space-between">
-        <div>
-          <%- item.institution %>-<%- item.studyType %>-<%= item.area %>
-        </div>
-        <time><%= item.startDate %> - <%= item.endDate %></time>
-      </main>
-      <% }); %>
-    </section>
     <section>
       <header>教育经历</header>
       <% education.forEach(function(item){ %>
