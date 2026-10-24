@@ -4,8 +4,8 @@
   "description": "",
   "source": "src/index.ejs",
   "scripts": {
-    "dev": "parcel",
-    "build": "parcel build",
+    "dev": "parcel --public-url /resume/",
+    "build": "parcel build --public-url /resume/",
     "commitlint": "commitlint --edit"
   },
   "keywords": [],
