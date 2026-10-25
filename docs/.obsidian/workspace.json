@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "e2f73863efb995e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "df2abc7264a7b3a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26049407f52896df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06-旅行博主第二职业规划.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "06-旅行博主第二职业规划"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fe30244cd9024ecf",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f395fd943e8acfa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "010d59c21cd88fec",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "151f1959209a1bef",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "12051c33c93d45c0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "d0d907c2746abc82",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef24daa89febaedd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fdc30e05488c499b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "06-旅行博主第二职业规划.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "d286b5dd5bbf37b7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "06-旅行博主第二职业规划.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "b9be85dbb0ca90ff",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "15514b9161e20619",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "2a57df5352b2e836",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "06-旅行博主第二职业规划.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 486.40234375
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "26049407f52896df",
+  "lastOpenFiles": [
+    "07-重庆资源利用与差异化策略.md",
+    "07-自如退租安排.md",
+    "03-近期面试备战计划.md",
+    "02-转型准备计划.md",
+    "06-旅行博主第二职业规划.md",
+    "06-旅行博主第二业务规划.md",
+    "04-面试准备清单.md",
+    "01-五年职业规划.md",
+    "05-面试题库.md",
+    "00-AI时代核心能力.md",
+    "近期面试备战计划.md",
+    "面试题库.md",
+    "面试准备清单.md",
+    "五年职业规划.md",
+    "转型准备计划.md",
+    "INTERVIEW-CHECKLIST.md",
+    "INTERVIEW.md",
+    "CAREER-PLAN-5Y.md",
+    "PREP-PLAN.md"
+  ]
+}
