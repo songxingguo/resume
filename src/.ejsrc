@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "宋兴国",
-    "label": "前端开发工程师",
+    "label": "全栈开发工程师",
     "email": "xg.song@qq.com",
     "phone": "(+86) 189-8364-2737",
     "url": "sxg.im",
@@ -24,11 +24,12 @@
     }]
   },
   "skills": [
-    "技术栈：Vue3、Uniapp、微信小程序、React、TypeScript、Webpack、Vite、Node.js、Java",
-    "擅长微信小程序和Vue开发，熟悉Uniapp多端适配，能独立完成项目从0到1的搭建，拥有6+项目经验",
-    "能够搭建并使用CLI工具提升项目初始化和组件生成效率，节省20%开发成本",
-    "具备音视频、微前端（qiankun）、低代码开发经验",
-    "熟练运用 Claude Code、Codex、ZCode、Trae 等 AI 编程工具，通过 VibeCoding 与多 Agent 协作模式提升 50% 开发效率"
+    "主语言：TypeScript / JavaScript / Node.js、Java，可阅读 Python 代码",
+    "全栈开发：Node.js 服务与接口设计、大模型 API 接入与 Prompt 编排，具备前后端联调与独立交付能力",
+    "工程化：Git、Shell、Docker、GitHub Actions，自建简历站点实现提交即构建镜像并推送私有仓库",
+    "代码质量：牵头前端开发规范与历史模块重构（重复代码减少约 50%），具备代码阅读、问题定位与回归验证能力",
+    "AI 工具：使用 Claude Code、Codex、Trae 完成代码生成与重构，对 AI 生成代码做人工审核与修正，实践 VibeCoding 与多 Agent 协作",
+    "其他：Vue3、Vite、Webpack、Uniapp、React、微信小程序、微前端（qiankun）、低代码、音视频"
   ],
   "work": [{
     "name": "德邦快递",
@@ -104,6 +105,27 @@
     "startDate": "2026.05",
     "endDate": "至今"
   },{
+    "name": "AI 求职 Agent（个人项目）",
+    "description": "基于 Node.js + TypeScript 自建的大模型应用：调用大模型 API 解析 JD 并提取要求，与简历内容做匹配，生成针对性的简历改写结果，并提供交互界面，用于个人求职流程提效。",
+    "duty": [
+      "负责服务端接口设计与大模型 API 调用编排",
+      "负责 JD 解析、简历匹配与改写流程及交互界面开发"
+    ],
+    "difficulty": [
+      "大模型输出不稳定，需设计结构化输入与校验策略保证结果可用"
+    ],
+    "highlights": [
+      "基于 Node.js + TypeScript 搭建服务端与交互界面，封装模型调用与 Prompt 编排，跑通「JD 解析 → 要求提取 → 简历匹配 → 内容改写」主流程。",
+      "针对大模型输出不稳定，采用结构化输入、规则校验与人工复核组合策略，保证改写结果可用。"
+    ],
+    "keywords": [
+      "Node.js",
+      "TypeScript",
+      "大模型 API"
+    ],
+    "startDate": "2026.09",
+    "endDate": "至今"
+  },{
     "name": "淘米旗下相关项目",
     "description": "淘米旗下项目涵盖微信小程序、PC/H5网页和后台管理系统，包括【淘米会员中心】小程序及其管理后台、客服管理平台、游戏活动网页和游戏活动脚手架（tm-cli）。",
     "duty":[
@@ -166,6 +188,25 @@
     "startDate": "2020.08",
     "endDate": "2022.06",
     "url": "https://www.yueliu.cn/",
+  },{
+    "name": "新能源物流车综合运营平台（B305 实验室外部项目）",
+    "description": "面向新能源物流车运营的综合管理平台，覆盖车辆与司机管理、充电与状态监控、订单调度、运营报表；由实验室承接的外部商业项目，交付客户后持续运营。",
+    "duty": [
+      "负责 MySQL 表结构设计与数据查询",
+      "负责 Java 后端接口开发",
+      "负责 AngularJS 运营后台开发"
+    ],
+    "highlights": [
+      "负责 MySQL 表结构设计、Java 后端接口与 AngularJS 运营后台开发，覆盖车辆/司机管理、充电与状态监控、订单调度、运营报表等核心模块。",
+      "项目交付外部客户并持续运营，完成从数据模型、后端接口到管理后台的完整全栈交付。"
+    ],
+    "keywords": [
+      "Java",
+      "MySQL",
+      "AngularJS"
+    ],
+    "startDate": "2016.07",
+    "endDate": "2018.02"
   }],
   "education": [{
     "institution": "重庆理工大学",
