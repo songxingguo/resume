@@ -34,3 +34,4 @@ coverage
 package-lock.json
 
 .trae/
+docs/.obsidian/
