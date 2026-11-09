@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "宋兴国",
-    "label": "全栈开发工程师",
+    "label": "AI 全栈开发工程师",
     "email": "xg.song@qq.com",
     "phone": "(+86) 189-8364-2737",
     "url": "sxg.im",
@@ -24,18 +24,17 @@
     }]
   },
   "skills": [
-    "主语言：TypeScript / JavaScript / Node.js、Java，可阅读 Python 代码",
+    "技术栈：TypeScript / JavaScript / Node.js、Vue3、Vite、Webpack、Uniapp、React、微信小程序、微前端（qiankun）、低代码、音视频",
     "全栈开发：Node.js 服务与接口设计、大模型 API 接入与 Prompt 编排，具备前后端联调与独立交付能力",
     "工程化：Git、Shell、Docker、GitHub Actions，自建简历站点实现提交即构建镜像并推送私有仓库",
     "代码质量：牵头前端开发规范与历史模块重构（重复代码减少约 50%），具备代码阅读、问题定位与回归验证能力",
-    "AI 工具：使用 Claude Code、Codex、Trae 完成代码生成与重构，对 AI 生成代码做人工审核与修正，实践 VibeCoding 与多 Agent 协作",
-    "其他：Vue3、Vite、Webpack、Uniapp、React、微信小程序、微前端（qiankun）、低代码、音视频"
+    "AI 工具：使用 Claude Code、Codex、Trae 完成代码生成与重构，对 AI 生成代码做人工审核与修正，实践 VibeCoding 与多 Agent 协作"
   ],
   "work": [{
     "name": "德邦快递",
     "position": "软件开发工程师",
     "startDate": "2026.05",
-    "endDate": "至今",
+    "endDate": "2026.11",
     "highlights": [
       "负责德邦快递多端小程序开发，覆盖百度、抖音、快手、H5等平台，保障多端兼容"
     ]
@@ -103,25 +102,28 @@
       "TypeScript"
     ], 
     "startDate": "2026.05",
-    "endDate": "至今"
+    "endDate": "2026.11"
   },{
-    "name": "AI 求职 Agent（个人项目）",
-    "description": "基于 Node.js + TypeScript 自建的大模型应用：调用大模型 API 解析 JD 并提取要求，与简历内容做匹配，生成针对性的简历改写结果，并提供交互界面，用于个人求职流程提效。",
+    "name": "知识库问答 Agent（个人项目）",
+    "description": "基于 Nuxt 3 + Node.js + TypeScript 搭建的 RAG 知识库问答应用：定时同步 NAS 知识库并增量向量化入 Qdrant，问答时检索 Top5 相关片段，由大模型流式生成答案并展示引用来源。",
     "duty": [
-      "负责服务端接口设计与大模型 API 调用编排",
-      "负责 JD 解析、简历匹配与改写流程及交互界面开发"
+      "负责问答接口、Embedding 与 LLM 调用编排（DeepSeek / GPT-4o-mini 可切换）",
+      "负责知识库同步 Worker（增量去重、文本切分、向量入库）与问答交互界面开发"
     ],
     "difficulty": [
-      "大模型输出不稳定，需设计结构化输入与校验策略保证结果可用"
+      "知识库持续更新，需保证增量同步与向量去重；召回不准会导致答非所问，需控制切片粒度、相似度阈值与 Prompt 约束"
     ],
     "highlights": [
-      "基于 Node.js + TypeScript 搭建服务端与交互界面，封装模型调用与 Prompt 编排，跑通「JD 解析 → 要求提取 → 简历匹配 → 内容改写」主流程。",
-      "针对大模型输出不稳定，采用结构化输入、规则校验与人工复核组合策略，保证改写结果可用。"
+      "基于 Nuxt 3 + Node.js + TypeScript 跑通「NAS 同步 → SHA256 增量去重 → 文本切分 → Embedding 入 Qdrant → Top5 检索 → 流式生成」全链路，Docker Compose 部署至 NAS。",
+      "针对召回质量与模型幻觉，设置相似度阈值（≥0.5）与「仅基于知识库回答」的 Prompt 约束，并在界面展示命中片段与来源段落，便于核对答案。"
     ],
     "keywords": [
       "Node.js",
       "TypeScript",
-      "大模型 API"
+      "Nuxt 3",
+      "Qdrant",
+      "RAG",
+      "Mastra"
     ],
     "startDate": "2026.09",
     "endDate": "至今"
